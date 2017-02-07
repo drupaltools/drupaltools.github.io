@@ -7,6 +7,7 @@
     color: #fff;
     // Positioning context for the mobile navigation icon
     position: relative;
+    text-align: center;
 }
 
 .site-title {
@@ -15,7 +16,7 @@
     line-height: 70px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
+    // float: left;
 
     &,
     &:visited {
