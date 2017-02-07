@@ -16,6 +16,7 @@
     line-height: 70px;
     letter-spacing: -1px;
     margin-bottom: 0;
+    margin-right: 1em;
     // float: left;
 
     &,
@@ -252,4 +253,19 @@
 
 .project-wrapper {
   padding: 0 50px;
+}
+
+.ssk-count {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  a {
+    color: #fff;
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
 }

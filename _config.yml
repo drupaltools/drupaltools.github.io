@@ -8,7 +8,7 @@
 # Site settings
 title: DrupalTools
 email:
-description: "A list of the <b>open source tools</b> that can help people accomplish a <b>Drupal related task</b>."
+description: "A list of <b>open source tools</b> that can help people accomplish <b>Drupal related tasks</b>."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://drupaltools.com" # the base hostname & protocol for your site
 copyright: '<a href="https://www.drupal.org">Drupal</a> is a <a href="http://drupal.com/trademark">registered trademark</a> of <a href="http://buytaert.net">Dries Buytaert</a>.'
