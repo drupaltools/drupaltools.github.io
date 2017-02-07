@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<table><tbody>
+
+<tr>
+  <th>Project</th>
+  <th>Source</th>
+  <th>Description</th>
+  <th>Docs</th>
+  <th>Created</th>
+  <th>Drupal</th>
+  <th>OS</th>
+  <th>Work with</th>
+  <th>Category</th>
+  <th>Tags</th>
+</tr>
+
+{% for project_hash in site.data.projects %}
+{% assign project = project_hash[1] %}
+<tr>
+  <td>{{ project.name }}</td>
+  <td><a href="{{ project.homepage }}">{{ project.homepage | replace:'https://','' | replace:'http://','' }}</td>
+  <td>{{ project.description }}</td>
+  <td><a href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</td>
+  <td>{{ project.year_created }}</td>
+  <td>{{ project.drupal_versions | sort | join: ', ' }}</td>
+  <td>{{ project.operation_system | sort | join: ', ' }}</td>
+  <td>{{ project.works_with | sort | join: ', ' }}</td>
+  <td>{{ project.category | sort | join: ', ' }}</td>
+  <td>{{ project.tags | sort | join: ', ' }}</td>
+</tr>
+{% endfor %}
+
+</tbody></table>
+
+
+
+</div>
