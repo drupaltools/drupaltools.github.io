@@ -1,0 +1,23 @@
+name: Vlad
+year_created: 2013
+source: https://github.com/hashbangcode/vlad
+homepage: https://www.drupal.org/project/vlad
+docs: http://vlad-docs.readthedocs.io
+logo: https://www.drupal.org/files/styles/grid-3/public/project-images/vlad_logo.png
+
+description: "Vagrant LAMP Ansible Drupal. A Drupal development platform in a box, with everything you would need to develop Drupal websites."
+
+requires:
+  - vagrant
+  - ansible
+drupal_versions:
+  - 7.x, 8.x
+operation_system:
+  - all
+category:
+  - vagrant
+  - vm
+  - development
+  - debug
+tags:
+  - do

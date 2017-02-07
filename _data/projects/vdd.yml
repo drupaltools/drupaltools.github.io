@@ -1,0 +1,27 @@
+name: vdd
+year_created: 2013
+source: https://www.drupal.org/project/vdd
+homepage: https://www.drupal.org/project/vdd
+docs: https://www.drupal.org/node/2008758
+logo:
+
+description: "Vagrant Drupal Development (VDD) is fully configured and ready to use development environment
+built with VirtualBox, Vagrant, Linux and Chef Solo provisioner. VDD is virtualized environment,
+so your base system will not be changed and remain clean after installation. You can create as
+many environments as you wish without any consequences."
+
+requires:
+  - vagrant
+  - chef
+  - virtualbox
+drupal_versions:
+  - all
+operation_system:
+  - all
+category:
+  - vagrant
+  - vm
+  - development
+  - debug
+tags:
+  - do

@@ -1,0 +1,27 @@
+name: OpenDevShop
+year_created: 2013
+source: https://github.com/opendevshop/devshop
+homepage: http://getdevshop.com
+docs: https://docs.opendevshop.com
+logo: https://raw.githubusercontent.com/opendevshop/devshop/1.x/logo.png
+
+description: "DevShop is a 'cloud hosting' system for Drupal. DevShop makes it easy to host,
+develop, test and update drupal sites. It provides a front-end built in Drupal (Devmaster)
+and a back-end built with drush, Symfony, and Ansible."
+
+requires:
+  - ansible
+drupal_versions:
+  - 8.x
+operation_system:
+  - linux
+category:
+  - hosting
+  - multisite
+  - paas
+  - aegir
+tags:
+  - popular
+similar:
+  - boa
+  - aegir

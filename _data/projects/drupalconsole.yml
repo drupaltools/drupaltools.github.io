@@ -1,0 +1,24 @@
+name: Drupal Console
+year_created: 2013
+source: https://github.com/hechoendrupal/drupal-console
+homepage: https://drupalconsole.com
+docs: https://docs.drupalconsole.com
+logo: https://drupalconsole.com/sites/default/files/inline-images/drupal-console.png
+
+description: "The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal."
+
+requires:
+  - nothing
+drupal_versions:
+  - 8.x
+operation_system:
+  - all
+category:
+  - cli
+  - symfony
+  - development
+  - debug
+  - scaffold
+  - phar
+tags:
+  - popular

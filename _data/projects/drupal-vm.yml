@@ -1,0 +1,25 @@
+name: Drupal VM
+year_created: 2014
+source: https://github.com/geerlingguy/drupal-vm
+homepage: https://www.drupalvm.com
+docs: http://docs.drupalvm.com
+logo:
+
+description: "Drupal VM is A VM for local Drupal development, built with Vagrant + Ansible.
+This project aims to make spinning up a simple local Drupal test/development environment incredibly quick and easy,
+and to introduce new developers to the wonderful world of Drupal development on local virtual machines (instead of crufty old MAMP/WAMP-based development)."
+
+requires:
+  - vagrant
+  - ansible
+drupal_versions:
+  - 7.x, 8.x
+operation_system:
+  - all
+category:
+  - vagrant
+  - vm
+  - development
+  - debug
+tags:
+  - popular
