@@ -4,7 +4,7 @@
 
 ## Contributing
 
-Missing a tool here? Just fork the repo and add your tool as a `<name>.md` in the `_data/projects` folder.
+Missing a tool here? Just fork the repo and add your tool as a `<name>.yml` in the `_data/projects` folder.
 
 Make sure to follow the following rules:
 
@@ -14,16 +14,17 @@ Make sure to follow the following rules:
 
 ## Running locally
 
-Drupaltools is built with Jekyll. To install and run locally:
+Drupaltools is built with Jekyll, Bundler and Liquid. To install and run locally:
 
 ```
+gem install jekyll bundler
 git clone https://github.com/theodorosploumis/drupaltools.git
 cd drupaltools
-bundle install (requires ruby 2.1.2 to work w/o errors)
+bundle install
 bundle exec jekyll serve
 ```
 
 ## License
 This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
-Drupal is a [registered trademark](http://drupal.com/trademark) of [Dries Buytaert](http://buytaert.net/).
+[Drupal](https://www.drupal.org) is a [registered trademark](http://drupal.com/trademark) of [Dries Buytaert](http://buytaert.net/).
