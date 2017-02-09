@@ -1,0 +1,33 @@
+name: Terra
+year_created: 2015
+source: https://github.com/terra-ops
+homepage: http://terra.readthedocs.io
+docs: http://terra.readthedocs.io
+logo: https://avatars1.githubusercontent.com/u/12502742
+
+description: "Terra is a suite of tools for the purpose of quickly and easily standing up web apps with Docker.
+It is designed to be as simple as possible for developers, while being powerful enough to use in production at scale.
+With Terra, all you care about is your site's code. Stop wasting time setting up environments. 
+Let terra and docker do all the work for you."
+
+requires:
+  - docker
+drupal_versions:
+  - 7.x
+  - 8.x
+operation_system:
+  - all
+category:
+  - development
+  - testing
+  - production
+  - cli
+  - docker
+  - aegir
+tags:
+  - noteworthy
+similar:
+  - kalabox
+  - opendevshop
+  - aegir
+ 
