@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="project-tiles row">
+  {% for project_hash in site.data.projects %}
+  {% assign project = project_hash[1] %}
+    <div class="column">
+      <article class="project-wrapper-tile">
+        <div class="name"><a href="{{ project.homepage }}">{{ project.name }}</a> ({{ project.year_created }})</div>
+        <div><label>Source: </label><a href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a></div>
+        <div class="description">{{ project.description }}</div>
+        <div><label>Docs: </label><a href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a></div>
+        <div><label>Drupal: </label>{{ project.drupal_versions | sort | join: ', ' }}</div>
+        <div><label>OS: </label>{{ project.operation_system | sort | join: ', ' }}</div>
+        <div><label>Requires: </label>{{ project.requires | sort | join: ', ' }}</div>
+        <div class="category"><label>Category: </label>{{ project.category | sort | join: ', ' }}</div>
+        <div class="tags"><label>Tags: </label>{{ project.tags | sort | join: ', ' }}</div>
+      </article>
+    </div>
+  {% endfor %}
+</div>

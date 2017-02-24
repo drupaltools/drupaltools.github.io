@@ -171,6 +171,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    overflow: hidden;
 }
 
 .page-heading {
@@ -196,7 +197,25 @@
     font-size: 24px;
 }
 
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 4px 8px;
+  background: $site-blue;
+  color: #fff !important;
+  border-radius: 3px;
 
+  &:hover,
+  &:focus {
+    background: #fff;
+    color: $site-blue !important;
+    text-decoration: none;
+  }
+}
+
+.buttons {
+  margin-top: 20px;
+}
 
 /**
  * Posts
@@ -267,5 +286,93 @@
     &:focus {
       color: #fff;
     }
+  }
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 260px;
+
+  &:hover,
+  &:focus {
+    white-space: normal;
+  }
+}
+
+// Tile - flexbox
+.project-wrapper-tile {
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 6px #ddd;
+
+  &:hover,
+  &:focus {
+    background: #ddd;
+  }
+  label {
+    font-weight: bold;
+  }
+  div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #f1f1f1;
+    padding-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    &.name {
+      margin-bottom: 10px;
+      background: #f1f1f1;
+      padding: 4px 10px;
+    }
+    &.description,
+    &.category,
+    &.tags {
+      &:hover,
+      &:focus {
+        white-space: normal;
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 23%;
+  padding: 1%;
+  float: left;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 31%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .column {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .column {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
   }
 }

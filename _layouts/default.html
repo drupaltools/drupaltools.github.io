@@ -7,9 +7,11 @@
 
     {% include header.html %}
 
-    <div class="intro"><div class="wrapper">
-      {{ site.description }}
-    </div></div>
+    <div class="intro">
+      <div class="wrapper">
+        {% include description.html %}
+      </div>
+    </div>
 
     <div class="page-content">
       <div class="project-wrapper">

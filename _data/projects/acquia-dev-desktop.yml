@@ -1,0 +1,22 @@
+name: Drupalal
+year_created: 2015
+source: https://github.com/activelamp/generator-drupalal
+homepage: https://github.com/activelamp/generator-drupalal
+docs: https://github.com/activelamp/generator-drupalal
+logo:
+
+description: "Yeoman generator for building Drupal sites."
+
+requires:
+  - yeoman
+drupal_versions:
+  - 7.x
+operation_system:
+  - all
+category:
+  - development
+  - scaffolding
+tags:
+  - scaffolding
+similar:
+  - none
