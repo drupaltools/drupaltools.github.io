@@ -1,0 +1,27 @@
+name: BLT
+year_created: 2014
+source: https://github.com/acquia/blt
+homepage: https://github.com/acquia/blt
+docs: http://blt.readthedocs.io
+logo:
+
+description: "BLT (Build and Launch Tool) is a tool that generates new Drupal projects
+using a standardized template derived from Acquia Professional Services' best practices."
+
+requires:
+  - git
+  - composer
+drupal_versions:
+  - 8.x
+operation_system:
+  - all
+category:
+  - provisioning
+  - building
+  - launch
+  - testing
+  - cli
+tags:
+  - popular
+similar:
+  - fetcher

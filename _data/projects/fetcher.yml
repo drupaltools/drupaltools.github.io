@@ -1,0 +1,32 @@
+name: Fetcher
+year_created: 2011
+source: https://github.com/tizzo/fetcher
+homepage: https://www.drupal.org/project/fetcher
+docs: http://fetcher.readthedocs.io
+logo:
+
+description: "Fetcher is a Drush extension that automates the process of provisioning a
+Drupal site on a local development environment or a server. This includes setting up the Drupal root,
+fetching the code (generally from a VCS), creating a database for the site and a user with the necessary
+privileges to manage it, updating permissions, creating symlinks, setting up server configuration
+files like Apache’s virtual hosts,
+and generating drush alias files for your convenience. In addition, fetcher supports
+post installation tasks that can be run after a site is setup."
+
+requires:
+  - docker
+drupal_versions:
+  - 7.x, 8.x
+operation_system:
+  - all
+category:
+  - provisioning
+  - development
+  - drush plugin
+  - debug
+tags:
+  - popular
+similar:
+  - opendevshop
+  - terra
+  - docksal

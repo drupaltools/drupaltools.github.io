@@ -1,0 +1,31 @@
+name: Valkyrie
+year_created: 2014
+source: https://github.com/GetValkyrie/valkyrie
+homepage: http://www.getvalkyrie.com
+docs: http://www.getvalkyrie.com
+logo: https://raw.githubusercontent.com/GetValkyrie/valkyrie/0.5.x/assets/valkyrie_logo.png
+
+description: "Valkyrie is a free git-based development and maintenance stack for hardcore Drupal developers.
+It’s built with tools you know and love to make your life easier.
+We’ve fine-tuned it and tested it in production with a growing team of developers,
+and across hundereds of sites."
+
+requires:
+  - drush
+  - Virtualbox
+  - Vagrant
+drupal_versions:
+  - all
+operation_system:
+  - linux
+  - OS X
+category:
+  - develop
+  - debug
+  - production
+  - aegir
+  - drush plugin
+tags:
+  - popular
+similar:
+  - aegir
