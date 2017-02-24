@@ -1,0 +1,25 @@
+name: Drupal VM cli
+year_created: 2016
+source: https://github.com/opdavies/drupal-vm-cli
+homepage: https://github.com/opdavies/drupal-vm-cli
+docs: http://docs.drupalvm.com
+logo:
+
+description: "A Symfony Console application that manages and customises configuration files for Drupal VM projects."
+
+requires:
+  - symfony
+  - vagrant
+  - ansible
+  - drupalvm
+drupal_versions:
+  - 7.x, 8.x
+operation_system:
+  - all
+category:
+  - vagrant
+  - vm
+  - development
+  - debug
+tags:
+  - popular

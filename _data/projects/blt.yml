@@ -18,10 +18,13 @@ operation_system:
 category:
   - provisioning
   - building
-  - launch
+  - deploy
   - testing
   - cli
+  - production
 tags:
   - popular
 similar:
   - fetcher
+  - aquifer
+  - drubs

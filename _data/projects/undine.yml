@@ -1,0 +1,26 @@
+name: Undine
+year_created: 2014
+source: https://bitbucket.org/stevens_devops/undine
+homepage: https://bitbucket.org/stevens_devops/undine
+docs:
+logo:
+
+description: "Undine is a cross-platform development environment for Drupal
+developers, inspired by (and intended to emulate) the Acquia Cloud hosting platform.
+Where prior versions of Undine used Vagrant, the current incarnation leverages
+Docker to provide improved speed, stability and cross-platform compatibility."
+
+requires:
+  - docker
+drupal_versions:
+  - all
+operation_system:
+  - all
+category:
+  - development
+  - cli
+  - docker
+tags:
+  - docker
+similar:
+  - none
