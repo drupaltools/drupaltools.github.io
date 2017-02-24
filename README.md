@@ -1,6 +1,6 @@
 # DrupalTools
 
-[Drupaltools.com](http://drupaltools.com), a list of open-source tools used for Drupal development and other Drupal related tasks.
+[drupaltools.github.io](https://drupaltools.github.io/), a list of open-source tools used for Drupal development and other Drupal related tasks.
 
 ## Contributing
 
