@@ -7,7 +7,7 @@ logo: https://avatars1.githubusercontent.com/u/12502742
 
 description: "Terra is a suite of tools for the purpose of quickly and easily standing up web apps with Docker.
 It is designed to be as simple as possible for developers, while being powerful enough to use in production at scale.
-With Terra, all you care about is your site's code. Stop wasting time setting up environments. 
+With Terra, all you care about is your site's code. Stop wasting time setting up environments.
 Let terra and docker do all the work for you."
 
 requires:
@@ -30,4 +30,4 @@ similar:
   - kalabox
   - opendevshop
   - aegir
- 
+  - dockerdrupal
