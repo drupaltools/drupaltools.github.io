@@ -1,0 +1,28 @@
+name: DockerDrupal
+year_created: 2016
+source: https://github.com/4AllDigital/DockerDrupal
+homepage: https://www.4alldigital.io/dockerdrupal
+docs: http://dockerdrupal.readthedocs.io
+logo: https://raw.githubusercontent.com/4alldigital/drupaldev-docker/master/docs/images/drupal-docker-logo-monochrome.png
+
+description: "DockerDrupal is a ongoing project to build an out-of-the-box Docker based development environment designed for local Drupal (PHP) web apps/sites.
+It currently ships with a number of useful addons, like a SOLR search index, Selenium test grid and a Redis memory cache to boost performance."
+
+requires:
+  - docker
+drupal_versions:
+  - 7.x, 8.x
+operation_system:
+  - all
+category:
+  - development
+  - cli
+  - docker
+  - debug
+  - production
+tags:
+  - popular
+similar:
+  - opendevshop
+  - terra
+  - docksal
