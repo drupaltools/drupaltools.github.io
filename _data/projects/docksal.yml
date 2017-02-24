@@ -1,0 +1,26 @@
+name: docksal
+year_created: 2015
+source: https://github.com/docksal/docksal
+homepage: http://docksal.io
+docs: http://docksal.readthedocs.io
+logo: http://docksal.readthedocs.io/en/master/img/docksald.png
+
+description: "Docker and Docker Compose based environments for web development for macOS, Windows and Ubuntu."
+
+requires:
+  - docker
+drupal_versions:
+  - 7.x, 8.x
+operation_system:
+  - all
+category:
+  - Debug
+  - Develop
+  - Varnish
+  - Apache Solr
+  - Blackfire
+  - Behat
+tags:
+  - popular
+similar:
+  - devshop

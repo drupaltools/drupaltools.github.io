@@ -1,0 +1,24 @@
+name: Drupal 8 Sprint Box
+year_created: 2015
+source: https://github.com/thom8/drupal8-vagrant
+homepage: https://github.com/thom8/drupal8-vagrant
+docs: https://github.com/thom8/drupal8-vagrant
+logo:
+
+description: "Simple Vagrant config to download and install the latest dev version of Drupal 8 or 7."
+
+requires:
+  - vagrant
+  - composer
+  - virtualbox
+drupal_versions:
+  - 7.x, 8.x
+operation_system:
+  - all
+category:
+  - vagrant
+  - vm
+  - development
+  - debug
+tags:
+  - popular
