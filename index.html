@@ -8,6 +8,7 @@ layout: default
   <tbody>
 
     <tr>
+      <th>A/a</th>
       <th>Project</th>
       <th>Source</th>
       <th>Description</th>
@@ -23,6 +24,7 @@ layout: default
     {% for project_hash in site.data.projects %}
     {% assign project = project_hash[1] %}
       <tr>
+        <td>{{ forloop.index }}</td>
         <td><a href="{{ project.homepage }}">{{ project.name }}</a></td>
         <td><a href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a></td>
         <td>{{ project.description }}</td>

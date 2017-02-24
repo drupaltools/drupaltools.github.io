@@ -2,7 +2,7 @@ name: Undine
 year_created: 2014
 source: https://bitbucket.org/stevens_devops/undine
 homepage: https://bitbucket.org/stevens_devops/undine
-docs:
+docs: https://bitbucket.org/stevens_devops/undine
 logo:
 
 description: "Undine is a cross-platform development environment for Drupal

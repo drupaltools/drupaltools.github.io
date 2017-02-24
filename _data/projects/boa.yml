@@ -11,7 +11,6 @@ for Drupal, with Nginx, PHP-FPM, Zend OPcache, MariaDB and Redis."
 
 requires:
   - linux
-  - own server
 drupal_versions:
   - all
 operation_system:
