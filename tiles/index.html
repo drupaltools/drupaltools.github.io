@@ -14,7 +14,6 @@ layout: default
         <div><label>OS: </label>{{ project.operation_system | sort | join: ', ' }}</div>
         <div><label>Requires: </label>{{ project.requires | sort | join: ', ' }}</div>
         <div class="category"><label>Category: </label>{{ project.category | sort | join: ', ' }}</div>
-        <div class="tags"><label>Tags: </label>{{ project.tags | sort | join: ', ' }}</div>
       </article>
     </div>
   {% endfor %}

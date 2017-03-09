@@ -1,0 +1,23 @@
+name: Drupal Docker Environment
+year_created: 2016
+source: https://github.com/activelamp/generator-drupalal
+homepage: https://github.com/activelamp/generator-drupalal
+docs:
+logo:
+
+description: "Yeoman generator for building Drupal sites."
+
+requires:
+  - yeoman
+drupal_versions:
+  - 7.x, 8.x
+operation_system:
+  - all
+category:
+  - development
+  - generator
+  - npm
+  - scaffolding
+similar:
+  - valkyrie
+  - fetcher

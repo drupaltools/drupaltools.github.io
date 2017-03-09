@@ -1,0 +1,29 @@
+name: Drupal 8 Sprint Box
+year_created: 2015
+source: https://github.com/bezhermoso/generator-docker-drupal-8
+homepage: https://www.npmjs.com/package/generator-docker-drupal-8
+docs:
+logo:
+
+description: "Yeoman generator for Drupal 8.x development."
+
+requires:
+  - yeoman
+  - vagrant
+  - docker
+  - virtualbox
+drupal_versions:
+  - 8.x
+operation_system:
+  - all
+category:
+  - vagrant
+  - vm
+  - development
+  - debug
+  - generator
+similar:
+  - generator-docker-drupal8
+  - valkyrie
+  - fetcher
+  - ddd

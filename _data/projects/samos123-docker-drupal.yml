@@ -1,0 +1,26 @@
+name: Drupal image without database
+year_created: 2014
+source: https://github.com/samos123/docker-drupal
+homepage: https://github.com/samos123/docker-drupal
+docs:
+logo:
+
+description: "This image contains the latest stable Drupal 7-release.
+It will automatically setup the database and install a default site.
+The image doesn't contain a database so you have to create a seperate database
+container (which is no effort if you use the provided configuration for docker-compose)
+and link this container or pass the database information of a MySQL- or Postgres-host."
+
+requires:
+  - docker
+drupal_versions:
+  - 7.x
+operation_system:
+  - all
+category:
+  - development
+  - docker
+  - debug
+similar:
+  - drupal8-sprint-box
+  - 4alldigital-dockerdrupal

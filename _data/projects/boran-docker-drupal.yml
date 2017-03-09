@@ -1,0 +1,23 @@
+name: docker-drupal
+year_created: 2014
+source: https://github.com/Boran/docker-drupal
+homepage: https://github.com/Boran/docker-drupal
+docs:
+logo:
+
+description: "Completely automated Drupal install, with lots of flexibility!
+Creates a Docker container for Drupal 7 or 8, using Linux (Ubuntu 14.04), Apache and MySQL."
+
+requires:
+  - docker
+drupal_versions:
+  - all
+operation_system:
+  - all
+category:
+  - development
+  - docker
+  - debug
+similar:
+  - drupal8-sprint-box
+  - 4alldigital-dockerdrupal

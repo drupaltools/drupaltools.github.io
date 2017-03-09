@@ -18,7 +18,6 @@ layout: default
       <th>OS</th>
       <th>Requires</th>
       <th>Category</th>
-      <th>Tags</th>
     </tr>
 
     {% for project_hash in site.data.projects %}
@@ -34,7 +33,6 @@ layout: default
         <td>{{ project.operation_system | sort | join: ', ' }}</td>
         <td>{{ project.requires | sort | join: ', ' }}</td>
         <td>{{ project.category | sort | join: ', ' }}</td>
-        <td>{{ project.tags | sort | join: ', ' }}</td>
       </tr>
     {% endfor %}
 

@@ -1,0 +1,34 @@
+name: Switchboard
+year_created: 2014
+source: https://github.com/fluxsauce/switchboard
+homepage: https://github.com/fluxsauce/switchboard
+docs: https://fluxsauce.github.io/switchboard/
+logo:
+
+description: "Switchboard is a application for coordinating between local
+environments and third-party hosts. Switchboard gets information about remote sites,
+sets up local sites, and can be used to synchronize content between the local and remote.
+Switchboard uses Drush for validation and input. All commands can respond with
+Drush format (default), or with JSON output using option --json.
+Switchboard currently supports operations on both Acquia and Pantheon sites."
+
+requires:
+  - composer
+  - drush
+  - git
+drupal_versions:
+  - all
+operation_system:
+  - all
+category:
+  - cli
+  - development
+  - deployment
+  - drush-plugin
+  - acquia
+  - pantheon
+similar:
+  - fetcher
+  - aquifer
+  - blt
+  - drubs
