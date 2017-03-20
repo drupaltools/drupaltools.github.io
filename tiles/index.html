@@ -4,9 +4,11 @@ layout: default
 <div class="project-tiles row">
   {% for project_hash in site.data.projects %}
   {% assign project = project_hash[1] %}
+
     <div class="column">
       <article class="project-wrapper-tile">
         <div class="name"><a href="{{ project.homepage }}">{{ project.name }}</a> ({{ project.year_created }})</div>
+        <div class="logo">{% if project.logo == null %}<img src="/img/no-image.png" />{% else %}<img src="{{ project.logo }}" />{% endif %}</div>
         <div><label>Source: </label><a href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a></div>
         <div class="description">{{ project.description }}</div>
         <div><label>Docs: </label><a href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a></div>

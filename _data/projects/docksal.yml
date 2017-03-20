@@ -3,7 +3,7 @@ year_created: 2015
 source: https://github.com/docksal/docksal
 homepage: http://docksal.io
 docs: http://docksal.readthedocs.io
-logo: http://docksal.readthedocs.io/en/master/img/docksald.png
+logo: http://docksal.io/img/docksal-word.png
 
 description: "Docker and Docker Compose based environments for web development for macOS, Windows and Ubuntu."
 

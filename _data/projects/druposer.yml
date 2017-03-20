@@ -1,0 +1,23 @@
+name: Druposer
+year_created: 2016
+source: https://github.com/dsdobrzynski/druposer
+homepage: https://github.com/dsdobrzynski/druposer
+docs:
+logo:
+
+description: "A framework for creating a Drupal project using composer."
+
+requires:
+  - composer
+drupal_versions:
+  - 7.x
+  - 8.x
+operation_system:
+  - all
+category:
+  - building
+  - cli
+  - scaffolding
+similar:
+  - drubs
+  - blt

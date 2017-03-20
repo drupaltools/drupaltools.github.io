@@ -6,7 +6,7 @@ docs: https://github.com/forumone/web-starter/wiki
 logo:
 
 description: "Starting place for developing Drupal, Wordpress and other web applications.
-This project has been setup to use a virtual machine for localdevelopment to
+This project has been setup to use a virtual machine for local development to
 closely mirror the production environment."
 
 requires:

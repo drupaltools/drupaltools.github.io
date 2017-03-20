@@ -1,24 +1,22 @@
-name: Kalabox
-year_created: 2016
-source: https://github.com/kalabox/kalabox
-homepage: http://www.kalabox.io
-docs: http://docs.kalabox.io
-logo: http://www.kalabox.io/img/kalabox-white-name.png
+name: Drupalal
+year_created: 2015
+source: https://github.com/activelamp/generator-drupalal
+homepage: https://github.com/activelamp/generator-drupalal
+docs: https://github.com/activelamp/generator-drupalal
+logo:
 
-description: "Faster local development for Drupal, WordPress, and beyond.
-Kalabox is the easiest way to develop websites and get them live. Get rid of the drudgery and have more fun!"
+description: "Yeoman generator for building Drupal sites."
 
 requires:
-  - docker
+  - yeoman
 drupal_versions:
-  - all
+  - 7.x
 operation_system:
   - all
 category:
   - development
-  - cli
-  - docker
+  - scaffolding
 tags:
-  - pantheon
+  - scaffolding
 similar:
-  - none
+  - ddd

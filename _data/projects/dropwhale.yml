@@ -1,0 +1,26 @@
+name: dropwhale
+year_created: 2014
+source: https://github.com/socketwench/dropwhale
+homepage: https://github.com/socketwench/dropwhale
+docs:
+logo:
+
+description: "Dropwhale is a drop-in Docker environment aimed at Drupal module
+developers. Instead of maintaining a separate Drupal installation,
+Dropwhale does all the downloading and initialization of Drupal with a
+few easy commands. No need for you to download and install core.
+No need to argue with xdebug or get Drush installed. It's all built in!"
+
+requires:
+  - docker
+drupal_versions:
+  - 8.x
+operation_system:
+  - all
+category:
+  - development
+  - docker
+  - debug
+similar:
+  - drupal8-sprint-box
+  - 4alldigital-dockerdrupal

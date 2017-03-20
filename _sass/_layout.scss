@@ -314,6 +314,14 @@
   label {
     font-weight: bold;
   }
+  .logo {
+    text-align: center;
+    img {
+      //max-width: 200px;
+      height: 60px;
+      width: auto;
+    }
+  }
   div {
     overflow: hidden;
     text-overflow: ellipsis;
