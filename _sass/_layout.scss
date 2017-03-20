@@ -217,6 +217,19 @@
   margin-top: 20px;
 }
 
+.table-visible {
+  display: none;
+}
+
+.tiles-template {
+  .table-visible {
+    display: initial;
+  }
+  .tiles-visible {
+    display: none;
+  }
+}
+
 /**
  * Posts
  */

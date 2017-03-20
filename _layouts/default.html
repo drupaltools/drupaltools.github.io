@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html>
+{% if page.url == "/" %}
+  <html>
+{% else %}
+  <html class="tiles-template">
+{% endif %}
 
   {% include head.html %}
 
