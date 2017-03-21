@@ -11,9 +11,9 @@ Creates a Docker container for Drupal 7 or 8, using Linux (Ubuntu 14.04), Apache
 requires:
   - docker
 drupal_versions:
-  - all
-operation_system:
-  - all
+  - 6
+  - 7
+  - 8
 category:
   - development
   - docker

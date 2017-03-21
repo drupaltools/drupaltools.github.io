@@ -13,26 +13,24 @@ layout: default
       <th>Source</th>
       <th>Description</th>
       <th>Docs</th>
-      <th>Created</th>
-      <th>Drupal</th>
-      <th>OS</th>
-      <th>Requires</th>
-      <th>Category</th>
+      <th class="td-filter" data-class="td-created"><span>Created</span></th>
+      <th class="td-filter" data-class="td-drupal"><span>Drupal</span></th>
+      <th class="td-filter" data-class="td-requires"><span>Requires</span></th>
+      <th class="td-filter" data-class="td-category"><span>Category</span></th>
     </tr>
 
     {% for project_hash in site.data.projects %}
     {% assign project = project_hash[1] %}
-      <tr>
+      <tr class="result-row">
         <td>{{ forloop.index }}</td>
         <td><a href="{{ project.homepage }}">{{ project.name }}</a></td>
         <td><a href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a></td>
         <td class="description">{{ project.description }}</td>
         <td><a href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a></td>
-        <td>{{ project.year_created }}</td>
-        <td>{{ project.drupal_versions | sort | join: ', ' }}</td>
-        <td>{{ project.operation_system | sort | join: ', ' }}</td>
-        <td>{{ project.requires | sort | join: ', ' }}</td>
-        <td>{{ project.category | sort | join: ', ' }}</td>
+        <td class="td-filter" data-class="td-created">{{ project.year_created }}</td>
+        <td class="td-filter" data-class="td-drupal">{{ project.drupal_versions | sort | join: ', ' }}</td>
+        <td class="td-filter" data-class="td-requires">{{ project.requires | sort | join: ', ' }}</td>
+        <td class="td-filter" data-class="td-category">{{ project.category | sort | join: ', ' }}</td>
       </tr>
     {% endfor %}
 

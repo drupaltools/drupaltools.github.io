@@ -11,9 +11,9 @@ Kalabox is the easiest way to develop websites and get them live. Get rid of the
 requires:
   - docker
 drupal_versions:
-  - all
-operation_system:
-  - all
+  - 6
+  - 7
+  - 8
 category:
   - development
   - cli

@@ -13,9 +13,9 @@ requires:
   - vagrant
   - virtualbox
 drupal_versions:
-  - all
-operation_system:
-  - all
+  - 6
+  - 7
+  - 8
 category:
   - vagrant
   - vm

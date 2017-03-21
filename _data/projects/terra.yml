@@ -13,10 +13,8 @@ Let terra and docker do all the work for you."
 requires:
   - docker
 drupal_versions:
-  - 7.x
-  - 8.x
-operation_system:
-  - all
+  - 7
+  - 8
 category:
   - development
   - testing

@@ -14,9 +14,7 @@ and link this container or pass the database information of a MySQL- or Postgres
 requires:
   - docker
 drupal_versions:
-  - 7.x
-operation_system:
-  - all
+  - 7
 category:
   - development
   - docker

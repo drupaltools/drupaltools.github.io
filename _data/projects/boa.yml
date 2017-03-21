@@ -12,7 +12,9 @@ for Drupal, with Nginx, PHP-FPM, Zend OPcache, MariaDB and Redis."
 requires:
   - linux
 drupal_versions:
-  - all
+  - 6
+  - 7
+  - 8
 operation_system:
   - linux
 category:

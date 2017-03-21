@@ -13,9 +13,9 @@ Drush can be extended by 3rd party commandfiles."
 requires:
   - nothing
 drupal_versions:
-  - all
-operation_system:
-  - all
+  - 6
+  - 7
+  - 8
 category:
   - cli
   - drush

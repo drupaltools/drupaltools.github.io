@@ -11,9 +11,8 @@ It currently ships with a number of useful addons, like a SOLR search index, Sel
 requires:
   - docker
 drupal_versions:
-  - 7.x, 8.x
-operation_system:
-  - all
+  - 7
+  - 8
 category:
   - development
   - cli

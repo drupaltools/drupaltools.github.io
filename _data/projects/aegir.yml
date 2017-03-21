@@ -13,7 +13,9 @@ requires:
   - linux
   - own server
 drupal_versions:
-  - all
+  - 6
+  - 7
+  - 8
 operation_system:
   - linux
 category:

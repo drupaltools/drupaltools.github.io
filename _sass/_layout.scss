@@ -5,7 +5,6 @@
     min-height: 70px;
     background: $site-blue;
     color: #fff;
-    // Positioning context for the mobile navigation icon
     position: relative;
     text-align: center;
 }
@@ -92,8 +91,6 @@
         }
     }
 }
-
-
 
 /**
  * Site footer
@@ -314,6 +311,17 @@
   }
 }
 
+th {
+  select {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    background: $site-blue;
+    border: 1px solid #ddd;
+    color: #fff;
+  }
+}
+
 // Tile - flexbox
 .project-wrapper-tile {
   padding: 10px;
@@ -334,6 +342,9 @@
       height: 60px;
       width: auto;
     }
+  }
+  .description {
+    max-width: 100%;
   }
   div {
     overflow: hidden;
@@ -376,6 +387,14 @@
   padding: 1%;
   float: left;
   margin: 0;
+}
+
+.js-hidden {
+  display: none !important;
+}
+
+.js-visible {
+  display: table-row;
 }
 
 @media screen and (max-width: 1200px) {

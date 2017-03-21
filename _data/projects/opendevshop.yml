@@ -12,7 +12,7 @@ and a back-end built with drush, Symfony, and Ansible."
 requires:
   - ansible
 drupal_versions:
-  - 8.x
+  - 8
 operation_system:
   - linux
 category:

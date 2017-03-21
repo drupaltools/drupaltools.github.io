@@ -12,7 +12,7 @@ requires:
   - drush
   - symfony
 drupal_versions:
-  - 8.x
+  - 8
 operation_system:
   - Linux
   - macOS

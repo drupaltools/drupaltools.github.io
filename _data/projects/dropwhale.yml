@@ -14,9 +14,7 @@ No need to argue with xdebug or get Drush installed. It's all built in!"
 requires:
   - docker
 drupal_versions:
-  - 8.x
-operation_system:
-  - all
+  - 8
 category:
   - development
   - docker

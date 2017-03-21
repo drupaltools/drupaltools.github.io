@@ -10,9 +10,8 @@ description: "Docker and Docker Compose based environments for web development f
 requires:
   - docker
 drupal_versions:
-  - 7.x, 8.x
-operation_system:
-  - all
+  - 7
+  - 8
 category:
   - Debug
   - Develop

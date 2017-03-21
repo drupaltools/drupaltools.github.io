@@ -13,7 +13,6 @@ layout: default
         <div class="description">{{ project.description }}</div>
         <div><label>Docs: </label><a href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a></div>
         <div><label>Drupal: </label>{{ project.drupal_versions | sort | join: ', ' }}</div>
-        <div><label>OS: </label>{{ project.operation_system | sort | join: ', ' }}</div>
         <div><label>Requires: </label>{{ project.requires | sort | join: ', ' }}</div>
         <div class="category"><label>Category: </label>{{ project.category | sort | join: ', ' }}</div>
       </article>

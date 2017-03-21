@@ -11,9 +11,8 @@ It contains a LAMP stack and an SSH server, along with an up to date version of 
 requires:
   - docker
 drupal_versions:
-  - 7.x, 8.x
-operation_system:
-  - all
+  - 7
+  - 8
 category:
   - development
   - debug

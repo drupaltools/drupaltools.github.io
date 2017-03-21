@@ -10,9 +10,7 @@ description: "The Drupal CLI. A tool to generate boilerplate code, interact with
 requires:
   - nothing
 drupal_versions:
-  - 8.x
-operation_system:
-  - all
+  - 8
 category:
   - cli
   - symfony

@@ -12,9 +12,8 @@ hard to set up, servers you'll need."
 requires:
   - vagrant
 drupal_versions:
-  - 7.x, 8.x
-operation_system:
-  - all
+  - 7
+  - 8
 category:
   - vagrant
   - vm

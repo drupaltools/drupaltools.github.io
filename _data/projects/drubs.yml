@@ -13,7 +13,7 @@ requires:
   - git
   - drush
 drupal_versions:
-  - 8.x
+  - 8
 operation_system:
   - linux
 category:

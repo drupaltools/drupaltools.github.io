@@ -12,9 +12,7 @@ requires:
   - git
   - composer
 drupal_versions:
-  - 8.x
-operation_system:
-  - all
+  - 8
 category:
   - provisioning
   - building

@@ -10,9 +10,7 @@ description: "Yeoman generator for building Drupal sites."
 requires:
   - yeoman
 drupal_versions:
-  - 7.x
-operation_system:
-  - all
+  - 7
 category:
   - development
   - scaffolding
