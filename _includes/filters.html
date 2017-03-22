@@ -1,0 +1,68 @@
+<div class="filters">
+  <select class="filter-created">
+    <option value="none" class="default">- Created -</option>
+    {% capture list_created %}
+      {% for project_hash in site.data.projects %}
+        {% assign project = project_hash[1] %}
+        {{ project.year_created }}
+      {% endfor %}
+    {% endcapture %}
+    {% assign list_created_final = list_created | split: " " | uniq | sort %}
+
+    {% for item in list_created_final %}
+      <option value="{{ item }}">{{ item }}</option>
+    {% endfor %}
+  </select>
+
+  <select class="filter-drupal">
+    <option value="none" class="default">- Drupal -</option>
+    {% capture list_created %}
+      {% for project_hash in site.data.projects %}
+        {% assign project = project_hash[1] %}
+        {% for element in project.drupal_versions %}
+          {{ element | downcase }}
+        {% endfor %}
+      {% endfor %}
+    {% endcapture %}
+    {% assign list_created_final = list_created | split: " " | uniq | sort %}
+
+    {% for item in list_created_final %}
+      <option value="{{ item }}">{{ item }}</option>
+    {% endfor %}
+  </select>
+
+  <select class="filter-requires">
+    <option value="none" class="default">- Requires -</option>
+    {% capture list_created %}
+      {% for project_hash in site.data.projects %}
+        {% assign project = project_hash[1] %}
+        {% for element in project.requires %}
+          {{ element | downcase }}
+        {% endfor %}
+      {% endfor %}
+    {% endcapture %}
+    {% assign list_created_final = list_created | split: " " | uniq | sort %}
+
+    {% for item in list_created_final %}
+      <option value="{{ item }}">{{ item }}</option>
+    {% endfor %}
+  </select>
+
+  <select class="filter-category">
+    <option value="none" class="default">- Category -</option>
+    {% capture list_created %}
+      {% for project_hash in site.data.projects %}
+        {% assign project = project_hash[1] %}
+        {% for element in project.category %}
+          {{ element | downcase }}
+        {% endfor %}
+      {% endfor %}
+    {% endcapture %}
+    {% assign list_created_final = list_created | split: " " | uniq | sort %}
+
+    {% for item in list_created_final %}
+      <option value="{{ item }}">{{ item }}</option>
+    {% endfor %}
+  </select>
+
+</div>

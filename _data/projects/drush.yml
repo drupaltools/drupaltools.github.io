@@ -11,7 +11,7 @@ Similarly, it runs update.php, executes sql queries and DB migrations, and misc 
 Drush can be extended by 3rd party commandfiles."
 
 requires:
-  - nothing
+  - cli
 drupal_versions:
   - 6
   - 7

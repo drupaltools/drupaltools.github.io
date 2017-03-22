@@ -12,8 +12,8 @@ and across hundereds of sites."
 
 requires:
   - drush
-  - Virtualbox
-  - Vagrant
+  - virtualbox
+  - vagrant
 drupal_versions:
   - 6
   - 7

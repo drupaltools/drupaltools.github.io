@@ -1,4 +1,4 @@
-name: Drupal image without database
+name: Samos123 Docker image
 year_created: 2014
 source: https://github.com/samos123/docker-drupal
 homepage: https://github.com/samos123/docker-drupal

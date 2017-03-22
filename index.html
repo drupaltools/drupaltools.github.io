@@ -9,28 +9,36 @@ layout: default
 
     <tr>
       <th>A/a</th>
-      <th>Project</th>
-      <th>Source</th>
-      <th>Description</th>
-      <th>Docs</th>
-      <th class="td-filter" data-class="td-created"><span>Created</span></th>
-      <th class="td-filter" data-class="td-drupal"><span>Drupal</span></th>
-      <th class="td-filter" data-class="td-requires"><span>Requires</span></th>
-      <th class="td-filter" data-class="td-category"><span>Category</span></th>
+      <th class="sort-filter"><span>Project</span></th>
+      <th>Basic</th>
+      <th>Details</th>
+      <th class="sort-filter"><span>Created</span></th>
+      <th class="sort-filter"><span>Requires</span></th>
+      <th class="sort-filter"><span>Category</span></th>
     </tr>
 
     {% for project_hash in site.data.projects %}
     {% assign project = project_hash[1] %}
-      <tr class="result-row">
+    {% assign requires =  project.requires | sort | join: ', ' | downcase %}
+    {% assign category =  project.category | sort | join: ', ' | downcase %}
+    {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
+
+      <tr class="result-row" data-find="{{ requires }}, {{ category }}, {{ drupal }}">
         <td>{{ forloop.index }}</td>
-        <td><a href="{{ project.homepage }}">{{ project.name }}</a></td>
-        <td><a href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a></td>
+        <td>
+          <h4 class="project-title"><a href="{{ project.homepage }}">{{ project.name }}</a></h4>
+        </td>
+        <td>
+          <div class="project-icons">
+            <a class="project-source" title="Source" href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a>
+            <a class="project-docs" title="Docs" href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a>
+            <span class="filter-drupal project-drupal">{{ drupal }}</span>
+          </div>
+        </td>
         <td class="description">{{ project.description }}</td>
-        <td><a href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a></td>
-        <td class="td-filter" data-class="td-created">{{ project.year_created }}</td>
-        <td class="td-filter" data-class="td-drupal">{{ project.drupal_versions | sort | join: ', ' }}</td>
-        <td class="td-filter" data-class="td-requires">{{ project.requires | sort | join: ', ' }}</td>
-        <td class="td-filter" data-class="td-category">{{ project.category | sort | join: ', ' }}</td>
+        <td class="filter-created">{{ project.year_created }}</td>
+        <td class="filter-requires">{{ requires }}</td>
+        <td class="filter-category">{{ category }}</td>
       </tr>
     {% endfor %}
 

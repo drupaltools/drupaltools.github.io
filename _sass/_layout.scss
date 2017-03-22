@@ -322,6 +322,31 @@ th {
   }
 }
 
+.project-title {
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+.project-drupal {
+  line-height: 32px;
+  color: $site-blue;
+}
+
+.project-source,
+.project-docs {
+  display: block;
+  text-indent: -9999px;
+  background: url(../img/source.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin-right: 10px;
+}
+
+.project-docs {
+  background: url(../img/book.png) no-repeat;
+}
+
 // Tile - flexbox
 .project-wrapper-tile {
   padding: 10px;
@@ -366,7 +391,7 @@ th {
       padding: 4px 10px;
     }
     &.description,
-    &.category,
+    &.filter-category,
     &.tags {
       &:hover,
       &:focus {
@@ -390,11 +415,11 @@ th {
 }
 
 .js-hidden {
-  display: none !important;
+  display: none;
 }
 
 .js-visible {
-  display: table-row;
+  display: table-row !important;
 }
 
 @media screen and (max-width: 1200px) {

@@ -8,7 +8,7 @@ logo: https://drupalconsole.com/sites/default/files/inline-images/drupal-console
 description: "The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal."
 
 requires:
-  - nothing
+  - cli
 drupal_versions:
   - 8
 category:

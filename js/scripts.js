@@ -1,48 +1,41 @@
 jQuery(function($){
 
-  $("th.td-filter").each(function(){
-    var el = $(this),
-        elClass = el.attr("data-class");
+  $("selectNOT").change(function(){
+    var search = [];
 
-    el.append("<select class='"+elClass+"'><option value='none'>- select -</option></select>");
-  });
+    //$(".result-row").addClass("js-hidden");
 
-  var uniqueTexts = [];
+    $("select").each(function(i) {
+      var el = $(this),
+          selected = el.val();
 
-  $("td.td-filter").each(function(){
-    var el = $(this),
-        text = el.text().split(","),
-        elClass = el.attr("data-class"),
-        select = $("select."+elClass);
-
-      for (var i = 0; i < text.length; i++) {
-        text[i] = text[i].replace(" ", "");
-        select.append("<option class='"+text[i]+"'>"+text[i]+"</option>");
+      if (selected != "none"){
+        search[i] = selected;
+      } else {
+        return;
       }
-  });
+    });
 
-  var options = $("#list option");
+    for (i = 0; i < search.length; i++) {
 
+      $(".result-row").each(function() {
+        var el = $(this),
+            lookup = el.attr("data-find");
 
-  var usedOptions = {};
-  $("th select option").each(function(){
-    var el = $(this),
-        elText = el.text();
+        var check = lookup.search(search[i]);
+        //console.log(check);
 
-    if (usedOptions[elText] && elText !== "- select -") {
-      el.remove();
-    } else {
-      usedOptions[elText] = elText;
+        if (lookup.search(search[i]) > 0) {
+          el.addClass("js-visible")
+            .removeClass("js-hidden");
+        } else {
+          el.removeClass("js-visible")
+            .addClass("js-hidden");
+          return;
+        }
+      });
+
     }
-  });
-
-  $("th select").change(function(){
-    $(".result-row").addClass("js-hidden");
-
-    var el = $(this),
-        selected = el.val();
-
-    $("td:contains('"+selected+"')").parent().addClass("js-visible").removeClass("js-hidden");
 
   });
 
