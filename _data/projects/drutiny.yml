@@ -1,0 +1,23 @@
+name: Drutiny
+year_created: 2016
+source: https://github.com/seanhamlin/drutiny
+homepage: https://github.com/seanhamlin/drutiny
+docs: https://seanhamlin.github.io/drutiny/
+logo:
+
+description: "A generic Drupal 7 and Drupal 8 site auditing and optional remediation tool."
+
+requires:
+  - cli
+  - composer
+drupal_versions:
+  - 7
+  - 8
+category:
+  - cli
+  - drush
+  - symfony
+  - testing
+  - auditing
+tags:
+  - do
