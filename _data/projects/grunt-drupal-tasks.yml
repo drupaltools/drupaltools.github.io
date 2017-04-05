@@ -1,0 +1,26 @@
+name: Grunt drupal tasks
+year_created: 2014
+source: https://github.com/phase2/grunt-drupal-tasks
+homepage: https://github.com/phase2/grunt-drupal-tasks
+docs:
+logo:
+
+description: "A Grunt plugin to automate Drupal 7 and Drupal 8 build and testing tasks."
+
+requires:
+  - grunt
+drupal_versions:
+  - 7
+  - 8
+category:
+  - building
+  - deploy
+  - testing
+  - workflow
+  - cli
+  - CI
+tags:
+  - test
+similar:
+  - deployer
+  - drupalal
