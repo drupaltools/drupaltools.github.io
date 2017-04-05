@@ -1,0 +1,20 @@
+name: Waterwheel
+year_created: 2016
+source: https://github.com/acquia/waterwheel.js
+homepage: https://www.drupal.org/project/waterwheel
+docs:
+logo: https://raw.githubusercontent.com/acquia/waterwheel-js/assets/waterwheel.png
+
+description: "A generic JavaScript helper library to query and manipulate Drupal 8 via core REST."
+
+requires:
+  - npm
+drupal_versions:
+  - 8
+category:
+  - rest
+  - javascript
+tags:
+  - new
+similar:
+  - Waterwheel.swift
