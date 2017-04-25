@@ -23,7 +23,7 @@ layout: default
     {% assign category =  project.category | sort | join: ', ' | downcase %}
     {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
 
-      <tr class="result-row" data-find="{{ requires }}, {{ category }}, {{ drupal }}">
+      <tr class="result-row" data-created="{{ project.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
         <td>{{ forloop.index }}</td>
         <td>
           <h4 class="project-title"><a href="{{ project.homepage }}">{{ project.name }}</a></h4>

@@ -1,42 +1,37 @@
-jQuery(function($){
+jQuery(function($) {
 
-  $("selectNOT").change(function(){
-    var search = [];
+  var rows = $(".result-row");
 
-    //$(".result-row").addClass("js-hidden");
+  $(".results-text").text(rows.length);
 
-    $("select").each(function(i) {
-      var el = $(this),
-          selected = el.val();
+  $("select").change(function() {
+    var el = $(this),
+        attr = el.attr("class").replace("filter-",""),
+        selected = el.val();
 
-      if (selected != "none"){
-        search[i] = selected;
-      } else {
-        return;
-      }
-    });
+    //console.log("Value: "+ selected +" attr: "+attr);
 
-    for (i = 0; i < search.length; i++) {
-
-      $(".result-row").each(function() {
+    if (selected != "none"){
+      rows.each(function() {
         var el = $(this),
-            lookup = el.attr("data-find");
+            lookup = el.attr("data-"+attr);
 
-        var check = lookup.search(search[i]);
-        //console.log(check);
-
-        if (lookup.search(search[i]) > 0) {
-          el.addClass("js-visible")
-            .removeClass("js-hidden");
+        if (lookup.search(selected) >= 0) {
+          el.removeClass("js-hidden-"+attr);
         } else {
-          el.removeClass("js-visible")
-            .addClass("js-hidden");
-          return;
+          el.addClass("js-hidden-"+attr);
         }
       });
-
+    } else {
+      rows.each(function() {
+        $(this).removeClass("js-hidden-"+attr);
+      });
     }
 
   });
 
+});
+
+$(function () {
+    $("table").stickyTableHeaders();
 });

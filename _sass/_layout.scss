@@ -414,12 +414,20 @@ th {
   margin: 0;
 }
 
-.js-hidden {
-  display: none;
+.filters {
+  margin-bottom: 20px;
 }
 
-.js-visible {
-  display: table-row !important;
+.results {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.js-hidden-created,
+.js-hidden-category,
+.js-hidden-requires,
+.js-hidden-drupal {
+  display: none;
 }
 
 @media screen and (max-width: 1200px) {
