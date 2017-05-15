@@ -14,7 +14,7 @@ drupal_versions:
   - 8
 category:
   - Debug
-  - Develop
+  - Development
   - Varnish
   - Apache Solr
   - Blackfire

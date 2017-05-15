@@ -22,7 +22,7 @@ operation_system:
   - linux
   - OS X
 category:
-  - develop
+  - development
   - debug
   - production
   - aegir

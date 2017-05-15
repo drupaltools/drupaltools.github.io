@@ -16,7 +16,7 @@ drupal_versions:
   - 8
 category:
   - debug
-  - develop
+  - development
   - testing
 tags:
   - docker
