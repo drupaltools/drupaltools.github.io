@@ -21,8 +21,8 @@ category:
   - vagrant
   - vm
   - devops
-  - provision
-  - deploy
+  - provisioning
+  - deployment
   - scaffolding
 tags:
   - devops

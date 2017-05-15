@@ -22,10 +22,10 @@ drupal_versions:
 category:
   - provisioning
   - building
-  - deploy
+  - deployment
   - testing
   - CI
 tags:
-  - drush plugin
+  - drush
 similar:
   - cibox

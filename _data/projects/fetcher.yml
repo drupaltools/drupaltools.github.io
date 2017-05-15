@@ -21,7 +21,7 @@ drupal_versions:
 category:
   - provisioning
   - development
-  - drush plugin
+  - drush
   - debug
 tags:
   - popular

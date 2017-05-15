@@ -19,7 +19,7 @@ operation_system:
 category:
   - provisioning
   - building
-  - deploy
+  - deployment
   - testing
   - cli
   - jenkins

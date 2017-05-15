@@ -14,7 +14,7 @@ drupal_versions:
   - 7
   - 8
 category:
-  - deploy
+  - deployment
   - testing
   - cli
 similar:

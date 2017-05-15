@@ -20,11 +20,11 @@ drupal_versions:
 category:
   - provisioning
   - building
-  - deploy
+  - deployment
   - testing
   - cli
 tags:
-  - drush plugin
+  - drush
 similar:
   - fetcher
   - drubs

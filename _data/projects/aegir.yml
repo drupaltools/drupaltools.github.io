@@ -11,7 +11,7 @@ upgrade, and backup an entire network of Drupal sites."
 
 requires:
   - linux
-  - own server
+  - own-server
 drupal_versions:
   - 6
   - 7
