@@ -15,7 +15,9 @@ layout: default
 
         <div class="project-icons">
           <a class="project-source" title="Source" href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a>
-          <a class="project-docs" title="Docs" href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a>
+          {% if project.docs %}
+            <a class="project-docs" title="Docs" href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a>
+            {% endif %}
           <span class="project-drupal filter-drupal">{{ project.drupal_versions | sort | join: ', ' }}</span>
         </div>
 

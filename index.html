@@ -18,10 +18,11 @@ layout: default
     </tr>
 
     {% for project_hash in site.data.projects %}
-    {% assign project = project_hash[1] %}
-    {% assign requires =  project.requires | sort | join: ', ' | downcase %}
-    {% assign category =  project.category | sort | join: ', ' | downcase %}
-    {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
+
+      {% assign project = project_hash[1] %}
+      {% assign requires =  project.requires | sort | join: ', ' | downcase %}
+      {% assign category =  project.category | sort | join: ', ' | downcase %}
+      {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
 
       <tr class="result-row" data-created="{{ project.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
         <td>{{ forloop.index }}</td>
@@ -31,7 +32,9 @@ layout: default
         <td>
           <div class="project-icons">
             <a class="project-source" title="Source" href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a>
-            <a class="project-docs" title="Docs" href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a>
+            {% if project.docs %}
+              <a class="project-docs" title="Docs" href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a>
+            {% endif %}
             <span class="filter-drupal project-drupal">{{ drupal }}</span>
           </div>
         </td>
