@@ -1,0 +1,24 @@
+name: DruDock
+year_created: 2016
+source: https://github.com/4AllDigital/DruDockCli
+homepage: https://www.4alldigital.io/dockerdrupal-cli
+docs:
+logo: https://s3.eu-west-2.amazonaws.com/drudock/DruDockLogo.jpg
+
+description: "DruDock is Docker based development, staging and production
+environment for Drupal websites or PHP apps."
+
+requires:
+  - docker
+drupal_versions:
+  - 7
+  - 8
+category:
+  - development
+  - cli
+  - docker
+  - debug
+  - production
+similar:
+  - terra
+  - docksal
