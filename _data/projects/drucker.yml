@@ -18,8 +18,6 @@ category:
   - debug
   - development
   - testing
-tags:
   - docker
-  - ansible
 similar:
   - drocker

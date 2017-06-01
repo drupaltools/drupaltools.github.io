@@ -19,6 +19,7 @@ category:
   - Apache Solr
   - Blackfire
   - Behat
+  - docker
 tags:
   - popular
 similar:

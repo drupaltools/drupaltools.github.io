@@ -23,8 +23,7 @@ category:
   - development
   - drush
   - debug
-tags:
-  - popular
+  - docker
 similar:
   - opendevshop
   - terra
