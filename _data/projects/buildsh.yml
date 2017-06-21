@@ -1,0 +1,27 @@
+name: build.sh
+year_created: 2014
+source: https://github.com/wunderkraut/build.sh
+homepage: https://github.com/wunderkraut/build.sh
+docs: https://github.com/wunderkraut/build.sh/blob/master/README.md
+logo:
+
+description: "build.sh is a tool for making, updating and managing
+Drupal installations from the development phase up to production."
+
+requires:
+  - drush
+drupal_versions:
+  - 8
+category:
+  - provisioning
+  - building
+  - deployment
+  - testing
+  - cli
+  - production
+  - scaffolding
+similar:
+  - fetcher
+  - aquifer
+  - drubs
+  - blt
