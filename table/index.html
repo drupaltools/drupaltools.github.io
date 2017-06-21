@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<table>
+  <tbody>
+
+    <tr>
+      <th>A/a</th>
+      <th class="sort-filter"><span>Project</span></th>
+      <th>Basic</th>
+      <th>Details</th>
+      <th class="sort-filter"><span>Created</span></th>
+      <th class="sort-filter"><span>Requires</span></th>
+      <th class="sort-filter"><span>Category</span></th>
+    </tr>
+
+    {% for project_hash in site.data.projects %}
+
+      {% assign project = project_hash[1] %}
+      {% assign requires =  project.requires | sort | join: ', ' | downcase %}
+      {% assign category =  project.category | sort | join: ', ' | downcase %}
+      {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
+
+      <tr class="result-row" data-created="{{ project.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
+        <td>{{ forloop.index }}</td>
+        <td>
+          <h4 class="project-title"><a href="{{ project.homepage }}">{{ project.name }}</a></h4>
+        </td>
+        <td>
+          <div class="project-icons">
+            <a class="project-source" title="Source" href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a>
+            {% if project.docs %}
+              <a class="project-docs" title="Docs" href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a>
+            {% endif %}
+            <span class="filter-drupal project-drupal">{{ drupal }}</span>
+          </div>
+        </td>
+        <td class="description">{{ project.description }}</td>
+        <td class="filter-created">{{ project.year_created }}</td>
+        <td class="filter-requires">{{ requires }}</td>
+        <td class="filter-category">{{ category }}</td>
+      </tr>
+    {% endfor %}
+
+  </tbody>
+</table>
+
+</div>
