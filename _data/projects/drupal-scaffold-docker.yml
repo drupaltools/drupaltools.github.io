@@ -15,7 +15,7 @@ requires:
 drupal_versions:
   - 8
 category:
-  - scaffold
+  - scaffolding
   - development
   - testing
   - docker
