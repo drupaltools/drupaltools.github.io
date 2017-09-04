@@ -7,7 +7,7 @@ logo:
 
 description: "Docker4Drupal is a set of docker containers optimized for Drupal.
 Use docker-compose.yml file from docker4drupal repository to spin up
-local environment on Linux, Mac OS X and Windows.""
+local environment on Linux, Mac OS X and Windows."
 
 requires:
   - docker
