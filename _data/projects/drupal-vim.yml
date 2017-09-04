@@ -1,0 +1,23 @@
+name: Drupal Vim
+year_created: 2013
+source: https://github.com/subhojit777/drupal-vim
+homepage: http://subhojit777.in/use-vim-as-ide-for-drupal-development/
+docs:
+logo:
+
+description: "Vim plugins and settings that will ease writing Drupal code in
+Vim as an IDE. The settings will also work in graphical Vim (recommended)."
+
+requires:
+  - cli
+  - vim
+drupal_versions:
+  - 7
+  - 8
+category:
+  - cli
+  - development
+  - IDE
+tags:
+  - ide
+similar:
