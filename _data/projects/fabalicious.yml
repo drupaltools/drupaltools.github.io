@@ -13,6 +13,7 @@ drupal-projects but it works for a lot of other types of projects."
 requires:
   - fabric
 drupal_versions:
+  - 7
   - 8
 operation_system:
   - Linux
