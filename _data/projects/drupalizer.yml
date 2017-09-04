@@ -1,0 +1,33 @@
+name: Drupalizer
+year_created: 2015
+source: https://github.com/sfl-drupal/drupalizer
+homepage: https://github.com/sfl-drupal/drupalizer
+docs:
+logo:
+
+description: "Drupalizer is a Fabric script on top of Docker and tightly
+integrated with Drush and Drupal that provides the developer high-level tasks
+to manage the local development environment."
+
+requires:
+  - fabric
+  - drush
+  - docker
+drupal_versions:
+  - 7
+  - 8
+operation_system:
+  - Linux
+  - macOS
+category:
+  - provisioning
+  - building
+  - deployment
+  - testing
+  - cli
+similar:
+  - fetcher
+  - drubs
+  - blt
+  - deployotron
+  - fabalicious
