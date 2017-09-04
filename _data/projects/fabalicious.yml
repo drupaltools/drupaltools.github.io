@@ -1,0 +1,30 @@
+name: Fabalicious
+year_created: 2014
+source: https://github.com/factorial-io/fabalicious
+homepage: https://github.com/factorial-io/fabalicious
+docs: http://factorial-io.github.io/fabalicious
+logo:
+
+description: "Fabalicious uses a configuration file with a list of hosts and
+ssh and optionally tools like composer, drush, git, docker or custom scripts
+to run common tasks on remote machines. It is slightly biased to
+drupal-projects but it works for a lot of other types of projects."
+
+requires:
+  - fabric
+drupal_versions:
+  - 8
+operation_system:
+  - Linux
+  - macOS
+category:
+  - provisioning
+  - building
+  - deployment
+  - testing
+  - cli
+similar:
+  - fetcher
+  - drubs
+  - blt
+  - deployotron

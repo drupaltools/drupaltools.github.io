@@ -12,14 +12,15 @@ requires:
   - yeoman
   - docker
 drupal_versions:
-  - 6,7,8
+  - 6
+  - 7
+  - 8
 category:
   - development
   - provision
   - debug
   - generator
 similar:
-  - generator-docker-drupal8
   - valkyrie
   - ddd
   - generator-docker-drupal8
