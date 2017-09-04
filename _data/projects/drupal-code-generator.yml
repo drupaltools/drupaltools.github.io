@@ -1,0 +1,25 @@
+name: Drupal Code Generator
+year_created: 2015
+source: https://github.com/Chi-teck/drupal-code-generator
+homepage: https://github.com/Chi-teck/drupal-code-generator
+docs:
+logo:
+
+description: "A command line code generator for Drupal."
+
+requires:
+  - cli
+drupal_versions:
+  - 7
+  - 8
+category:
+  - cli
+  - symfony
+  - development
+  - scaffolding
+  - generator
+  - phar
+tags:
+  - popular
+similar:
+  - drupalconsole
