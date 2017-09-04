@@ -1,4 +1,4 @@
-name: Drupal 8 Sprint Box
+name: Generator docker drupal 8
 year_created: 2015
 source: https://github.com/bezhermoso/generator-docker-drupal-8
 homepage: https://www.npmjs.com/package/generator-docker-drupal-8

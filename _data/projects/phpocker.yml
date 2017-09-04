@@ -1,0 +1,25 @@
+name: phpocker
+year_created: 2015
+source: https://github.com/blueoakinteractive/phpocker
+homepage: https://github.com/blueoakinteractive/phpocker
+docs:
+logo:
+
+description: "Yeoman generator to provision a docker compose stack for
+Drupal development."
+
+requires:
+  - yeoman
+  - docker
+drupal_versions:
+  - 6,7,8
+category:
+  - development
+  - provision
+  - debug
+  - generator
+similar:
+  - generator-docker-drupal8
+  - valkyrie
+  - ddd
+  - generator-docker-drupal8

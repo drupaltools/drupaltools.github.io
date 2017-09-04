@@ -6,13 +6,15 @@ docs: https://docker4drupal.readthedocs.io
 logo:
 
 description: "Docker4Drupal is a set of docker containers optimized for Drupal.
-Use docker-compose.yml file from docker4drupal repository to spin up
-local environment on Linux, Mac OS X and Windows."
+Use docker-compose.yml file from docker4drupal repository to spin up local
+environment on Linux, Mac OS X and Windows."
 
 requires:
   - docker
 drupal_versions:
-  - 6,7,8
+  - 6
+  - 7
+  - 8
 operation_system:
   - all
 category:
