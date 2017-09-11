@@ -2,11 +2,13 @@
 layout: default
 ---
 <div class="project-tiles row">
-  {% for project_hash in site.data.projects %}
-  {% assign project = project_hash[1] %}
-  {% assign requires =  project.requires | sort | join: ', ' | downcase %}
-  {% assign category =  project.category | sort | join: ', ' | downcase %}
-  {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
+  {% assign project_hashes = site.data.projects | sort %}
+  {% for project_hash in project_hashes %}
+
+    {% assign project = project_hash[1] %}
+    {% assign requires =  project.requires | sort | join: ', ' | downcase %}
+    {% assign category =  project.category | sort | join: ', ' | downcase %}
+    {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
 
     <div class="column result-row" data-created="{{ project.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
       <article class="project-wrapper-tile">

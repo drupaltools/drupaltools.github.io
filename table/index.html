@@ -16,8 +16,8 @@ layout: default
       <th class="sort-filter"><span>Requires</span></th>
       <th class="sort-filter"><span>Category</span></th>
     </tr>
-
-    {% for project_hash in site.data.projects %}
+    {% assign project_hashes = site.data.projects | sort %}
+    {% for project_hash in project_hashes %}
 
       {% assign project = project_hash[1] %}
       {% assign requires =  project.requires | sort | join: ', ' | downcase %}
