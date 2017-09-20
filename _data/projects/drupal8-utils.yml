@@ -1,0 +1,20 @@
+name: Drupal 8 utilities & extras
+year_created: 2017
+source: https://github.com/tejomayonline/drupal8-utils/
+homepage: https://github.com/tejomayonline/drupal8-utils/
+docs: https://github.com/tejomayonline/drupal8-utils/tree/master/doc
+logo:
+
+description: "A collection of bash sciprts to install fresh composer based
+drupal 8.x site in one hit."
+
+requires:
+  - cli
+  - composer
+drupal_versions:
+  - 8
+category:
+  - development
+  - scaffolding
+  - debug
+similar:
