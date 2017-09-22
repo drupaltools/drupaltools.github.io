@@ -210,6 +210,10 @@
   }
 }
 
+.red {
+  background: #d01111;
+}
+
 .buttons {
   margin-top: 20px;
 }
@@ -220,7 +224,7 @@
 
 .tiles-template {
   .table-visible {
-    display: initial;
+    display: inline-block;
   }
   .tiles-visible {
     display: none;
