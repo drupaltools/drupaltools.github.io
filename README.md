@@ -10,7 +10,7 @@ Missing a tool here? Just fork the repo and add your tool as a `<name>.yml` in t
 
 Make sure to follow the following rules:
 
- - **Open Source:** The generator must have a public repository on Github that we can link to and pull in stats from.
+ - **Open Source:** The generator must have a public repository on Github, Gitlab, Bitbucket etc that we can link to and pull in stats from.
  - **Stick to the format:** Fill out all the same fields as the other tools in `source/projects`.
  - **Short description:** Keep all the details for the body text, keep the description for the overview page short and sweet.
 
