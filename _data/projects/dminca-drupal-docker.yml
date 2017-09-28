@@ -1,7 +1,7 @@
 name: dminca drupal-docker
 year_created: 2015
 source: https://github.com/dminca/drupal-docker
-homepage: https://github.com/dminca/drupal-docker
+homepage: https://dminca.github.io
 docs:
 logo:
 
