@@ -1,0 +1,27 @@
+name: Drupalstack
+year_created: 2014
+source: https://github.com/adminteractive/drupalstack
+homepage: https://github.com/adminteractive/drupalstack
+docs:
+logo:
+
+description: "Docker based development environment for Drupal 8 using only
+official Docker images."
+
+requires:
+  - docker
+drupal_versions:
+  - 8
+operation_system:
+  - all
+category:
+  - development
+  - docker
+  - testing
+tags:
+  - popular
+similar:
+  - terra
+  - kalabox
+  - drupal-8-sprint-box
+  - docker4drupal
