@@ -1,0 +1,30 @@
+name: Drop Fabrik
+year_created: 2017
+source: https://github.com/adminteractive/drupalstack
+homepage: https://github.com/adminteractive/drupalstack
+docs:
+logo:
+
+description: "Drop Fabrik is configuration of Docker to help development more
+speedy for Drupal. You can choose 4 configration according to amount of resource
+in your machine, and will be able to build a Drupal environment on Docker in
+5 to 10 minutes with the following steps. And you can also deploy the extactly
+same environment to the cloud service such as AWS."
+
+requires:
+  - docker
+drupal_versions:
+  - 8
+operation_system:
+  - all
+category:
+  - development
+  - docker
+  - testing
+tags:
+  - popular
+similar:
+  - terra
+  - kalabox
+  - drupal-8-sprint-box
+  - docker4drupal
