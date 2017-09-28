@@ -1,16 +1,16 @@
 name: DDEV
 year_created: 2016
 source: https://github.com/drud/ddev
-homepage: https://www.drud.com/
+homepage: https://github.com/drud/ddev
 docs: https://ddev.readthedocs.io
 logo: https://raw.githubusercontent.com/drud/ddev/master/images/ddev_logo.png
 
-description: "ddev is an open source tool that makes it dead simple to get 
-local PHP development environments up and running within minutes. It's 
-powerful and flexible as a result of its per-project environment 
-configurations, which can be extended, version controlled, and shared. In 
-short, ddev aims to allow development teams to use Docker in their workflow 
-without the complexities of bespoke configuration. Pluggable hosting 
+description: "ddev is an open source tool that makes it dead simple to get
+local PHP development environments up and running within minutes. It's
+powerful and flexible as a result of its per-project environment
+configurations, which can be extended, version controlled, and shared. In
+short, ddev aims to allow development teams to use Docker in their workflow
+without the complexities of bespoke configuration. Pluggable hosting
 providers with current support for Pantheon."
 
 requires:
