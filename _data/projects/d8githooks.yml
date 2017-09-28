@@ -1,0 +1,24 @@
+name: d8githooks
+year_created: 2013
+source: https://github.com/alexpott/d8githooks
+homepage: https://github.com/alexpott/d8githooks
+docs:
+logo:
+
+description: "Drupal core committer git hooks project performs automated checks
+(e.g. file permissions, PHP/CSS/JS coding standards) before/after performing a
+commit, to ensure regressions are not accidentally committed."
+
+requires:
+  - git
+  - composer
+  - nodejs
+  - eslint
+  - yarn
+drupal_versions:
+  - 8
+category:
+  - cli
+  - development
+  - drupal-core
+similar:
