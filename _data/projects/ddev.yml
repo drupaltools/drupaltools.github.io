@@ -10,7 +10,8 @@ local PHP development environments up and running within minutes. It's
 powerful and flexible as a result of its per-project environment 
 configurations, which can be extended, version controlled, and shared. In 
 short, ddev aims to allow development teams to use Docker in their workflow 
-without the complexities of bespoke configuration."
+without the complexities of bespoke configuration. Pluggable hosting 
+providers with current support for Pantheon."
 
 requires:
   - docker
