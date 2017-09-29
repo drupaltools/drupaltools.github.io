@@ -1,7 +1,7 @@
 name: DruDock
 year_created: 2016
 source: https://github.com/4AllDigital/DruDockCli
-homepage: https://www.4alldigital.io/dockerdrupal-cli
+homepage: https://github.com/4AllDigital/DruDockCli
 docs:
 logo: https://s3.eu-west-2.amazonaws.com/drudock/DruDockLogo.jpg
 
