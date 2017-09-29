@@ -2,10 +2,9 @@
 
 # DrupalTools
 
-Project [drupaltools.github.io](https://drupaltools.github.io/), a list of open-source tools used for Drupal development and other Drupal related tasks.
-
-Initially based on the this [Google Sheets](https://docs.google.com/spreadsheets/d/1EWmxQMMekc0fMoMl16HyLt0i8yCRBT5wAVuy66Bi4kI)
-which is now deprecated!
+Project [drupaltools.github.io](https://drupaltools.github.io/), a list of open-source tools used for
+Drupal development and other Drupal related tasks. Initially based on the
+this [Google Sheets](https://docs.google.com/spreadsheets/d/1EWmxQMMekc0fMoMl16HyLt0i8yCRBT5wAVuy66Bi4kI) which is now deprecated!
 
 ## Contributing
 
