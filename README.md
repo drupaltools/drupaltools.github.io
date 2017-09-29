@@ -1,6 +1,7 @@
 # DrupalTools
-
 <img src="img/logo.png" align="right" alt="Drupaltools logo">
+
+## About
 
 [drupaltools.github.io](https://drupaltools.github.io/), a list of open-source tools used for Drupal development and other Drupal related tasks.
 
