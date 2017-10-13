@@ -1,0 +1,26 @@
+name: Dockerized drupal starter
+year_created: 2017
+source: https://github.com/LevInteractive/dockerized-drupal-starter
+homepage: https://github.com/LevInteractive/dockerized-drupal-starter
+docs:
+logo:
+
+description: "End-to-end (CI + CD) dockerized Drupal 8 starting point."
+
+requires:
+  - docker
+drupal_versions:
+  - 8
+operation_system:
+  - all
+category:
+  - development
+  - docker
+  - testing
+  - ci
+  - cd
+tags:
+  - new
+similar:
+  - drupal-8-sprint-box
+  - docker4drupal

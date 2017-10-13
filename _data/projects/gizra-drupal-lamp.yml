@@ -1,0 +1,23 @@
+name: Gizra drupal lamp
+year_created: 2016
+source: https://github.com/Gizra/drupal-lamp
+homepage: https://github.com/Gizra/drupal-lamp
+docs:
+logo:
+
+description: "This is a base LAMP docker file. The docker container is based
+on PHP 5.6-apache or php7, and have: Drupal, Apache2, MySQL, git, Composer, NodeJS, zip,
+vim, Java jdk, ruby and rubygems, wget, Solr."
+
+requires:
+  - docker
+drupal_versions:
+  - 8
+category:
+  - debug
+  - development
+  - cli
+  - docker
+similar:
+  - dminca-drupal-docker
+  - boran-docker-drupal

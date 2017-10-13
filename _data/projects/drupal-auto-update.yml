@@ -1,0 +1,24 @@
+name: Pantheon Drupal Auto Update
+year_created: 2016
+source: https://github.com/populist/drupal-auto-update
+homepage: https://github.com/populist/drupal-auto-update
+docs:
+logo:
+
+description: "Automate Drupal core, plugin and theme updates on Pantheon
+with Terminus, CircleCI, Drush, BackstopJS and Slack."
+
+requires:
+  - cli
+drupal_versions:
+  - 7
+  - 8
+category:
+  - ci
+  - cd
+  - debug
+  - testing
+  - pantheon
+  - deployment
+tags:
+  - new
