@@ -9,7 +9,7 @@ description: "An online saas to run try - within seconds - several popular
 Drupal 8.x and 7.x distributions within LAMP stack using Docker."
 
 requires:
-
+  - docker
 drupal_versions:
   - 7
   - 8
