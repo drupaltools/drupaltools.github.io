@@ -1,0 +1,23 @@
+name: Drupal Distros
+year_created: 2017
+source: https://github.com/theodorosploumis/drupal-docker-distros
+homepage: https://www.distros.bid
+docs: https://github.com/theodorosploumis/drupal-docker-distros
+logo:
+
+description: "An online saas to run try - within seconds - several popular
+Drupal 8.x and 7.x distributions within LAMP stack using Docker."
+
+requires:
+
+drupal_versions:
+  - 7
+  - 8
+category:
+  - docker
+  - testings
+  - debug
+  - development
+tags:
+  - docker
+similar:
