@@ -1,0 +1,27 @@
+name: Drupal on Elastic Beanstalk
+year_created: 2016
+source: https://github.com/awslabs/eb-php-drupal
+homepage: https://github.com/awslabs/eb-php-drupal
+docs:
+logo:
+
+description: "Configuration files and instructions for installing Drupal securely
+and running it in a load balanced AWS Elastic Beanstalk environment with an EFS
+file system for shared assets.Use the EB CLI to create an Elastic Beanstalk
+environment with an attached RDS DB and EFS file system to provide Drupal with
+a MySQL database and shared storage for uploaded files."
+
+requires:
+  - cli
+drupal_versions:
+  - 8
+category:
+  - database
+  - aws
+  - deployment
+  - testing
+  - cli
+similar:
+  - fetcher
+  - drubs
+  - blt
