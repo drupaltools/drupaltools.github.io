@@ -1,0 +1,23 @@
+name: Drupal Ansible Tools
+year_created: 2016
+source: https://github.com/pjoulot/Drupal-Ansible-Tools
+homepage: https://github.com/pjoulot/Drupal-Ansible-Tools
+docs:
+logo:
+
+description: "Some Ansible tools to deploy Drupal environment on lxc containers."
+
+requires:
+  - lxc
+  - ansible
+drupal_versions:
+  - 8
+category:
+  - development
+  - containers
+  - cli
+  - ubuntu
+similar:
+  - deployotron
+  - deployer
+  - drubs
