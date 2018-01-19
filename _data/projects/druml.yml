@@ -1,0 +1,29 @@
+name: Druml
+year_created: 2014
+source: https://github.com/georgetown-university/druml
+homepage: http://www.usedruml.com
+docs: https://github.com/georgetown-university/druml
+logo:
+
+description: "Druml is a Drupal multisite tool that helps to maintain multiple
+Drupal sites. It has been developed in Georgetown University, which maintains
+over 250 Drupal websites. Druml can run commands on different servers in parallel."
+
+requires:
+  - cli
+drupal_versions:
+  - 7
+  - 8
+category:
+  - drush
+  - building
+  - deployment
+  - cli
+  - acquia
+tags:
+  - popular
+similar:
+  - fetcher
+  - aquifer
+  - drubs
+  - blt
