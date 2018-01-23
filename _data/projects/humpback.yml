@@ -12,12 +12,14 @@ some others that will make your life easier when developing with Humpback."
 
 requires:
   - docker
-  - node
+  - docker-compose
+  - ahoy
 drupal_versions:
   - 8
 category:
   - docker
   - development
   - cli
+  - scaffolding
 tags:
   - popular
