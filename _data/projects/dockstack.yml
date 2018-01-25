@@ -1,5 +1,5 @@
 name: dockstack
-year_created: 2017
+year_created: 2016
 source: https://github.com/ten7/dockstack
 homepage: https://github.com/ten7/dockstack
 docs:
@@ -12,6 +12,7 @@ a mix-and-match approach to suit your development needs."
 requires:
   - docker
 drupal_versions:
+  - 6
   - 7
   - 8
 category:
