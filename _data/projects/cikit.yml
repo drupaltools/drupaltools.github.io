@@ -1,0 +1,33 @@
+name: CIKit
+year_created: 2016
+source: https://github.com/BR0kEN-/cikit
+homepage: https://cikit.tools/
+docs: https://cikit.tools/documentation/
+logo: https://cikit.tools/assets/site-logo.png
+
+description: |-
+  Ansible-based system for building environments for local development and continuous integration that ships as an extensible package.
+
+  - Install CIKit package just once. This guarantees your minimal involvement in keeping the codebase up to date. Run "cikit self-update" to get the latest fixes/features and do not care about running thru all your projects - they'll be picked up by every single project you have based on CIKit.
+  - Build the project by the scenario you want in the Pull Request on Github/Gitlab (Jenkins CI).
+  - Create and maintain a hosting of continuous integration servers (Docker) via command line tool.
+  - Deploy a local environment for development on Windows 10, Linux and macOS with automatic IP allocation for local VPN and smart provisioner that will remember the configuration of the environment you've build and will allow to share it with others.
+  - Deploy CI server at whatever cloud hosting you prefer.
+  - Base any framework or CMS you want on CIKit and build your own CI workflow if necessary.
+  - Choose the software and versions of it that are needed for you. Nginx or Apache, various PHP/Solr/Ruby/Node.js versions, MySQL as a standard server and Microsoft SQL by desire, Phantom.js, Selenium and a lot of tools for providing the code quality - all these stuff just out of the box.
+  - Extend the software base of your project by writing your own Ansible roles for controlling the process.
+
+requires:
+  - vagrant
+  - ansible
+  - virtualbox
+drupal_versions:
+  - 7
+  - 8
+category:
+  - ci
+  - jenkins
+  - ansible
+  - vagrant
+  - virtualbox
+  - docker
