@@ -3,7 +3,7 @@ year_created: 2013
 source: https://github.com/reload/deployotron
 homepage: http://reload.github.io/deployotron
 docs: https://github.com/reload/deployotron
-logo: http://reload.github.io/deployotron/images/deployotron.png
+logo: https://reload.github.io/deployotron/images/deployotron.png
 
 description: "Deployotron is a Drush command to simplify deploying new code to a Drupal site.
 There's already a lot of ways to deploy ones Drupal site, from FTPing up the files
