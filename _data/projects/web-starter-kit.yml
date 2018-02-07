@@ -1,30 +1,21 @@
 name: Web Starter Kit
-year_created: 2013
-source: https://github.com/forumone/web-starter
-homepage: http://forumone.github.io/web-starter/
-docs: https://github.com/forumone/web-starter/wiki
+year_created: 2014
+source: https://github.com/forumone/generator-web-starter
+homepage: https://github.com/forumone/generator-web-starter
+docs: https://github.com/forumone/generator-web-starter
 logo:
 
-description: "Starting place for developing Drupal, Wordpress and other web applications.
-This project has been setup to use a virtual machine for local development to
-closely mirror the production environment."
+description: "The Web Starter Kit is a yeoman generator that allows you to
+create a Drupal, AngularJS or Wordpress project, add a Drupal theme like the
+gesso theme and add common preconfigure common utilities like grunt tasks,
+capistrano or puppet."
 
 requires:
-  - vagrant
-  - virtualbox
+  - yeoman
 drupal_versions:
-  - 6
   - 7
   - 8
 category:
-  - vagrant
-  - vm
   - development
-  - deployment
-  - debug
-tags:
-  - popular
-similar:
-  - drupal-vm
-  - vdd
-  - vlad
+  - scaffolding
+  - generator

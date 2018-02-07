@@ -20,7 +20,7 @@ drupal_versions:
 category:
   - development
   - testing
-  - debugging
+  - debug
   - cli
   - docker
   - pantheon
