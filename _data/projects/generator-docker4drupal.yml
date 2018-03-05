@@ -20,5 +20,5 @@ category:
   - generator
 similar:
   - generator-docker-drupal8
-  - drupal-scaffold-docker.yml
-  - docker4drupal.yml
+  - drupal-scaffold-docker
+  - docker4drupal
