@@ -1,0 +1,24 @@
+name: Docker4Drupal Generator
+year_created: 2017
+source: https://github.com/pauloamgomes/generator-docker4drupal
+homepage: https://www.npmjs.com/package/generator-docker4drupal
+docs:
+logo:
+
+description: "Yeoman generator for docker4drupal stack"
+
+requires:
+  - yeoman
+  - docker
+drupal_versions:
+  - 7
+  - 8
+category:
+  - vm
+  - development
+  - debug
+  - generator
+similar:
+  - generator-docker-drupal8
+  - drupal-scaffold-docker
+  - docker4drupal
