@@ -1,0 +1,23 @@
+name: Drupal Code Builder
+year_created: 2006
+source: https://github.com/drupal-code-builder/drupal-code-builder
+homepage: https://github.com/drupal-code-builder/drupal-code-builder
+docs:
+logo:
+
+description: "Drupal Code Builder is a system for generating scaffold code for
+Drupal modules (and other components).This is a library, and has no UI of its
+own."
+
+requires:
+  - php
+drupal_versions:
+  - 7
+  - 8
+category:
+  - library
+  - development
+  - scaffolding
+similar:
+  - drush
+  - drupal-console
