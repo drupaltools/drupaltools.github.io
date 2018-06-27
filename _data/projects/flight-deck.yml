@@ -1,0 +1,28 @@
+name: Flight deck
+year_created: 2017
+source: https://github.com/ten7/flight-deck
+homepage: https://github.com/ten7/flight-deck
+docs: http://flight-deck.readthedocs.io
+logo: https://raw.githubusercontent.com/ten7/flight-deck/master/flightdeck-logo.png
+
+description: "Flight Deck is a set of Docker containers for local Drupal
+development. It is lightweight, simple, and Docker-native, allowing you to
+stand up a local development environment quickly after installing Docker."
+
+requires:
+  - docker
+drupal_versions:
+  - 6
+  - 7
+  - 8
+operation_system:
+  - all
+category:
+  - development
+  - docker
+  - testing
+similar:
+  - terra
+  - kalabox
+  - drupal-8-sprint-box
+  - docker4drupal
