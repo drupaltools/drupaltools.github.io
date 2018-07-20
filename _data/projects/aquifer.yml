@@ -3,7 +3,7 @@ year_created: 2015
 source: https://github.com/aquifer/aquifer
 homepage: http://aquifer.io
 docs: http://docs.aquifer.io
-logo: http://aquifer.io/branding/aquifer-logo-drupal.svg
+logo: https://raw.githubusercontent.com/aquifer/aquifer.io/master/branding/aquifer-logo-drupal-1456.png
 
 description: "Aquifer is a command line interface that makes it easy to scaffold,
 build, test, and deploy your Drupal websites. It provides a default
