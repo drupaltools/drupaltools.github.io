@@ -33,6 +33,9 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-6649652-57', 'auto');
-  ga('send', 'pageview');
+  ga('send', 'pageview', {
+    'page': location.pathname + location.search  + location.hash
+  });
+
 
 </script>
