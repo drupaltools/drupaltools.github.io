@@ -1,0 +1,22 @@
+name: Bitnami Docker for Drupal
+year_created: 2015
+source: https://github.com/bitnami/bitnami-docker-drupal
+homepage: https://github.com/bitnami/bitnami-docker-drupal
+docs: https://github.com/bitnami/bitnami-docker-drupal
+logo: https://bitnami.com/downloads/logos/bitnami-mark.png
+
+description: "Bitnami Docker Images for Drupal."
+
+requires:
+  - docker
+drupal_versions:
+  - 7
+  - 8
+category:
+  - debug
+  - development
+  - testing
+  - cli
+  - docker
+similar:
+  - terra
