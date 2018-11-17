@@ -160,8 +160,6 @@
     }
 }
 
-
-
 /**
  * Page content
  */
@@ -491,10 +489,12 @@ th {
   }
 }
 
-.filter-requires,
-.filter-category,
-.description {
-  display: none;
+.project-wrapper-tile {
+  .filter-requires,
+  .filter-category,
+  .description {
+    display: none;
+  }
 }
 
 .js-active-project {
