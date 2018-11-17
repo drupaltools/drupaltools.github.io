@@ -16,7 +16,6 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     margin-right: 1em;
-    // float: left;
 
     &,
     &:visited {
@@ -357,17 +356,12 @@ th {
   border-radius: 3px;
   box-shadow: 0 0 6px #ddd;
 
-  &:hover,
-  &:focus {
-    background: #ddd;
-  }
   label {
     font-weight: bold;
   }
   .logo {
     text-align: center;
     img {
-      //max-width: 200px;
       height: 60px;
       width: auto;
     }
@@ -412,7 +406,7 @@ th {
 }
 
 .column {
-  width: 23%;
+  width: 18%; //23%
   padding: 1%;
   float: left;
   margin: 0;
@@ -436,6 +430,117 @@ th {
 .js-hidden-requires,
 .js-hidden-drupal {
   display: none;
+}
+
+.js-more {
+  display: block;
+  background-color: #ddd;
+  color: gray;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+
+  &:visited {
+    text-decoration: none;
+    color: gray;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: gray;
+    background-color: darken(#ddd, 20%);
+  }
+}
+
+.js-close {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  width: 32px;
+  height: 32px;
+  display: none;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 0 10px #000;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    content: " ";
+    height: 26px;
+    width: 3px;
+    background-color: #6f6f6f;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.filter-requires,
+.filter-category,
+.description {
+  display: none;
+}
+
+.js-active-project {
+  position: fixed;
+  top: 50px;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 6;
+  width: 500px;
+
+  .filter-requires,
+  .filter-category,
+  .description {
+    display: block;
+    overflow: hidden;
+    white-space: normal;
+  }
+
+  .js-more {
+    display: none;
+  }
+
+  .js-close {
+    display: block;
+  }
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 3;
+  top: 0;
+  cursor: pointer;
+}
+
+body.js-has-open-project {
+  overflow: hidden;
+
+  .overlay {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1200px) {

@@ -11,6 +11,18 @@ copyright: '<a href="https://www.drupal.org">Drupal</a> is a <a href="http://dru
 # Build settings
 markdown: kramdown
 
+# yml_files = Dir.glob("_data/projects/*.yml")
+# puts "page_gen:"
+# yml_files.each do |file|
+#   puts <<EOS
+#   - data: #{file.gsub("_data", "").gsub(".yml", "")}
+#     name: name
+#     template: project
+#     dir: projects
+#     index_files: false
+# EOS
+# end
+
 sass:
   style: :compressed
   sass_dir: _sass
