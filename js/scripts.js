@@ -54,7 +54,8 @@ jQuery(function($) {
     gtag("event", event, {
       "event_label": label,
       "event_category": category,
-      "value": value
+      "value": value,
+      "non_interaction": true
     });
   }
 
