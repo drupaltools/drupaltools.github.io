@@ -42,7 +42,7 @@ jQuery(function($) {
     parent.addClass("js-active-project");
     body.addClass("js-has-open-project");
 
-    gaPopup("event", "popup_project", "open_project", 1);
+    gaPopup("event", project, "open_project", 1);
 
     $(".overlay, .js-close").click(function(){
       parent.removeClass("js-active-project");
