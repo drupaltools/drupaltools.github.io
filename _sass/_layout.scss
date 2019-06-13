@@ -562,3 +562,18 @@ body.js-has-open-project {
     margin-bottom: 20px;
   }
 }
+
+.results-text {
+  font-weight: bold;
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url(../img/party.png) no-repeat center center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    right: -35px;
+  }
+}

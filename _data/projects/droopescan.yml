@@ -1,0 +1,19 @@
+name: droopescan
+year_created: 2014
+source: https://github.com/droope/droopescan
+homepage: https://github.com/droope/droopescan
+docs:
+logo:
+
+description: "A plugin-based scanner that aids security researchers in
+identifying issues with several CMSs, mainly Drupal & Silverstripe."
+
+requires:
+  - python
+drupal_versions:
+  - 7
+  - 8
+category:
+  - development
+  - security
+similar:

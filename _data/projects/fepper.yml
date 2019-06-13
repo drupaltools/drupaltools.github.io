@@ -1,0 +1,18 @@
+name: Fepper for Drupal
+year_created: 2015
+source: https://github.com/electric-eloquence/fepper-drupal
+homepage: http://fepper.io/?project=drupal
+docs:
+logo: https://raw.githubusercontent.com/electric-eloquence/fepper-npm/master/excludes/fepper-branding.png
+
+description: "A frontend prototyper tool for rapid prototyping of Drupal websites."
+
+requires:
+  - npm
+drupal_versions:
+  - 7
+  - 8
+category:
+  - development
+  - theming
+similar:

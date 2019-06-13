@@ -1,0 +1,19 @@
+name: Drupal Check
+year_created: 2019
+source: https://github.com/mglaman/drupal-check
+homepage: https://github.com/mglaman/drupal-check
+docs:
+logo:
+
+description: "Built on PHPStan, this static analysis tool will check for
+correctness (e.g. using a class that doesn't exist), deprecation errors, and more."
+
+requires:
+  - phpstan
+drupal_versions:
+  - 8
+category:
+  - debugging
+  - testing
+  - cli
+similar:

@@ -1,0 +1,21 @@
+name: Drupal 8 CI
+year_created: 2017
+source: https://github.com/Lullabot/drupal8ci
+homepage: https://github.com/Lullabot/drupal8ci
+docs: 
+logo:
+
+description: "This repository provides the foundation to implement Continuous
+Integration in a Drupal 8 project using CircleCI, GitLab CI, or
+Travis CI against a GitHub or GitLab repository."
+
+requires:
+  - cli
+  - composer
+drupal_versions:
+  - 8
+category:
+  - development
+  - ci
+  - testing
+similar:
