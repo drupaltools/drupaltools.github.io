@@ -1,5 +1,6 @@
 name: Pygmy
 year_created: 2017
+source: https://github.com/amazeeio/pygmy
 homepage: https://github.com/amazeeio/pygmy
 docs: http://pygmy.readthedocs.io/
 
