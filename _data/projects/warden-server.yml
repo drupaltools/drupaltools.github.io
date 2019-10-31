@@ -14,6 +14,7 @@ which has a supporting connector module."
 requires:
   - composer
   - mongodb
+  - own-server
 drupal_versions:
   - 8
   - 7
