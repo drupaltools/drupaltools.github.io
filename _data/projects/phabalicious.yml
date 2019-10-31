@@ -1,0 +1,25 @@
+name: Phabalicious
+year_created: 2013
+source: https://github.com/factorial-io/phabalicious
+homepage: https://factorial-io.github.io/phabalicious
+docs: https://factorial-io.github.io/phabalicious/guide.html
+logo:
+
+description: "Phabalicious is the successor of the python tool fabalicious,
+a deployment helper based on fabric. Phabalicious is a complete rewrite in PHP
+using the symfony framework. It uses the same fabfile.yaml as fabalicious."
+
+requires:
+  - php
+drupal_versions:
+  - 8
+category:
+  - deployment
+  - ci
+  - cd
+  - scaffolding
+  - cli
+similar:
+  - deployotron
+  - drubs
+  - deployer

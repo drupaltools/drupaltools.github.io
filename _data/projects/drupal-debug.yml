@@ -1,0 +1,19 @@
+name: dropwhale
+year_created: 2019
+source: https://github.com/ekino/drupal-debug
+homepage: https://github.com/ekino/drupal-debug
+docs:
+logo:
+
+description: "Alternative Kernel for Drupal 8 to improve the Developer
+eXperience during the development process."
+
+requires:
+  - composer
+drupal_versions:
+  - 8
+category:
+  - development
+  - debug
+similar:
+  - dropwhale

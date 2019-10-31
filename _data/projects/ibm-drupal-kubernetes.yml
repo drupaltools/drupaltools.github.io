@@ -1,0 +1,22 @@
+name: Drupal on Kubernetes
+year_created: 2017
+source: https://github.com/IBM/drupal-on-kubernetes-sample
+homepage: https://github.com/IBM/drupal-on-kubernetes-sample
+docs: https://developer.ibm.com/patterns/run-drupal-website-on-kubernetes/
+logo:
+
+description: "Code Pattern to setup a Drupal site using Kubernetes and Postgres.
+By splitting out the services into containers, we have the ability to leverage
+the power of Kubernetes."
+
+requires:
+  - docker
+  - kubernetes
+drupal_versions:
+  - 8
+category:
+  - ci
+  - debug
+  - testing
+tags:
+  - new
