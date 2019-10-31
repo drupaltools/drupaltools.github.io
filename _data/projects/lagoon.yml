@@ -1,0 +1,21 @@
+name: Lagoon
+year_created: 2017
+source: https://github.com/amazeeio/lagoon
+homepage: https://www.amazee.io/
+docs: http://lagoon.readthedocs.io/
+logo: https://raw.githubusercontent.com/amazeeio/lagoon/master/docs/images/lagoon-logo.png
+
+description: "Lagoon solves what developers are dreaming about: A system that allows developers to locally develop their code and their services with Docker and run the exact same system in production. The same Docker images, the same service configurations and the same code."
+
+requires:
+  - own-server
+  - linux
+drupal_versions:
+  - 7
+  - 8
+  - 9
+category:
+  - hosting
+tags:
+  - amazeeio
+  - lagoon
