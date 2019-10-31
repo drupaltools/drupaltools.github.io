@@ -13,7 +13,7 @@ requires:
 drupal_versions:
   - 8
 category:
-  - debugging
+  - debug
   - testing
   - cli
 similar:

@@ -17,7 +17,7 @@ drupal_versions:
   - 8
 category:
   - development
-  - provision
+  - provisioning
   - debug
   - generator
 similar:

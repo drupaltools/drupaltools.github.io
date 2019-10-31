@@ -1,18 +1,16 @@
-name: Drupal 8 Scaffolding
-year_created: 2016
-source: https://github.com/LastCallMedia/Drupal-Scaffold
-homepage: https://github.com/LastCallMedia/Drupal-Scaffold
-docs: https://github.com/LastCallMedia/Drupal-Scaffold
+name: Drupal Scaffold
+year_created: 2015
+source: https://github.com/drupal-composer/drupal-scaffold
+homepage: https://github.com/drupal-composer/drupal-scaffold
+docs: https://github.com/drupal-composer/drupal-scaffold
 logo:
 
-description: "This is a boilerplate Drupal 8 build that bundles some standard
-tools to make it a good starting point for an enterprise scale Drupal build.
-It is conceptually similar to drupal-composer/drupal-scaffold, but it has a
-much simpler (and more manual) Composer setup, and includes additional tools."
+description: "Composer Plugin for updating the Drupal scaffold files when using drupal/core.
+This is a composer plugin for automatically downloading Drupal scaffold files 
+(like index.php, update.php, …) when using drupal/core via Composer."
 
 requires:
-  - docker
-  - docker-compose
+  - composer
 drupal_versions:
   - 8
 category:
@@ -23,10 +21,8 @@ category:
   - cli
   - development
   - scaffolding
-  - pantheon
-tags:
-  - popular
 similar:
   - fetcher
   - aquifer
   - drubs
+  - blt

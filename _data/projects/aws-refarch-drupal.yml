@@ -1,0 +1,21 @@
+name: Running Drupal on AWS
+year_created: 2017
+source: https://github.com/aws-samples/aws-refarch-drupal
+homepage: https://github.com/aws-samples/aws-refarch-drupal
+docs:
+logo:
+
+description: "This reference architecture provides a set of YAML templates for
+deploying Drupal on AWS using Amazon VPC, Amazon EC2, Auto Scaling,
+Elastic Load Balancing (Application Load Balancer), Amazon RDS, Amazon ElastiCache,
+Amazon EFS, Amazon CloudFront, Amazon Route 53, Amazon ACM with AWS CloudFormation."
+
+requires:
+  - aws
+drupal_versions:
+  - 8
+category:
+  - ci
+  - deployment
+  - scaffolding
+  - provisioning

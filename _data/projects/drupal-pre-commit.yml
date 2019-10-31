@@ -1,9 +1,9 @@
 name: Drupal pre-commit hook
-year_created: 2017
-source: https://github.com/previousnext/m8s
-homepage: https://github.com/previousnext/m8s
-docs: https://github.com/previousnext/m8s/tree/master/docs
-logo: https://raw.githubusercontent.com/previousnext/m8s/master/logo/small.png
+year_created: 2014
+source: https://github.com/andrewmriley/drupal-site-precommit
+homepage: https://github.com/andrewmriley/drupal-site-precommit
+docs:
+logo:
 
 description: "A Drupal pre-commit hook to help write better code."
 
@@ -15,3 +15,4 @@ drupal_versions:
 category:
   - cli
   - development
+  - git
