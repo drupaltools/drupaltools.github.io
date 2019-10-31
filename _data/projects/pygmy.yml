@@ -2,13 +2,13 @@ name: Pygmy
 year_created: 2017
 source: https://github.com/amazeeio/pygmy
 homepage: https://github.com/amazeeio/pygmy
-docs: http://pygmy.readthedocs.io/
+docs: http://pygmy.readthedocs.io
 
 description: "pygmy is the single tool needed to get the local amazee.io Docker Drupal Development Environment running on your Linux based system. It built to work with Docker for Mac! (quite a lot for such a small whale 🐳)"
 
 requires:
   - linux
-  - mac-OS
+  - macOS
   - ruby
 drupal_versions:
   - 7
@@ -21,4 +21,3 @@ category:
 tags:
   - amazeeio
   - lagoon
-

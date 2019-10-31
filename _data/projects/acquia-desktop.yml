@@ -11,8 +11,8 @@ Cloud. Use Acquia Dev Desktop to evaluate Drupal, add and test other Drupal
 modules, and develop sites while on a plane or away from an internet connection."
 
 requires:
-  - windows-OS
-  - mac-OS
+  - windows
+  - macOS
 drupal_versions:
   - 7
   - 8

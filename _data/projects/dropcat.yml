@@ -14,7 +14,7 @@ requires:
 drupal_versions:
   - 8
 operation_system:
-  - Linux
+  - linux
   - macOS
 category:
   - provisioning
