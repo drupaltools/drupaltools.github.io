@@ -7,6 +7,8 @@ logo: https://www.drupal.org/files/styles/grid-3-2x/public/project-images/tome_l
 
 description: "A static site generator lovingly crafted with Drupal 8."
 
+recommended: true
+
 requires:
   - composer
   - drush

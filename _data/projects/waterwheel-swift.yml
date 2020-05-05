@@ -1,9 +1,9 @@
 name: Waterwheel Swift SDK
 year_created: 2010
-source: https://github.com/acquia/waterwheel.swift
-homepage: https://acquia.github.io/waterwheel.swift
+source: https://github.com/kylebrowning/waterwheel.swift
+homepage: https://github.com/kylebrowning/waterwheel.swift
 docs:
-logo: https://raw.githubusercontent.com/acquia/waterwheel-js/assets/waterwheel.png
+logo: https://raw.githubusercontent.com/kylebrowning/waterwheel-js/assets/waterwheel.png
 
 description: "Waterwheel makes using Drupal as a backend with iOS, macOS, tvOS,
 or watchOS enjoyable by combining the most used features of Drupal's API's in

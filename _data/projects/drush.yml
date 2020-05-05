@@ -10,6 +10,8 @@ Drush core ships with lots of useful commands for interacting with code like mod
 Similarly, it runs update.php, executes sql queries and DB migrations, and misc utilities like run cron or clear cache.
 Drush can be extended by 3rd party commandfiles."
 
+recommended: true
+
 requires:
   - cli
 drupal_versions:

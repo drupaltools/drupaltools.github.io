@@ -5,7 +5,10 @@ homepage: https://drupalconsole.com
 docs: https://drupalconsole.com/docs/en/
 logo: https://drupalconsole.com/images/drupal-console-logo.png
 
-description: "The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal."
+description: "The Drupal CLI. A tool to generate boilerplate code,
+interact with and debug Drupal."
+
+recommended: true
 
 requires:
   - cli

@@ -215,16 +215,26 @@
   margin-top: 20px;
 }
 
-.table-visible {
+.hide-on-table,
+.hide-on-grid {
   display: none;
 }
 
-.tiles-template {
-  .table-visible {
+.grid-template {
+  .hide-on-table {
     display: inline-block;
   }
-  .tiles-visible {
+  .hide-on-grid {
     display: none;
+  }
+}
+
+.table-template {
+  .hide-on-table {
+    display: none;
+  }
+  .hide-on-grid {
+    display: inline-block;
   }
 }
 

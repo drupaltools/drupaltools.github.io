@@ -9,6 +9,8 @@ description: "BOA is an acronym of high performance Barracuda, Octopus and Aegir
 Includes all-in-one bash scripts to install and upgrade high performance Aegir Hosting Systems
 for Drupal, with Nginx, PHP-FPM, Zend OPcache, MariaDB and Redis."
 
+recommended: true
+
 requires:
   - linux
 drupal_versions:

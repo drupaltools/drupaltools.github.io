@@ -9,6 +9,8 @@ description: "DevShop is a 'cloud hosting' system for Drupal. DevShop makes it e
 develop, test and update drupal sites. It provides a front-end built in Drupal (Devmaster)
 and a back-end built with drush, Symfony, and Ansible."
 
+recommended: true
+
 requires:
   - ansible
 drupal_versions:

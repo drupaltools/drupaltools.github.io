@@ -3,8 +3,7 @@ year_created: 2014
 source: https://github.com/socketwench/dropwhale
 homepage: https://github.com/socketwench/dropwhale
 docs:
-# logo: https://raw.githubusercontent.com/socketwench/dropwhale/master/logo.png
-logo: https://raw.githubusercontent.com/theodorosploumis/dropwhale/d19caee37e63c63ebb103d17619d85595d1cae59/logo.png
+logo:
 
 description: "Dropwhale is a drop-in Docker environment aimed at Drupal module
 developers. Instead of maintaining a separate Drupal installation,
