@@ -10,8 +10,6 @@ interact with and debug Drupal."
 
 recommended: true
 
-recommended: true
-
 requires:
   - cli
 drupal_versions:
