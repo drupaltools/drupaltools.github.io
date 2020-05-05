@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="project-tiles row">
+  {% assign project_hashes = site.data.projects | sort %}
+  {% for project_hash in project_hashes %}
+
+    {% assign project = project_hash[1] %}
+    {% assign requires =  project.requires | sort | join: ', ' | downcase %}
+    {% assign category =  project.category | sort | join: ', ' | downcase %}
+    {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
+
+    <div class="column result-row" data-created="{{ project.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
+      <div class="js-close"> </div>
+      <article class="project-wrapper-tile">
+        <div class="name"><a href="{{ project.homepage }}">{{ project.name }}</a> (<span class="td-filter" data-class="td-created">{{ project.year_created }}</span>)</div>
+        <div class="logo">{% if project.logo == null %}<img src="/img/no-image.png" />{% else %}<img src="{{ project.logo }}" />{% endif %}</div>
+
+        <div class="project-icons">
+          <a class="project-source" title="Source" href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a>
+          {% if project.docs %}
+            <a class="project-docs" title="Docs" href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a>
+            {% endif %}
+          <span class="project-drupal filter-drupal">{{ project.drupal_versions | sort | join: ', ' }}</span>
+        </div>
+
+        <div class="description">{{ project.description }}</div>
+        <div class="filter-requires"><label>Requires: </label>{{ project.requires | sort | join: ', ' | downcase }}</div>
+        <div class="filter-category"><label>Category: </label>{{ project.category | sort | join: ', ' | downcase }}</div>
+
+        <a class="js-more" href="{{ project.name }}">more details</a>
+      </article>
+    </div>
+  {% endfor %}
+</div>

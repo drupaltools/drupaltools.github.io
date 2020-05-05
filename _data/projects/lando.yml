@@ -11,6 +11,8 @@ by Tandem. It is designed to work with most major languages, frameworks and
 services and to provide an easy way for users to specify simple or complex
 development requirements for their projects."
 
+recommended: true
+
 requires:
   - docker
 drupal_versions:

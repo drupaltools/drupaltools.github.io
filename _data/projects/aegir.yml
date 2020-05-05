@@ -9,6 +9,8 @@ description: "Aegir allows you to deploy and manage many Drupal sites,
 and can scale across multiple server clusters. Aegir makes it easy to install,
 upgrade, and backup an entire network of Drupal sites."
 
+recommended: true
+
 requires:
   - linux
   - own-server

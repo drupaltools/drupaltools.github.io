@@ -7,6 +7,8 @@ logo: https://raw.githubusercontent.com/amazeeio/lagoon/master/docs/images/lagoo
 
 description: "Lagoon solves what developers are dreaming about: A system that allows developers to locally develop their code and their services with Docker and run the exact same system in production. The same Docker images, the same service configurations and the same code."
 
+recommended: true
+
 requires:
   - own-server
   - linux

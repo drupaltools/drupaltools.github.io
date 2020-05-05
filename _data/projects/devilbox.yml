@@ -1,0 +1,32 @@
+name: devilbox
+year_created: 2016
+source: https://github.com/cytopia/devilbox
+homepage: http://devilbox.org
+docs: https://devilbox.readthedocs.io/en/latest
+logo: https://devilbox.readthedocs.io/en/latest/_images/banner.png
+
+description: "The Devilbox is a modern and highly customisable dockerized PHP
+stack supporting full LAMP and MEAN and running on all major platforms.
+The main goal is to easily switch and combine any version required for local development."
+
+recommended: true
+
+requires:
+  - docker
+drupal_versions:
+  - 6
+  - 7
+  - 8
+operation_system:
+  - all
+category:
+  - development
+  - docker
+  - testing
+  - gui
+tags:
+  - popular
+similar:
+  - terra
+  - docker4drupal
+  - lando

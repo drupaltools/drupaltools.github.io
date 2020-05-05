@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-{% if page.url == "/all/" %}
-  <html class="grid-template">
-{% else %}
-  <html class="table-template">
-{% endif %}
+<html class="tiles-template">
 
   {% include head.html %}
 
@@ -14,13 +10,12 @@
     <div class="intro">
       <div class="wrapper">
         {% include description.html %}
-        {% include buttons.html %}
+        {% include buttons-front.html %}
       </div>
     </div>
 
     <div class="page-content">
       <div class="project-wrapper">
-        {% include filters.html %}
         {{ content }}
       </div>
     </div>

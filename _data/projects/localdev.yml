@@ -1,0 +1,24 @@
+name: Localdev
+year_created: 2019
+source: https://pantheon.io/localdev
+homepage: https://pantheon.io/localdev
+docs: https://pantheon.io/docs/localdev
+logo:
+
+description: "Localdev by Pantheon makes it easy to develop your sites
+locally with the Pantheon workflow."
+
+requires:
+  - macos
+drupal_versions:
+  - 8
+category:
+  - development
+  - gui
+tags:
+  - new
+similar:
+  - acquia-desktop
+  - opendevshop
+  - docker4drupal
+  - lando

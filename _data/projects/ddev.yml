@@ -13,6 +13,8 @@ short, ddev aims to allow development teams to use Docker in their workflow
 without the complexities of bespoke configuration. Pluggable hosting
 providers with current support for Pantheon."
 
+recommended: true
+
 requires:
   - docker
 drupal_versions:
