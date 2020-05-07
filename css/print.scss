@@ -1,0 +1,246 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$site-blue:        #0678be;
+
+$grey-color:       #828282;
+$soft-gray:        #c5c5c5;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "syntax-highlighting"
+;
+
+// Main Styles
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul, ol {
+    margin-left: $spacing-unit;
+}
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $base-font-weight;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Print overrides
+.filters,
+#st-2,
+.js-more,
+.buttons {
+  display: none !important;
+}
+
+body {
+  margin: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.site-header,
+.page-content {
+  padding-bottom: 1em;
+}
+
+.site-header {
+  font-size: 30px;
+
+  a {
+    color: #000;
+  }
+}
+
+.intro {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid $soft-gray;
+}
+
+.result-row {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  border-bottom: 1px solid $soft-gray;
+  clear: both;
+  overflow: hidden;
+  break-inside: avoid;
+}
+
+.project-wrapper-tile {
+  > div {
+    margin-bottom: 10px;
+  }
+  label {
+    font-weight: bold;
+  }
+
+  .name {
+    font-size: 20px;
+    margin-bottom: 1em;
+  }
+
+  .logo {
+    float: left;
+    width: 70px;
+    margin-right: 2em;
+    text-align: center;
+
+    img {
+      max-height: 70px;
+    }
+  }
+}
+
+.project-icons {
+  border: 1px solid $soft-gray;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+
+  div {
+    margin-bottom: 3px;
+  }
+}
+
+.project-source {
+  display: block;
+
+  &:before {
+    content: "Source: ";
+    min-width: 70px;
+    display: inline-block;
+    color: #000;
+  }
+}
+
+.project-docs {
+  display: block;
+
+  &:before {
+    content: "Docs: ";
+    min-width: 70px;
+    display: inline-block;
+    color: #000;
+  }
+}
+
+.project-drupal {
+  display: block;
+
+  &:before {
+    content: "Drupal: ";
+    min-width: 70px;
+    display: inline-block;
+    color: #000;
+  }
+}
+
+.logo-icons-wrapper {
+  padding-bottom: 0.5em;
+  overflow: hidden;
+}
+
+.description {
+  clear: left;
+
+  &:before {
+    content: "Description: ";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+}
+
+.filter-requires {
+  width: 29%;
+  float: left;
+  padding-right: 1%;
+}
+
+.filter-category {
+  width: 70%;
+  float: left;
+}
+
+// Tables
+table {
+  width: 100%;
+
+  th {
+    background: $site-blue;
+    color: #fff;
+    padding: 0.3em;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+
+  tr {
+    background: #fff;
+    &:nth-child(even) {
+      background: #ddd;
+    }
+  }
+
+  td {
+    font-size: 0.8em;
+    padding: 6px;
+    vertical-align: middle;
+  }
+}
+
+.description {
+  overflow: visible;
+  white-space: normal;
+}

@@ -6,14 +6,17 @@ layout: default
     <div class="column result-row" data-created="{{ page.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
       <article class="project-wrapper-tile">
         <div class="name"><a href="{{ page.homepage }}">{{ page.name }}</a> (<span class="td-filter" data-class="td-created">{{ page.year_created }}</span>)</div>
-        <div class="logo">{% if page.logo == null %}<img src="/img/no-image.png" />{% else %}<img src="{{ page.logo }}" />{% endif %}</div>
 
-        <div class="project-icons">
-          <a class="project-source" title="Source" href="{{ page.source }}">{{ page.source | replace:'https://','' | replace:'http://','' }}</a>
-          {% if page.docs %}
-            <a class="project-docs" title="Docs" href="{{ page.docs }}">{{ page.docs | replace:'https://','' | replace:'http://','' }}</a>
-            {% endif %}
-          <span class="project-drupal filter-drupal">{{ page.drupal_versions | sort | join: ', ' }}</span>
+        <div class="logo-icons-wrapper">
+          <div class="logo">{% if page.logo == null %}<img src="/img/no-image.png" />{% else %}<img src="{{ page.logo }}" />{% endif %}</div>
+
+          <div class="project-icons">
+            <a class="project-source" title="Source" href="{{ page.source }}">{{ page.source | replace:'https://','' | replace:'http://','' }}</a>
+            {% if page.docs %}
+              <a class="project-docs" title="Docs" href="{{ page.docs }}">{{ page.docs | replace:'https://','' | replace:'http://','' }}</a>
+              {% endif %}
+            <span class="project-drupal filter-drupal">{{ page.drupal_versions | sort | join: ', ' }}</span>
+          </div>
         </div>
 
         <div class="description">{{ page.description }}</div>

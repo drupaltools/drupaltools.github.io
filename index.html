@@ -17,14 +17,17 @@ layout: front
         <div class="js-close"> </div>
         <article class="project-wrapper-tile">
           <div class="name"><a href="{{ project.homepage }}">{{ project.name }}</a> (<span class="td-filter" data-class="td-created">{{ project.year_created }}</span>)</div>
-          <div class="logo">{% if project.logo == null %}<img src="/img/no-image.png" />{% else %}<img src="{{ project.logo }}" />{% endif %}</div>
 
-          <div class="project-icons">
-            <a class="project-source" title="Source" href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a>
-            {% if project.docs %}
-              <a class="project-docs" title="Docs" href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a>
-              {% endif %}
-            <span class="project-drupal filter-drupal">{{ project.drupal_versions | sort | join: ', ' }}</span>
+          <div class="logo-icons-wrapper">
+            <div class="logo">{% if project.logo == null %}<img src="/img/no-image.png" />{% else %}<img src="{{ project.logo }}" />{% endif %}</div>
+
+            <div class="project-icons">
+              <a class="project-source" title="Source" href="{{ project.source }}">{{ project.source | replace:'https://','' | replace:'http://','' }}</a>
+              {% if project.docs %}
+                <a class="project-docs" title="Docs" href="{{ project.docs }}">{{ project.docs | replace:'https://','' | replace:'http://','' }}</a>
+                {% endif %}
+              <span class="project-drupal filter-drupal">{{ project.drupal_versions | sort | join: ', ' }}</span>
+            </div>
           </div>
 
           <div class="description">{{ project.description }}</div>
