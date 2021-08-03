@@ -3,7 +3,7 @@ year_created: 2017
 source: https://github.com/amazeeio/lagoon
 homepage: https://www.amazee.io/technology
 docs: http://lagoon.readthedocs.io/
-logo: https://raw.githubusercontent.com/amazeeio/lagoon/master/docs/images/lagoon-logo.png
+logo: https://raw.githubusercontent.com/uselagoon/lagoon/main/docs/images/lagoon-logo.png
 
 description: "Lagoon solves what developers are dreaming about: A system that allows developers to locally develop their code and their services with Docker and run the exact same system in production. The same Docker images, the same service configurations and the same code."
 
