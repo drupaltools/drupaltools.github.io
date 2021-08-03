@@ -1,23 +1,25 @@
-name: Lagoon
-year_created: 2017
-source: https://github.com/amazeeio/lagoon
-homepage: https://www.amazee.io/technology
-docs: http://lagoon.readthedocs.io/
-logo: https://raw.githubusercontent.com/uselagoon/lagoon/main/docs/images/lagoon-logo.png
+name: DrupalPod
+year_created: 2021
+source: https://github.com/shaal/DrupalPod
+homepage: https://github.com/shaal/DrupalPod
+docs: https://github.com/shaal/DrupalPod
+logo: https://user-images.githubusercontent.com/22901/122864786-40253c00-d2f3-11eb-959b-61fb6871e3f4.png
 
-description: "Lagoon solves what developers are dreaming about: A system that allows developers to locally develop their code and their services with Docker and run the exact same system in production. The same Docker images, the same service configurations and the same code."
+description: "This project allows you to work on Drupal core contributions with a familiar setup of a 'normal' Drupal website using the online IDE Gitpod.io and DDEV. No computer is needed because it is all running in the cloud."
 
 recommended: true
 
 requires:
-  - own-server
-  - linux
+  - gitpod
 drupal_versions:
-  - 7
   - 8
   - 9
 category:
-  - hosting
+  - drupal-core
+  - development
+  - gui
+  - ide
 tags:
-  - amazeeio
-  - lagoon
+  - ddev
+  - ide
+  - gitpod

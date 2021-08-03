@@ -1,0 +1,19 @@
+name: Drupal Code Quality Checker
+year_created: 2017
+source: https://github.com/vijaycs85/drupal-quality-checker
+homepage: https://github.com/vijaycs85/drupal-quality-checker
+docs:
+logo:
+
+description: "Provides set of libraries to easily setup code quality checks based on GrumPHP for Drupal module/theme/profile."
+
+requires:
+  - composer
+drupal_versions:
+  - 8
+category:
+  - debug
+  - testing
+  - cli
+similar:
+  - drupal-check

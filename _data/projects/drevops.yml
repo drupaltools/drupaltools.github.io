@@ -1,0 +1,23 @@
+name: DrevOps
+year_created: 2017
+source: https://github.com/drevops/drevops
+homepage: https://drevops.com
+docs: https://github.com/drevops/drevops
+logo: https://raw.githubusercontent.com/wiki/integratedexperts/drupal-dev/images/drevops_logo_text_white.png
+
+description: "Build, Test, Deploy scripts for Drupal using Docker and CI/CD."
+
+requires:
+  - docker
+drupal_versions:
+  - 7
+  - 8
+category:
+  - behat
+  - ci
+  - cd
+  - deployment
+  - devops
+  - provisioning
+tags:
+  - devops

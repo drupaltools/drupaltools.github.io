@@ -1,0 +1,17 @@
+name: GoComposer
+year_created: 2018
+source: https://github.com/WebKings-ca/gocomposer
+homepage: https://github.com/WebKings-ca/gocomposer
+docs:
+logo:
+
+description: "GoComposer is an all in one solution to update existing Drupal 8 sites to the latest Fully Composer Managed template. It takes the template found in drupal-project and automagically applies it to ypur site."
+
+requires:
+  - composer
+drupal_versions:
+  - 8
+category:
+  - cli
+  - development
+similar:

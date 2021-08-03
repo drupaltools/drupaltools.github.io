@@ -1,0 +1,20 @@
+name: Drupal Test Traits
+year_created: 2017
+source: https://gitlab.com/weitzman/drupal-test-traits
+homepage: https://gitlab.com/weitzman/drupal-test-traits
+docs:
+logo:
+
+description: "Traits for testing Drupal sites that have user content (versus unpopulated sites)."
+
+requires:
+  - composer
+drupal_versions:
+  - 8
+  - 9
+category:
+  - debug
+  - testing
+  - cli
+similar:
+  - drupal-check

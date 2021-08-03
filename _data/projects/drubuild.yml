@@ -1,0 +1,23 @@
+name: Drubuild
+year_created: 2017
+source: https://github.com/fubarhouse/drubuild
+homepage: https://github.com/fubarhouse/drubuild
+docs: https://github.com/fubarhouse/drubuild
+logo: https://raw.githubusercontent.com/fubarhouse/ansible-role-golang/master/gopher.png
+
+description: "Drubuild is a command-line application which builds and manages sites via some common composer and drush commands. This application was born of the personal desire of the creator to be a useful tool for CI and automation to be used at work, however the stability and reliability was a catalyst for a lot of work here."
+
+recommended: true
+
+requires:
+  - go
+drupal_versions:
+  - 7
+  - 8
+category:
+  - cli
+  - development
+  - scaffolding
+  - vm
+tags:
+  - drupalvm

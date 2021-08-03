@@ -1,0 +1,20 @@
+name: drupal_ti
+year_created: 2014
+source: https://github.com/LionsAd/drupal_ti
+homepage: https://github.com/LionsAd/drupal_ti
+docs:
+logo:
+
+description: "This will make it simple to use Travis CI to test your Drupal modules with simpletest and PHPUnit tests."
+
+requires:
+  - travis
+drupal_versions:
+  - 7
+  - 8
+  - 9
+category:
+  - ci
+  - debug
+  - testing
+tags:

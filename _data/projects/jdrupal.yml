@@ -1,0 +1,16 @@
+name: jDrupal
+year_created: 2014
+source: https://github.com/signalpoint/jDrupal
+homepage: http://jdrupal.tylerfrankenstein.com
+docs: https://github.com/signalpoint/jDrupal/tree/8.x-1.x/docs
+logo:
+
+description: "A JavaScript Library and API for Drupal Applications."
+
+requires:
+drupal_versions:
+  - 7
+  - 8
+category:
+  - development
+similar:
