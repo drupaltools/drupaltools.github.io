@@ -1,0 +1,29 @@
+name: ORCA
+year_created: 2018
+source: https://github.com/acquia/orca
+homepage: https://github.com/acquia/orca
+docs: https://github.com/acquia/orca/tree/develop/docs
+logo: https://raw.githubusercontent.com/acquia/orca/develop/docs/images/logo-wide.png
+
+description: "ORCA (Official Representative Customer Application) is a tool for testing a company 
+Drupal-adjacent software packages. It ensures their cross compatibility and correct 
+functioning by installing all of them together into a realistic, functioning, best practices 
+Drupal build and running automated tests and static code analysis on them. 
+Its guiding design principle is to use company packages as a customer would. 
+It installs the latest recommended versions via composer and performs no manual setup or configuration."
+
+recommended: false
+
+requires:
+  - sqlite
+  - composer
+drupal_versions:
+  - 8
+  - 9
+category:
+  - development
+  - testing
+  - ci
+  - cd
+  - cli
+  - infrastructure
