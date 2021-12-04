@@ -1,0 +1,22 @@
+name: Next.js for Drupal
+year_created: 2021
+source: https://github.com/chapter-three/next-drupal
+homepage: https://next-drupal.org
+docs: https://next-drupal.org/docs
+logo:
+
+description: "Next.js + Drupal for Incremental Static Regeneration and Preview mode (works with JSON:API and GraphQL)."
+
+recommended: true
+
+requires:
+  - javascript
+  - nodejs
+drupal_versions:
+  - 8
+  - 9
+category:
+  - cms
+  - nextjs
+tags:
+  - popular
