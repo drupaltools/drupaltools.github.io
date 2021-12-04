@@ -5,8 +5,7 @@ homepage: https://github.com/ekino/drupal-debug
 docs:
 logo:
 
-description: "Alternative Kernel for Drupal 8 to improve the Developer
-eXperience during the development process."
+description: "Alternative Kernel for Drupal 8 to improve the Developer eXperience during the development process."
 
 requires:
   - composer
