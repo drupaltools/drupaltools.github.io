@@ -1,0 +1,19 @@
+name: https://github.com/Tuhinshubhra/CMSeeK
+year_created: 2017
+source: https://github.com/Tuhinshubhra/CMSeeK
+homepage: https://github.com/Tuhinshubhra/CMSeeK
+docs: 
+logo:
+
+description: "CMS Detection and Exploitation suite - Scan WordPress, Joomla, Drupal and over 180 other CMSs"
+
+requires:
+  - python
+drupal_versions:
+  - 6
+  - 7
+  - 8
+category:
+  - testing
+  - security
+  - bruteforce
