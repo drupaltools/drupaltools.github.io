@@ -1,5 +1,5 @@
 name: Behat Drupal Extension
-year_created: 2013
+year_created: 2012
 source: https://github.com/jhedstrom/drupalextension
 homepage: https://github.com/jhedstrom/drupalextension
 docs: https://behat-drupal-extension.readthedocs.io
@@ -13,6 +13,7 @@ recommended: true
 requires:
   - behat
 drupal_versions:
+  - 6
   - 7
   - 8
   - 9
