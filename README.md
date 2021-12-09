@@ -3,8 +3,7 @@
 # DrupalTools
 
 Project [drupaltools.github.io](https://drupaltools.github.io/), a list of open-source tools used for
-Drupal development and other Drupal related tasks. Initially based on the
-this [Google Sheets](https://docs.google.com/spreadsheets/d/1EWmxQMMekc0fMoMl16HyLt0i8yCRBT5wAVuy66Bi4kI) which is now deprecated!
+Drupal development and other Drupal related tasks.
 
 ## Contributing
 
@@ -28,6 +27,11 @@ cd drupaltools
 bundle install
 bundle exec jekyll serve --port 8080
 ```
+
+Or just open in Gitpod!
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/drupaltools/drupaltools.github.io)
+
 
 ## License
 This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
