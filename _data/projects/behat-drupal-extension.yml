@@ -8,8 +8,6 @@ logo: https://raw.githubusercontent.com/jhedstrom/drupalextension/v4.0.1/doc/_st
 description: "The Drupal Extension is an integration layer between Behat, Mink Extension, and Drupal. 
 It provides step definitions for common testing scenarios specific to Drupal sites."
 
-recommended: true
-
 requires:
   - behat
 drupal_versions:
