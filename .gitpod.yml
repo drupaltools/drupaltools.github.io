@@ -1,0 +1,19 @@
+image: gitpod/workspace-full
+
+tasks:
+  - init: |
+      gem install jekyll bundler
+      bundle install
+    command: |
+      bundle exec jekyll serve --port 8080
+
+ports:
+  - port: 8080
+    onOpen: open-browser
+
+github:
+  prebuilds:
+    master: true
+    pullRequests: true
+    addBadge: true
+    addLabel: true
