@@ -3,7 +3,7 @@ year_created: 2021
 source: https://github.com/chapter-three/next-drupal
 homepage: https://next-drupal.org
 docs: https://next-drupal.org/docs
-logo:
+logo: /img/next-logo.png
 
 description: "Next.js + Drupal for Incremental Static Regeneration and Preview mode (works with JSON:API and GraphQL)."
 
