@@ -1,0 +1,18 @@
+name: Drupal with Nginx
+year_created: 2010
+source: https://github.com/perusio/drupal-with-nginx
+homepage: https://github.com/perusio/drupal-with-nginx
+docs: 
+logo: 
+
+description: "Nginx configuration for running Drupal"
+
+requires:
+  - nginx
+drupal_versions:
+  - 6
+  - 7
+category:
+  - provisioning
+  - server
+  - seo
