@@ -1,0 +1,21 @@
+name: Phing Drupal Tests
+year_created: 2019
+source: https://github.com/DoghouseMedia/phing-drupal-tests
+homepage: https://github.com/DoghouseMedia/phing-drupal-tests
+docs: 
+logo:
+
+description: "A collection of automated Drupal testing targets for Phing."
+
+requires:
+  - composer
+  - phing
+drupal_versions:
+  - 8
+  - 9
+category:
+  - testing
+  - CI
+  - phing
+similar:
+  - phingdrushtask
