@@ -1,0 +1,20 @@
+name: Azure Kubernetes Service Drupal8
+year_created: 2019
+source: https://github.com/snp-technologies/Azure-Kubernetes-Service-Drupal8
+homepage: https://github.com/snp-technologies/Azure-Kubernetes-Service-Drupal8
+docs: 
+logo:
+
+description: "A solution for running Drupal 8+ workloads on Azure Kubernetes Service (AKS)."
+
+requires:
+  - docker
+  - kubernetes
+  - azure
+drupal_versions:
+  - 8
+  - 9
+category:
+  - docker
+  - deployment
+  - azure
