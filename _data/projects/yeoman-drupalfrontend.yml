@@ -1,0 +1,20 @@
+name: Yeoman drupal frontend
+year_created: 2017
+source: https://github.com/stefspakman/yeoman-drupalfrontend
+homepage: https://github.com/stefspakman/yeoman-drupalfrontend
+docs: 
+logo: 
+
+description: "A Yeoman generator to scaffold a Drupal theme and https://github.com/SyneticNL/Gulp-for-Drupal."
+
+requires:
+  - npm
+drupal_versions:
+  - 7
+  - 8
+category:
+  - development
+  - theming
+  - gulp
+similar:
+  - gulp-drupal
