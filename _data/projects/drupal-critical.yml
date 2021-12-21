@@ -1,0 +1,17 @@
+name: Drupal Critical
+year_created: 2017
+source: https://github.com/stefspakman/drupal-critical
+homepage: https://github.com/stefspakman/drupal-critical
+docs: 
+logo: 
+
+description: "Automated generation of Critical CSS for Drupal sites."
+
+requires:
+  - npm
+drupal_versions:
+  - 7
+  - 8
+category:
+  - css
+  - seo
