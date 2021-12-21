@@ -1,0 +1,19 @@
+name: Drupal Nginx recipe
+year_created: 2010
+source: https://github.com/perusio/drupal-with-nginx
+homepage: https://github.com/perusio/drupal-with-nginx
+docs: 
+logo: 
+
+description: "Nginx configuration for running Drupal"
+
+requires:
+  - nginx
+  - php-fpm
+drupal_versions:
+  - 7
+  - 8
+category:
+  - provisioning
+  - server
+  - seo
