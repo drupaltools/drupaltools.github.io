@@ -32,6 +32,11 @@ Or just open in Gitpod!
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/drupaltools/drupaltools.github.io)
 
+## Similar tools
+
+See also:
+
+- https://jakzal.github.io/toolbox
 
 ## License
 This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
