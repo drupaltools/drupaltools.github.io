@@ -4,6 +4,7 @@ tasks:
   - before: |
       gem install jekyll bundler
       bundle install
+      gem --version
     command: |
       bundle exec jekyll serve --port 8080
 
