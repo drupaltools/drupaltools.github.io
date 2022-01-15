@@ -4,7 +4,6 @@ tasks:
   - before: |
       gem install jekyll bundler
       bundle install
-      gem --version
     command: |
       bundle exec jekyll serve --port 8080
 
@@ -15,6 +14,6 @@ ports:
 github:
   prebuilds:
     master: true
-    pullRequests: true
+    pullRequests: false
     addBadge: true
     addLabel: true
