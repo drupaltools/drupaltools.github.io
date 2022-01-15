@@ -2,9 +2,11 @@ image: gitpod/workspace-full
 
 tasks:
   - init: |
+      sudo chsh -s $(which zsh)
       gem install jekyll bundler
       bundle install
     command: |
+      sudo chsh -s $(which zsh)
       bundle exec jekyll serve --port 8080
 
 ports:
