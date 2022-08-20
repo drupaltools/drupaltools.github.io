@@ -1,0 +1,25 @@
+name: Druact
+year_created: 2017
+source: https://github.com/gnikolovski/druact
+homepage: https://github.com/gnikolovski/druact
+docs: 
+logo: 
+
+description: "Drupal 8/9 + ReactJS + Bootstrap 4. Frontend stuff for https://github.com/gnikolovski/druact_api project"
+
+requires:
+  - reactjs
+  - drupal
+  - npm
+drupal_versions:
+  - 8
+  - 9
+category:
+  - cms
+  - frontend
+  - js
+tags:
+  - js
+similar:
+  - druxt
+  - next-drupal
