@@ -1,0 +1,23 @@
+name: DruxtJS
+year_created: 2020
+source: https://github.com/druxt/druxt.js
+homepage: https://druxtjs.org
+docs: https://druxtjs.org/guide
+logo: /img/logo-druxtjs.png
+
+description: "Druxt is a framework for building Fully Decoupled Drupal and Nuxt.js applications and sites. It allows you to leverage the content modelling and management power of Drupal, and build elegant user experiences with Nuxt.js."
+
+recommended: true
+
+requires:
+  - javascript
+  - nodejs
+  - nuxtjs
+drupal_versions:
+  - 8
+  - 9
+category:
+  - cms
+  - nuxtjs
+tags:
+  - popular
