@@ -7,6 +7,9 @@ logo:
 
 description: "This is a simple url shortener for drupal.org pages according to https://www.drupal.org/project/dgore."
 
+requires:
+  - http
+
 drupal_versions:
   - 6
   - 7
