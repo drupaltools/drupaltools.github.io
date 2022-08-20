@@ -1,0 +1,26 @@
+name: Docker Drupal Project
+year_created: 2017
+source: https://gitlab.com/florenttorregrosa-drupal/docker-drupal-project
+homepage: https://gitlab.com/florenttorregrosa-drupal/docker-drupal-project
+docs: https://gitlab.com/florenttorregrosa-drupal/docker-drupal-project
+logo: 
+
+description: "A Drupal project template with Docker environment and Gitlab CI."
+
+requires:
+  - cli
+  - docker
+  - traefik
+  - gitlab
+
+drupal_versions:
+  - 8
+  - 9
+category:
+  - devops
+  - ci
+  - cd
+  - deployment
+tags:
+  - ci
+  - cd
