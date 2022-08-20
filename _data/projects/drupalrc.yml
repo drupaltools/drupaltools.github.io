@@ -7,8 +7,6 @@ logo:
 
 description: "Useful Bash functions for Drupal development."
 
-recommended: false
-
 requires:
   - cli
   - drush
