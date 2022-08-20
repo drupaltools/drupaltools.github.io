@@ -1,0 +1,22 @@
+name: CLI tools for local Drupal development
+year_created: 2022
+source: https://github.com/karate/drupal-dev
+homepage: https://github.com/karate/drupal-dev
+docs: https://github.com/karate/drupal-dev
+logo: 
+
+description: "CLI tools for local Drupal development using Docker and tmux."
+
+requires:
+  - docker
+  - tmux
+drupal_versions:
+  - 7
+  - 8
+  - 9
+category:
+  - development
+  - docker
+  - cli
+tags:
+  - docker
