@@ -20,12 +20,12 @@ Make sure to follow the following rules:
 
 Drupaltools is built with Jekyll, Bundler and Liquid. To install and run locally:
 
-```
+```bash
 gem install jekyll bundler
 git clone https://github.com/theodorosploumis/drupaltools.git
 cd drupaltools
 bundle install
-bundle exec jekyll serve --port 8080
+bundle exec jekyll serve --server 8080
 ```
 
 Or just open in Gitpod!
@@ -39,6 +39,7 @@ See also:
 - https://jakzal.github.io/toolbox
 
 ## License
+
 This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 [Drupal](https://www.drupal.org) is a [registered trademark](http://drupal.com/trademark) of [Dries Buytaert](http://buytaert.net/).
