@@ -1,0 +1,19 @@
+name: Drupal RC
+year_created: 2017
+source: https://github.com/Chi-teck/drupalrc
+homepage: https://github.com/Chi-teck/drupalrc
+docs: https://github.com/Chi-teck/drupalrc
+logo: 
+
+description: "Useful Bash functions for Drupal development."
+
+recommended: false
+
+requires:
+  - cli
+  - drush
+drupal_versions:
+  - 8
+category:
+  - cli
+  - development
