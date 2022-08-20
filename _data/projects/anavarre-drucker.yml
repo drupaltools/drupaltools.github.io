@@ -1,0 +1,23 @@
+name: drucker
+year_created: 2016
+source: https://github.com/anavarre/drucker
+homepage: https://github.com/anavarre/drucker
+docs: https://github.com/anavarre/drucker
+logo:
+
+description: "drucker is an opinionated Docker-based Drupal stack managed by
+Ansible for orchestration. It automates creating Debian containers on
+which it will deploy a common web stack to run Drupal applications."
+
+requires:
+  - docker
+  - ansible
+drupal_versions:
+  - 8
+category:
+  - debug
+  - development
+  - testing
+  - docker
+similar:
+  - drocker

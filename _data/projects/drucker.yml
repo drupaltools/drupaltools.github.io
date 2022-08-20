@@ -1,23 +1,19 @@
-name: drucker
-year_created: 2016
-source: https://github.com/anavarre/drucker
-homepage: https://github.com/anavarre/drucker
-docs: https://github.com/anavarre/drucker
+name: Drucker
+year_created: 2017
+source: https://github.com/ovh/drucker
+homepage: https://ovh.github.io/drucker
+docs: https://ovh.github.io/drucker
 logo:
 
-description: "drucker is an opinionated Docker-based Drupal stack managed by
-Ansible for orchestration. It automates creating Debian containers on
-which it will deploy a common web stack to run Drupal applications."
+description: "Drucker is a lightweight Drupal developer environment. It contains required tools, like Drush or Composer, without useless extra. The goals of this project is to have a Drupal development environment without installing anything on your desk (except Docker), and to be easy as possible to use."
 
 requires:
   - docker
-  - ansible
+  - git
 drupal_versions:
   - 8
 category:
-  - debug
   - development
-  - testing
   - docker
 similar:
   - drocker
