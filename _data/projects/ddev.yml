@@ -20,6 +20,8 @@ requires:
 drupal_versions:
   - 7
   - 8
+  - 9
+  - 10
 operation_system:
   - linux
   - windows
