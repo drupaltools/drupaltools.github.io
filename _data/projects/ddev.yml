@@ -11,7 +11,7 @@ powerful and flexible as a result of its per-project environment
 configurations, which can be extended, version controlled, and shared. In
 short, DDEV aims to allow development teams to use Docker in their workflow
 without the complexities of bespoke configuration. Pluggable hosting
-providers with current support for Pantheon."
+providers with current support for Acquia, Pantheon, Platform.sh and more."
 
 recommended: true
 
