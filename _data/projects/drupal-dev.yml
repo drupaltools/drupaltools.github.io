@@ -3,7 +3,7 @@ year_created: 2022
 source: https://github.com/karate/drupal-dev
 homepage: https://github.com/karate/drupal-dev
 docs: https://github.com/karate/drupal-dev
-logo: 
+logo: https://avatars.githubusercontent.com/u/1358965
 
 description: "CLI tools for local Drupal development using Docker and tmux."
 
