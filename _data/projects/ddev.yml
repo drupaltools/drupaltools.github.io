@@ -3,7 +3,7 @@ year_created: 2016
 source: https://github.com/drud/ddev
 homepage: https://github.com/drud/ddev
 docs: https://ddev.readthedocs.io
-logo: https://raw.githubusercontent.com/drud/ddev/master/images/ddev_logo.png
+logo: https://raw.githubusercontent.com/drud/ddev/master/images/ddev-logo.svg
 
 description: "DDEV is an open source tool that makes it dead simple to get
 local PHP development environments up and running within minutes. It's
