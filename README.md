@@ -40,6 +40,6 @@ See also:
 
 ## License
 
-This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+This project is licensed under the [MIT license](LICENSE).
 
 [Drupal](https://www.drupal.org) is a [registered trademark](http://drupal.com/trademark) of [Dries Buytaert](http://buytaert.net/).
