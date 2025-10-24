@@ -17,6 +17,7 @@ category:
   - development
   - cli
   - docker
+  - deprecated
 similar:
   - terra
   - docker4drupal

@@ -17,6 +17,7 @@ category:
   - containers
   - cli
   - ubuntu
+  - deprecated
 similar:
   - deployotron
   - deployer

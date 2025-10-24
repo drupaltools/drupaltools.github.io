@@ -5,8 +5,7 @@ homepage: https://drumk.it/
 docs: https://drumk.it/documentation
 logo: https://drumk.it/images/logo.png
 
-description: "Drumkit is a suite of GNU Makefiles and other scripts made to
-simplify software development, testing and deployment."
+description: "Drumkit is a suite of GNU Makefiles and other scripts made to simplify software development, testing and deployment."
 
 requires:
   - docker

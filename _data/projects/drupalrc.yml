@@ -3,7 +3,7 @@ year_created: 2017
 source: https://github.com/Chi-teck/drupalrc
 homepage: https://github.com/Chi-teck/drupalrc
 docs: https://github.com/Chi-teck/drupalrc
-logo: 
+logo:
 
 description: "Useful Bash functions for Drupal development."
 

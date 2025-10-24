@@ -5,8 +5,7 @@ homepage: https://github.com/blueoakinteractive/phpocker
 docs:
 logo:
 
-description: "Yeoman generator to provision a docker compose stack for
-Drupal development."
+description: "Yeoman generator to provision a docker compose stack for Drupal development."
 
 requires:
   - yeoman
@@ -20,6 +19,7 @@ category:
   - provisioning
   - debug
   - generator
+  - deprecated
 similar:
   - valkyrie
   - ddd

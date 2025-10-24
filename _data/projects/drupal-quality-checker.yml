@@ -15,5 +15,6 @@ category:
   - debug
   - testing
   - cli
+  - deprecated
 similar:
   - drupal-check

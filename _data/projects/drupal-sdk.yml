@@ -3,11 +3,9 @@ year_created: 2021
 source: https://gitlab.com/VoidE/drupal-sdk
 homepage: https://gitlab.com/VoidE/drupal-sdk
 docs: https://gitlab.com/VoidE/drupal-sdk
-logo: 
+logo:
 
 description: "The Drupal SDK is a helper package for calling Drupal endpoints, like the JSON:API, in a more efficient and easy way."
-
-recommended: true
 
 requires:
   - npm

@@ -5,11 +5,7 @@ homepage: https://github.com/hussainweb/drupal-composer-init
 docs: https://github.com/hussainweb/drupal-composer-init
 logo:
 
-description: "This plugin provides a new composer command (drupal-init) which
-helps in creating new Drupal installations based on composer. Most of the
-options are very similar to the default composer init command.
-There are additional options to specify a Drupal core or distro to use and
-the docroot."
+description: "This plugin provides a new composer command (drupal-init) which helps in creating new Drupal installations based on composer. Most of the options are very similar to the default composer init command. There are additional options to specify a Drupal core or distro to use and the docroot."
 
 requires:
   - composer

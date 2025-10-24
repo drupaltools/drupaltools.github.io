@@ -5,8 +5,7 @@ homepage: https://gitlab.wklive.net/wk-public/dropcat
 docs: https://gitlab.wklive.net/wk-public/dropcat
 logo: https://gitlab.wklive.net/uploads/-/system/project/avatar/30/dropcat_logo.png
 
-description: "Dropcat is a new deployment tool, mainly for Drupal that is
-developed by Wunderkraut in Sweden."
+description: "Dropcat is a new deployment tool, mainly for Drupal that is developed by Wunderkraut in Sweden."
 
 requires:
   - drush

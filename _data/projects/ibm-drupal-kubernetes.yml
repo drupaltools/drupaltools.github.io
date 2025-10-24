@@ -5,9 +5,7 @@ homepage: https://github.com/IBM/drupal-on-kubernetes-sample
 docs: https://developer.ibm.com/patterns/run-drupal-website-on-kubernetes/
 logo:
 
-description: "Code Pattern to setup a Drupal site using Kubernetes and Postgres.
-By splitting out the services into containers, we have the ability to leverage
-the power of Kubernetes."
+description: "Code Pattern to setup a Drupal site using Kubernetes and Postgres. By splitting out the services into containers, we have the ability to leverage the power of Kubernetes."
 
 requires:
   - docker
@@ -18,5 +16,6 @@ category:
   - ci
   - debug
   - testing
+  - deprecated
 tags:
   - new

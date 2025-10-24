@@ -7,8 +7,6 @@ logo: /img/next-logo.png
 
 description: "Next.js + Drupal for Incremental Static Regeneration and Preview mode (works with JSON:API and GraphQL)."
 
-recommended: true
-
 requires:
   - javascript
   - nodejs

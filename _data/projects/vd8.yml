@@ -5,8 +5,7 @@ homepage: https://github.com/nickschuch/vd8
 docs: https://github.com/nickschuch/vd8
 logo:
 
-description: "The VD8 project has been created to make sure developers have an
-easy method for boostrapping a local Drupal 8 development environment."
+description: "The VD8 project has been created to make sure developers have an easy method for boostrapping a local Drupal 8 development environment."
 
 requires:
   - vagrant
@@ -19,6 +18,7 @@ category:
   - vm
   - development
   - debug
+  - deprecated
 similar:
   - vdd
   - drupal-vm

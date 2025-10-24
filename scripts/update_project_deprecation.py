@@ -18,23 +18,33 @@ import asyncio
 import datetime as dt
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Set
 from xml.etree import ElementTree as ET
 
-import aiohttp
+import requests
 from ruamel.yaml import YAML
 from ruamel.yaml.comments import CommentedSeq
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent / "_data" / "projects"
-KEYWORDS = ("deprecated", "obsolete", "no further development")
+KEYWORD_PATTERNS = (
+    re.compile(r"\bthis\s+(?:project|repository|module|package|tool)\s+is\s+deprecated\b", re.I),
+    re.compile(r"\b(?:project|repository|module|package|tool)\s+is\s+deprecated\b", re.I),
+    re.compile(r"\bdeprecated\s+(?:project|repository|module|package|tool)\b", re.I),
+    re.compile(r"\bno\s+longer\s+maintained\b", re.I),
+    re.compile(r"\bno\s+further\s+development\b", re.I),
+    re.compile(r"\barchived\b[^\n.]*\bdeprecated\b", re.I),
+)
 TWO_YEARS_AGO = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=365 * 2)
 HEADERS = {
     "User-Agent": "drupaltools-audit-script/1.0 (+https://drupaltools.github.io)"
 }
-REQUEST_TIMEOUT = aiohttp.ClientTimeout(total=12)
+REQUEST_TIMEOUT = 12
 CONCURRENCY = 12
+
+_executor = ThreadPoolExecutor(max_workers=CONCURRENCY)
 
 
 def load_yaml(path: Path) -> Dict:
@@ -60,34 +70,43 @@ class UrlCheck:
     keyword_hit: bool
 
 
-async def fetch_page(session: aiohttp.ClientSession, semaphore: asyncio.Semaphore, url: str) -> UrlCheck:
-    async with semaphore:
-        try:
-            async with session.get(url, timeout=REQUEST_TIMEOUT) as response:
-                valid = 200 <= response.status < 400
-                text = await response.text(errors="ignore") if valid else ""
-        except (aiohttp.ClientError, asyncio.TimeoutError):
-            return UrlCheck(valid=False, keyword_hit=False)
+def fetch_page(url: str) -> UrlCheck:
+    try:
+        response = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+        valid = 200 <= response.status_code < 400
+        text = response.text if valid else ""
+    except requests.RequestException:
+        return UrlCheck(valid=False, keyword_hit=False)
 
-    lower_text = text.lower()
-    keyword_hit = any(keyword in lower_text for keyword in KEYWORDS)
+    keyword_hit = any(pattern.search(text) for pattern in KEYWORD_PATTERNS)
     return UrlCheck(valid=valid, keyword_hit=keyword_hit)
 
 
-async def fetch_commit_date(session: aiohttp.ClientSession, semaphore: asyncio.Semaphore, repo: str) -> Optional[dt.datetime]:
+def fetch_commit_date(repo: str) -> Optional[dt.datetime]:
     url = f"https://github.com/{repo}/commits.atom"
-    async with semaphore:
-        try:
-            async with session.get(url, timeout=REQUEST_TIMEOUT) as response:
-                if response.status >= 400:
-                    return None
-                text = await response.text(errors="ignore")
-        except (aiohttp.ClientError, asyncio.TimeoutError):
-            return None
+    try:
+        response = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+    except requests.RequestException:
+        return None
+    if response.status_code >= 400:
+        return None
+    text = response.text
 
     try:
         root = ET.fromstring(text)
         ns = {"atom": "http://www.w3.org/2005/Atom"}
+
+        entry = root.find("atom:entry", ns)
+        if entry is not None:
+            for tag in ("atom:updated", "atom:published"):
+                candidate = entry.find(tag, ns)
+                if candidate is not None and candidate.text:
+                    iso_value = candidate.text.replace("Z", "+00:00")
+                    try:
+                        return dt.datetime.fromisoformat(iso_value)
+                    except ValueError:
+                        continue
+
         updated = root.find("atom:updated", ns)
         if updated is None or not updated.text:
             return None
@@ -109,24 +128,20 @@ def github_repo(url: str) -> Optional[str]:
 
 
 async def collect_url_data(urls: Set[str]) -> Dict[str, UrlCheck]:
-    connector = aiohttp.TCPConnector(limit=CONCURRENCY)
-    semaphore = asyncio.Semaphore(CONCURRENCY)
-    async with aiohttp.ClientSession(headers=HEADERS, connector=connector) as session:
-        tasks = {url: asyncio.create_task(fetch_page(session, semaphore, url)) for url in urls}
-        results = {}
-        for url, task in tasks.items():
-            results[url] = await task
+    loop = asyncio.get_running_loop()
+    tasks = {url: loop.run_in_executor(_executor, fetch_page, url) for url in urls}
+    results: Dict[str, UrlCheck] = {}
+    for url, task in tasks.items():
+        results[url] = await task
     return results
 
 
 async def collect_commit_data(repos: Set[str]) -> Dict[str, Optional[dt.datetime]]:
-    connector = aiohttp.TCPConnector(limit=CONCURRENCY)
-    semaphore = asyncio.Semaphore(CONCURRENCY)
-    async with aiohttp.ClientSession(headers=HEADERS, connector=connector) as session:
-        tasks = {repo: asyncio.create_task(fetch_commit_date(session, semaphore, repo)) for repo in repos}
-        results = {}
-        for repo, task in tasks.items():
-            results[repo] = await task
+    loop = asyncio.get_running_loop()
+    tasks = {repo: loop.run_in_executor(_executor, fetch_commit_date, repo) for repo in repos}
+    results: Dict[str, Optional[dt.datetime]] = {}
+    for repo, task in tasks.items():
+        results[repo] = await task
     return results
 
 

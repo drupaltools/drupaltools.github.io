@@ -5,8 +5,7 @@ homepage: https://github.com/wadmiraal/docker-drupal
 docs: https://github.com/wadmiraal/docker-drupal
 logo:
 
-description: "Quick and easy to use Docker container for your local Drupal development.
-It contains a LAMP stack and an SSH server, along with an up to date version of Drush. It is based on Debian Jessie."
+description: "Quick and easy to use Docker container for your local Drupal development. It contains a LAMP stack and an SSH server, along with an up to date version of Drush. It is based on Debian Jessie."
 
 requires:
   - docker
@@ -17,6 +16,7 @@ category:
   - development
   - debug
   - docker
+  - deprecated
 tags:
   - popular
 similar:

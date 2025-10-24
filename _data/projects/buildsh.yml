@@ -5,8 +5,7 @@ homepage: https://github.com/wunderkraut/build.sh
 docs: https://github.com/wunderkraut/build.sh/blob/master/README.md
 logo:
 
-description: "build.sh is a tool for making, updating and managing
-Drupal installations from the development phase up to production."
+description: "build.sh is a tool for making, updating and managing Drupal installations from the development phase up to production."
 
 requires:
   - drush
@@ -20,6 +19,7 @@ category:
   - cli
   - production
   - scaffolding
+  - deprecated
 similar:
   - fetcher
   - aquifer

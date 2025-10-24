@@ -5,10 +5,7 @@ homepage: https://github.com/factorial-io/fabalicious
 docs: http://factorial-io.github.io/fabalicious
 logo:
 
-description: "Fabalicious uses a configuration file with a list of hosts and
-ssh and optionally tools like composer, drush, git, docker or custom scripts
-to run common tasks on remote machines. It is slightly biased to
-drupal-projects but it works for a lot of other types of projects."
+description: "Fabalicious uses a configuration file with a list of hosts and ssh and optionally tools like composer, drush, git, docker or custom scripts to run common tasks on remote machines. It is slightly biased to drupal-projects but it works for a lot of other types of projects."
 
 requires:
   - fabric
@@ -24,6 +21,7 @@ category:
   - deployment
   - testing
   - cli
+  - deprecated
 similar:
   - fetcher
   - drubs

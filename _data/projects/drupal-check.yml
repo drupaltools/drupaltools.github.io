@@ -5,8 +5,7 @@ homepage: https://github.com/mglaman/drupal-check
 docs:
 logo:
 
-description: "Built on PHPStan, this static analysis tool will check for
-correctness (e.g. using a class that doesn't exist), deprecation errors, and more."
+description: "Built on PHPStan, this static analysis tool will check for correctness (e.g. using a class that doesn't exist), deprecation errors, and more."
 
 requires:
   - phpstan

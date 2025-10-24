@@ -5,9 +5,7 @@ homepage: https://github.com/zaporylie/composer-drupal-optimizations
 docs:
 logo:
 
-description: "This composer-plugin contains a set of improvements that makes
-running heavy duty composer commands (i.e. composer update or
-composer require) much faster."
+description: "This composer-plugin contains a set of improvements that makes running heavy duty composer commands (i.e. composer update or composer require) much faster."
 
 requires:
   - composer
@@ -16,4 +14,5 @@ drupal_versions:
 category:
   - cli
   - development
+  - deprecated
 similar:

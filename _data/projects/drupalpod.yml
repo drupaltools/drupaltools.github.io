@@ -7,8 +7,6 @@ logo: https://user-images.githubusercontent.com/22901/122864786-40253c00-d2f3-11
 
 description: "This project allows you to work on Drupal core contributions with a familiar setup of a 'normal' Drupal website using the online IDE Gitpod.io and DDEV. No computer is needed because it is all running in the cloud."
 
-recommended: true
-
 requires:
   - gitpod
 drupal_versions:

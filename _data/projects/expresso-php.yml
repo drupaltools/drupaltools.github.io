@@ -2,8 +2,8 @@ name: Expresso PHP
 year_created: 2016
 source: https://github.com/expresso-php/expresso-php
 homepage: https://github.com/expresso-php/expresso-php
-docs: 
-logo: 
+docs:
+logo:
 
 description: "This is a fast and simple Docker setup for all your PHP development. Quick but not dirty."
 
@@ -15,3 +15,4 @@ drupal_versions:
 category:
   - development
   - docker
+  - deprecated

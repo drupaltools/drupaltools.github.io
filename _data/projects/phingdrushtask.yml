@@ -5,12 +5,7 @@ homepage: https://www.drupal.org/project/phingdrushtask
 docs: https://github.com/drupol/phingdrushtask/
 logo:
 
-description: "A Drush task for Phing. This task enable usage of Drush commands in Phing build scripts.
-Phing provides tools for usual tasks for PHP projects (phplint, jslint,
-VCS checkouts, files copy or merge, packaging, upload, etc.).
-Integration of Drush in Phing is particularly useful when building
-and testing Drupal projects in a continuous integration server such as
-Jenkins, Travis or Continuous PHP."
+description: "A Drush task for Phing. This task enable usage of Drush commands in Phing build scripts. Phing provides tools for usual tasks for PHP projects (phplint, jslint, VCS checkouts, files copy or merge, packaging, upload, etc.). Integration of Drush in Phing is particularly useful when building and testing Drupal projects in a continuous integration server such as Jenkins, Travis or Continuous PHP."
 
 requires:
   - composer
@@ -25,6 +20,7 @@ category:
   - deployment
   - testing
   - CI
+  - deprecated
 tags:
   - drush
 similar:

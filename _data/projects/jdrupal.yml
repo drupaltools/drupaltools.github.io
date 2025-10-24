@@ -14,3 +14,4 @@ drupal_versions:
   - 8
 category:
   - development
+  - deprecated

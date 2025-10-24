@@ -5,9 +5,7 @@ homepage: https://github.com/computerminds/parrot
 docs: https://github.com/computerminds/parrot/wiki
 logo:
 
-description: "Parrot is a utility VM for Drupal development.
-It's not your development environment, but it's the complex,
-hard to set up, servers you'll need."
+description: "Parrot is a utility VM for Drupal development. It's not your development environment, but it's the complex, hard to set up, servers you'll need."
 
 requires:
   - vagrant

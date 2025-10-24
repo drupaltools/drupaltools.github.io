@@ -5,8 +5,7 @@ homepage: https://github.com/druidfi/stonehenge
 docs: https://github.com/druidfi/stonehenge
 logo: https://raw.githubusercontent.com/druidfi/stonehenge/master/logos/stonehenge_logo_wide.svg?sanitize=true
 
-description: "Local development environment toolset on Docker supporting
-multiple projects (Drupal, Wordpress, Laravel, Ghost, Hugo and more)."
+description: "Local development environment toolset on Docker supporting multiple projects (Drupal, Wordpress, Laravel, Ghost, Hugo and more)."
 
 requires:
   - docker

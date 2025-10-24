@@ -5,9 +5,7 @@ homepage: https://github.com/kylebrowning/waterwheel.swift
 docs:
 logo: https://raw.githubusercontent.com/acquia/waterwheel-swift/assets/waterwheel.png
 
-description: "Waterwheel makes using Drupal as a backend with iOS, macOS, tvOS,
-or watchOS enjoyable by combining the most used features of Drupal's API's in
-one SDK. - Formerly known as Drupal iOS SDK."
+description: "Waterwheel makes using Drupal as a backend with iOS, macOS, tvOS, or watchOS enjoyable by combining the most used features of Drupal's API's in one SDK. - Formerly known as Drupal iOS SDK."
 
 requires:
   - Xcode

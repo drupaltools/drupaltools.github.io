@@ -5,12 +5,7 @@ homepage: https://github.com/drush-ops/drush
 docs: http://docs.drush.org
 logo: https://raw.githubusercontent.com/drush-ops/drush/master/drush_logo-black.png
 
-description: "Drush is a command line shell and Unix scripting interface for Drupal.
-Drush core ships with lots of useful commands for interacting with code like modules/themes/profiles.
-Similarly, it runs update.php, executes sql queries and DB migrations, and misc utilities like run cron or clear cache.
-Drush can be extended by 3rd party commandfiles."
-
-recommended: true
+description: "Drush is a command line shell and Unix scripting interface for Drupal. Drush core ships with lots of useful commands for interacting with code like modules/themes/profiles. Similarly, it runs update.php, executes sql queries and DB migrations, and misc utilities like run cron or clear cache. Drush can be extended by 3rd party commandfiles."
 
 requires:
   - cli

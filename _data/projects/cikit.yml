@@ -5,8 +5,7 @@ homepage: https://cikit.tools
 docs: https://cikit.tools/documentation
 logo: https://cikit.tools/assets/site-logo.png
 
-description: "Ansible-based system for building environments for local development and continuous integration that ships 
-as an extensible package. Base any framework or CMS you want on CIKit and build your own CI workflow if necessary."
+description: "Ansible-based system for building environments for local development and continuous integration that ships as an extensible package. Base any framework or CMS you want on CIKit and build your own CI workflow if necessary."
 
 requires:
   - vagrant

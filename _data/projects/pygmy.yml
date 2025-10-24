@@ -4,9 +4,7 @@ source: https://github.com/amazeeio/pygmy
 homepage: https://github.com/amazeeio/pygmy
 docs: http://pygmy.readthedocs.io
 
-description: "pygmy is the single tool needed to get the local amazee.io Docker
-Drupal Development Environment running on your Linux based system.
-It built to work with Docker for Mac! (quite a lot for such a small whale 🐳)"
+description: "pygmy is the single tool needed to get the local amazee.io Docker Drupal Development Environment running on your Linux based system. It built to work with Docker for Mac! (quite a lot for such a small whale 🐳)"
 
 requires:
   - linux

@@ -2,8 +2,8 @@ name: Drupal Critical
 year_created: 2017
 source: https://github.com/stefspakman/drupal-critical
 homepage: https://github.com/stefspakman/drupal-critical
-docs: 
-logo: 
+docs:
+logo:
 
 description: "Automated generation of Critical CSS for Drupal sites."
 
@@ -15,3 +15,4 @@ drupal_versions:
 category:
   - css
   - seo
+  - deprecated

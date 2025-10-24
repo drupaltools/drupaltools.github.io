@@ -5,9 +5,7 @@ homepage: https://drupalgap.org
 docs: http://docs.drupalgap.org
 logo: https://drupalgap.org/sites/default/files/logo-64x64.jpg
 
-description: "An application development kit for Drupal websites. Build custom
-apps for Drupal 7 and 8, with one set of code, and then deploy them to a wide
-range of app stores, devices and browsers."
+description: "An application development kit for Drupal websites. Build custom apps for Drupal 7 and 8, with one set of code, and then deploy them to a wide range of app stores, devices and browsers."
 
 requires:
   - phonegap

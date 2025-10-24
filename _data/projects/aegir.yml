@@ -5,11 +5,7 @@ homepage: http://www.aegirproject.org
 docs: http://docs.aegirproject.org
 logo: https://www.drupal.org/files/styles/grid-3/public/project-images/aegir_logo_smaller.png
 
-description: "Aegir allows you to deploy and manage many Drupal sites,
-and can scale across multiple server clusters. Aegir makes it easy to install,
-upgrade, and backup an entire network of Drupal sites."
-
-recommended: true
+description: "Aegir allows you to deploy and manage many Drupal sites, and can scale across multiple server clusters. Aegir makes it easy to install, upgrade, and backup an entire network of Drupal sites."
 
 requires:
   - linux

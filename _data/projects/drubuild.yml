@@ -17,5 +17,6 @@ category:
   - development
   - scaffolding
   - vm
+  - deprecated
 tags:
   - drupalvm

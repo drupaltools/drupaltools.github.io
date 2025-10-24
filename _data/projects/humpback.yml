@@ -5,10 +5,7 @@ homepage: https://humpbackdev.com
 docs: https://github.com/humpbackdev/humpback
 logo: https://humpbackdev.com/assets/images/logo.png
 
-description: "A Docker-based environment that makes it easy to build Drupal 8
-sites. This tool integrate several utilities that you can use in your project,
-among them varnish, solr, memcached, ngrok, mailhog, drush, drupal console and
-some others that will make your life easier when developing with Humpback."
+description: "A Docker-based environment that makes it easy to build Drupal 8 sites. This tool integrate several utilities that you can use in your project, among them varnish, solr, memcached, ngrok, mailhog, drush, drupal console and some others that will make your life easier when developing with Humpback."
 
 requires:
   - docker

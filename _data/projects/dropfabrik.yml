@@ -5,11 +5,7 @@ homepage: https://github.com/adminteractive/drupalstack
 docs:
 logo:
 
-description: "Drop Fabrik is configuration of Docker to help development more
-speedy for Drupal. You can choose 4 configration according to amount of resource
-in your machine, and will be able to build a Drupal environment on Docker in
-5 to 10 minutes with the following steps. And you can also deploy the extactly
-same environment to the cloud service such as AWS."
+description: "Drop Fabrik is configuration of Docker to help development more speedy for Drupal. You can choose 4 configration according to amount of resource in your machine, and will be able to build a Drupal environment on Docker in 5 to 10 minutes with the following steps. And you can also deploy the extactly same environment to the cloud service such as AWS."
 
 requires:
   - docker
@@ -21,6 +17,7 @@ category:
   - development
   - docker
   - testing
+  - deprecated
 tags:
   - popular
 similar:

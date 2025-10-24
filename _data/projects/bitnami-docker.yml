@@ -18,5 +18,6 @@ category:
   - testing
   - cli
   - docker
+  - deprecated
 similar:
   - terra

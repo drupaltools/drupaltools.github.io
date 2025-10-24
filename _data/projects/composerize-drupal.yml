@@ -15,4 +15,5 @@ drupal_versions:
 category:
   - cli
   - development
+  - deprecated
 similar:

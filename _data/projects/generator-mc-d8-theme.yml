@@ -5,8 +5,7 @@ homepage: https://github.com/mediacurrent/theme_generator_8
 docs: https://github.com/mediacurrent/theme_generator_8/blob/master/README.md
 logo:
 
-description: "Yeoman generator for Drupal Themes - lets you quickly set up a
-Drupal 8 theme with sensible defaults and best practices."
+description: "Yeoman generator for Drupal Themes - lets you quickly set up a Drupal 8 theme with sensible defaults and best practices."
 
 requires:
   - yeoman
@@ -16,6 +15,7 @@ category:
   - development
   - debug
   - generator
+  - deprecated
 similar:
   - generator-docker-drupal8
   - drupalal
