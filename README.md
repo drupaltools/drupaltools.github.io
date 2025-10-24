@@ -9,6 +9,26 @@ Drupal development and other Drupal related tasks.
 
 Missing a tool here? Just fork the repo and add your tool as a `<name>.yml` in the `_data/projects` folder.
 
+```yaml
+# _data/projects/example-tool.yml
+name: Example Tool
+year_created: 2024
+source: https://github.com/example/example-tool
+homepage: https://example.com
+description: |
+  A single sentence that will appear in the listings.
+requires:
+  - php
+drupal_versions:
+  - 10
+category:
+  - devops
+recommended: true
+```
+
+Use the same keys shown above so the site build picks up the metadata correctly.
+Optional keys such as `docs`, `logo`, or `similar` can be added when the information is available.
+
 Make sure to follow the following rules:
 
  - **Open Source:** The tool must have a public repository on Github, Gitlab, Bitbucket etc that we can link to and pull in stats from.
