@@ -4,9 +4,8 @@ source: https://bitbucket.org/mediacurrent/ci-tests/src/master/
 homepage: https://bitbucket.org/mediacurrent/ci-tests
 docs:
 logo:
-
 description: "Scripts helpful for testing a Drupal site on a Continuous-Integration server, or locally."
-
+recommended: true
 requires:
   - composer
   - behat

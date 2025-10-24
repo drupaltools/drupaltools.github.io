@@ -22,6 +22,7 @@ category:
   - testing
   - cli
   - jenkins
+  - deprecated
 tags:
   - CLI
 similar:

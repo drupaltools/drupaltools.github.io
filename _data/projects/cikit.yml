@@ -1,9 +1,9 @@
 name: CIKit
 year_created: 2016
 source: https://github.com/BR0kEN-/cikit
-homepage: https://cikit.tools
-docs: https://cikit.tools/documentation
-logo: https://cikit.tools/assets/site-logo.png
+homepage: https://github.com/BR0kEN-/cikit
+docs: https://github.com/BR0kEN-/cikit
+logo: 
 
 description: "Ansible-based system for building environments for local development and continuous integration that ships as an extensible package. Base any framework or CMS you want on CIKit and build your own CI workflow if necessary."
 
@@ -21,3 +21,4 @@ category:
   - vagrant
   - virtualbox
   - docker
+  - deprecated

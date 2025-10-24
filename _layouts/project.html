@@ -14,7 +14,7 @@ layout: default
             <a class="project-source" title="Source" href="{{ page.source }}">{{ page.source | replace:'https://','' | replace:'http://','' }}</a>
             {% if page.docs %}
               <a class="project-docs" title="Docs" href="{{ page.docs }}">{{ page.docs | replace:'https://','' | replace:'http://','' }}</a>
-              {% endif %}
+            {% endif %}
             <span class="project-drupal filter-drupal">{{ page.drupal_versions | sort | join: ', ' }}</span>
           </div>
         </div>
