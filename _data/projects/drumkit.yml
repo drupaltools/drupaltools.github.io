@@ -10,7 +10,7 @@ description: "Drumkit is a suite of GNU Makefiles and other scripts made to simp
 requires:
   - docker
 drupal_versions:
-  - 8
+  - 9
 category:
   - development
   - debug

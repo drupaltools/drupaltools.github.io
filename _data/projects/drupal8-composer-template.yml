@@ -10,7 +10,7 @@ description: "Provide a kickstart template for Drupal 8 projects, managing your 
 requires:
   - composer
 drupal_versions:
-  - 8
+  - 9
 category:
   - development
   - scaffolding

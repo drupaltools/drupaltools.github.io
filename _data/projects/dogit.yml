@@ -13,7 +13,6 @@ requires:
   - git
   - composer
 drupal_versions:
-  - 8
   - 9
 category:
   - building

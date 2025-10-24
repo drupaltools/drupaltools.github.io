@@ -11,7 +11,7 @@ requires:
   - yeoman
 drupal_versions:
   - 7
-  - 8
+  - 9
 category:
   - development
   - scaffolding

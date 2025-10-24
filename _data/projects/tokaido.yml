@@ -12,7 +12,6 @@ requires:
   - docker
   - docker-compose
 drupal_versions:
-  - 8
   - 9
   - 10
 category:

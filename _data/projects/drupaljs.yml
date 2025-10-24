@@ -10,7 +10,6 @@ description: "Automatically generated JavaScript API documentation for Drupal 8,
 requires:
   - http
 drupal_versions:
-  - 8
   - 9
   - 10
 category:

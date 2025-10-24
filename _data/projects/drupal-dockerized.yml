@@ -12,7 +12,6 @@ requires:
   - composer
   - git
 drupal_versions:
-  - 8
   - 9
 category:
   - ci

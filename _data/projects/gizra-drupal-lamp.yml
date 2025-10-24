@@ -10,7 +10,7 @@ description: "This is a base LAMP docker file. The docker container is based on 
 requires:
   - docker
 drupal_versions:
-  - 8
+  - 9
 category:
   - debug
   - development

@@ -14,7 +14,7 @@ requires:
   - eslint
   - yarn
 drupal_versions:
-  - 8
+  - 9
 category:
   - cli
   - development

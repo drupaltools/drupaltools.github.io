@@ -11,7 +11,7 @@ requires:
   - cli
 drupal_versions:
   - 7
-  - 8
+  - 9
 category:
   - ci
   - cd

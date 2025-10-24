@@ -10,7 +10,7 @@ description: "Extension for PHPStan to allow analysis of Drupal code."
 requires:
   - phpstan
 drupal_versions:
-  - 8
+  - 9
 category:
   - debug
   - testing

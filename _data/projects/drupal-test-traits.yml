@@ -10,7 +10,6 @@ description: "Traits for testing Drupal sites that have user content (versus unp
 requires:
   - composer
 drupal_versions:
-  - 8
   - 9
 category:
   - debug

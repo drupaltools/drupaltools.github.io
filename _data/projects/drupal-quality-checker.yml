@@ -10,7 +10,7 @@ description: "Provides set of libraries to easily setup code quality checks base
 requires:
   - composer
 drupal_versions:
-  - 8
+  - 9
 category:
   - debug
   - testing

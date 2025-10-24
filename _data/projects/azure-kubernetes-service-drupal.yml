@@ -12,7 +12,6 @@ requires:
   - kubernetes
   - azure
 drupal_versions:
-  - 8
   - 9
 category:
   - docker

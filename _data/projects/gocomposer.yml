@@ -10,7 +10,7 @@ description: "GoComposer is an all in one solution to update existing Drupal 8 s
 requires:
   - composer
 drupal_versions:
-  - 8
+  - 9
 category:
   - cli
   - development

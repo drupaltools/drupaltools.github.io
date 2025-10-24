@@ -12,7 +12,6 @@ requires:
   - nodejs
   - nuxtjs
 drupal_versions:
-  - 8
   - 9
 category:
   - cms

@@ -10,7 +10,6 @@ description: "Convert a non-Composer-managed Drupal application (e.g., one creat
 requires:
   - composer
 drupal_versions:
-  - 8
   - 9
 category:
   - cli

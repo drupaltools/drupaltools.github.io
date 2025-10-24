@@ -12,7 +12,7 @@ requires:
   - macOS
 drupal_versions:
   - 7
-  - 8
+  - 9
 category:
   - deployment
   - development

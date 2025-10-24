@@ -10,7 +10,7 @@ description: "DevShop is a 'cloud hosting' system for Drupal. DevShop makes it e
 requires:
   - ansible
 drupal_versions:
-  - 8
+  - 9
 operation_system:
   - linux
 category:

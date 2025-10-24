@@ -11,7 +11,7 @@ requires:
   - lxc
   - ansible
 drupal_versions:
-  - 8
+  - 9
 category:
   - development
   - containers

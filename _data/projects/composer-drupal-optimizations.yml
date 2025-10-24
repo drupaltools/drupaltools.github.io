@@ -10,7 +10,7 @@ description: "This composer-plugin contains a set of improvements that makes run
 requires:
   - composer
 drupal_versions:
-  - 8
+  - 9
 category:
   - cli
   - development

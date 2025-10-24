@@ -10,7 +10,7 @@ description: "This reference architecture provides a set of YAML templates for d
 requires:
   - aws
 drupal_versions:
-  - 8
+  - 9
 category:
   - ci
   - deployment

@@ -12,7 +12,6 @@ recommended: false
 requires:
   - gitpod
 drupal_versions:
-  - 8
   - 9
 category:
   - Debug

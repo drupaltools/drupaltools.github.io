@@ -13,7 +13,6 @@ requires:
   - php
 drupal_versions:
   - 7
-  - 8
   - 9
   - 10
 category:

@@ -10,7 +10,7 @@ description: "Drop Fabrik is configuration of Docker to help development more sp
 requires:
   - docker
 drupal_versions:
-  - 8
+  - 9
 operation_system:
   - all
 category:

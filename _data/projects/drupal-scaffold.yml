@@ -10,7 +10,7 @@ description: "Composer Plugin for updating the Drupal scaffold files when using 
 requires:
   - composer
 drupal_versions:
-  - 8
+  - 9
 category:
   - provisioning
   - building

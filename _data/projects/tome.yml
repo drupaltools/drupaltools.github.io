@@ -11,7 +11,7 @@ requires:
   - composer
   - drush
 drupal_versions:
-  - 8
+  - 9
 category:
   - generator
   - development

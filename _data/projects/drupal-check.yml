@@ -10,7 +10,7 @@ description: "Built on PHPStan, this static analysis tool will check for correct
 requires:
   - phpstan
 drupal_versions:
-  - 8
+  - 9
 category:
   - debug
   - testing

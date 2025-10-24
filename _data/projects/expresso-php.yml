@@ -10,7 +10,6 @@ description: "This is a fast and simple Docker setup for all your PHP developmen
 requires:
   - docker
 drupal_versions:
-  - 8
   - 9
 category:
   - development

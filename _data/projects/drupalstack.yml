@@ -10,7 +10,7 @@ description: "Docker based development environment for Drupal 8 using only offic
 requires:
   - docker
 drupal_versions:
-  - 8
+  - 9
 operation_system:
   - all
 category:

@@ -10,7 +10,7 @@ description: "build.sh is a tool for making, updating and managing Drupal instal
 requires:
   - drush
 drupal_versions:
-  - 8
+  - 9
 category:
   - provisioning
   - building
