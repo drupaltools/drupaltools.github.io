@@ -7,8 +7,6 @@ logo: https://docksal.io/static/docksal-logo.7e3ea577.png
 
 description: "Docker and Docker Compose based environments for web development for macOS, Windows and Ubuntu."
 
-recommended: true
-
 requires:
   - docker
 drupal_versions:

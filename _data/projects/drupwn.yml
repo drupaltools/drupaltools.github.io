@@ -15,5 +15,6 @@ drupal_versions:
 category:
   - development
   - security
+  - deprecated
 similar:
   - droopescan

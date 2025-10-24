@@ -5,8 +5,7 @@ homepage: https://github.com/tejomayonline/drupal8-utils/
 docs: https://github.com/tejomayonline/drupal8-utils/tree/master/doc
 logo:
 
-description: "A collection of bash sciprts to install fresh composer based
-drupal 8.x site in one hit."
+description: "A collection of bash sciprts to install fresh composer based drupal 8.x site in one hit."
 
 requires:
   - cli
@@ -17,4 +16,5 @@ category:
   - development
   - scaffolding
   - debug
+  - deprecated
 similar:

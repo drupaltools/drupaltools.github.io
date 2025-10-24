@@ -5,8 +5,7 @@ homepage: https://github.com/4AllDigital/DruDockCli
 docs:
 logo: https://s3.eu-west-2.amazonaws.com/drudock/DruDockLogo.jpg
 
-description: "DruDock is Docker based development, staging and production
-environment for Drupal websites or PHP apps."
+description: "DruDock is Docker based development, staging and production environment for Drupal websites or PHP apps."
 
 requires:
   - docker

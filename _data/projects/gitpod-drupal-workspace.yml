@@ -3,7 +3,7 @@ year_created: 2021
 source: https://github.com/theodorosploumis/gitpod-drupal-workspace
 homepage: https://github.com/theodorosploumis/gitpod-drupal-workspace
 docs: https://github.com/theodorosploumis/gitpod-drupal-workspace
-logo: 
+logo:
 
 description: "An opinionated Docker image you can use with Gitpod.io. Focused on Drupal 8+ development. Includes ddev, lando, composer 2.x and more."
 
@@ -20,6 +20,7 @@ category:
   - docker
   - gitpod
   - ide
+  - deprecated
 tags:
   - gitpod
   - ddev

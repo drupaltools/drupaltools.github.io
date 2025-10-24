@@ -5,9 +5,7 @@ homepage: http://outrigger.sh
 docs: http://docs.outrigger.sh
 logo: https://raw.githubusercontent.com/phase2/outrigger.sh/master/img/logo.png
 
-description: "Outrigger is a set of developer tools that makes development,
-integration, staging and production environments simple, portable and, most
-importantly, CONSISTENT across team members and environments."
+description: "Outrigger is a set of developer tools that makes development, integration, staging and production environments simple, portable and, most importantly, CONSISTENT across team members and environments."
 
 requires:
   - docker

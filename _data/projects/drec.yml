@@ -5,9 +5,7 @@ homepage: https://github.com/theodorosploumis/drec
 docs:
 logo: https://raw.githubusercontent.com/theodorosploumis/drec/master/drec-logo.png
 
-description: "A collection of basic bash scripts that work together to
-accomplish common development tasks for Drupal 8.x projects. You could probably
-use drec locally or on a development environment and not on a production server."
+description: "A collection of basic bash scripts that work together to accomplish common development tasks for Drupal 8.x projects. You could probably use drec locally or on a development environment and not on a production server."
 
 requires:
   - cli
@@ -17,4 +15,5 @@ category:
   - cli
   - development
   - debug
+  - deprecated
 similar:

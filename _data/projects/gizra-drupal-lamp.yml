@@ -5,9 +5,7 @@ homepage: https://github.com/Gizra/drupal-lamp
 docs:
 logo:
 
-description: "This is a base LAMP docker file. The docker container is based
-on PHP 5.6-apache or php7, and have: Drupal, Apache2, MySQL, git, Composer, NodeJS, zip,
-vim, Java jdk, ruby and rubygems, wget, Solr."
+description: "This is a base LAMP docker file. The docker container is based on PHP 5.6-apache or php7, and have: Drupal, Apache2, MySQL, git, Composer, NodeJS, zip, vim, Java jdk, ruby and rubygems, wget, Solr."
 
 requires:
   - docker
@@ -18,6 +16,7 @@ category:
   - development
   - cli
   - docker
+  - deprecated
 similar:
   - dminca-drupal-docker
   - boran-docker-drupal

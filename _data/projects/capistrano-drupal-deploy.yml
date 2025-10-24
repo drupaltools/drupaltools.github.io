@@ -5,10 +5,7 @@ homepage: https://github.com/capistrano/drupal-deploy
 docs:
 logo:
 
-description: "This gem provides a number of tasks which are useful for
-deploying Drupal 7 projects with Capistrano 3 and the help of drush.
-This is a short doc to help you deploy a drupal projet. To know more about
-capistrano read their documentation on Capistrano 3."
+description: "This gem provides a number of tasks which are useful for deploying Drupal 7 projects with Capistrano 3 and the help of drush. This is a short doc to help you deploy a drupal projet. To know more about capistrano read their documentation on Capistrano 3."
 
 requires:
   - ruby
@@ -20,6 +17,7 @@ category:
   - deployment
   - development
   - cli
+  - deprecated
 similar:
   - deployotron
   - deployer

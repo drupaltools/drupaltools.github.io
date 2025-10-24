@@ -2,7 +2,7 @@ name: Phing Drupal Tests
 year_created: 2019
 source: https://github.com/DoghouseMedia/phing-drupal-tests
 homepage: https://github.com/DoghouseMedia/phing-drupal-tests
-docs: 
+docs:
 logo:
 
 description: "A collection of automated Drupal testing targets for Phing."
@@ -17,5 +17,6 @@ category:
   - testing
   - CI
   - phing
+  - deprecated
 similar:
   - phingdrushtask

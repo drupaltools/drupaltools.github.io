@@ -5,9 +5,7 @@ homepage: https://github.com/drupal-composer-ext/drupal-scaffold-docker
 docs: https://github.com/drupal-composer-ext/drupal-scaffold-docker/blob/8.x/README.md
 logo:
 
-description: "Composer plugin for automatically downloading pre-configured
-Docker + Docker Compose scaffold files (like Dockerfile, docker-compose.yml, ...)
-when using composer with a Drupal specific project."
+description: "Composer plugin for automatically downloading pre-configured Docker + Docker Compose scaffold files (like Dockerfile, docker-compose.yml, ...) when using composer with a Drupal specific project."
 
 requires:
   - docker
@@ -19,6 +17,7 @@ category:
   - development
   - testing
   - docker
+  - deprecated
 similar:
   - drucker
   - drocker

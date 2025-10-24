@@ -5,10 +5,7 @@ homepage: https://github.com/LastCallMedia/Drupal-Scaffold
 docs: https://github.com/LastCallMedia/Drupal-Scaffold
 logo:
 
-description: "This is a boilerplate Drupal 8 build that bundles some standard
-tools to make it a good starting point for an enterprise scale Drupal build.
-It is conceptually similar to drupal-composer/drupal-scaffold, but it has a
-much simpler (and more manual) Composer setup, and includes additional tools."
+description: "This is a boilerplate Drupal 8 build that bundles some standard tools to make it a good starting point for an enterprise scale Drupal build. It is conceptually similar to drupal-composer/drupal-scaffold, but it has a much simpler (and more manual) Composer setup, and includes additional tools."
 
 requires:
   - docker

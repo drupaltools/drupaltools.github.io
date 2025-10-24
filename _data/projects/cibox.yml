@@ -5,9 +5,7 @@ homepage: http://cibox.tools
 docs: http://docs.cibox.tools
 logo: https://raw.githubusercontent.com/cibox/cibox/master/docs/images/cibox-logo.png
 
-description: "Continuous Integration Server that automatically generates builds for
-every commit in a Pull Request on GitHub (private repositories supported).
-Multi CMS/CMF support to create projects from scratch in seconds."
+description: "Continuous Integration Server that automatically generates builds for every commit in a Pull Request on GitHub (private repositories supported). Multi CMS/CMF support to create projects from scratch in seconds."
 
 requires:
   - vagrant
@@ -21,5 +19,6 @@ category:
   - ci
   - debug
   - testing
+  - deprecated
 tags:
   - popular

@@ -5,8 +5,7 @@ homepage: https://pantheon.io/localdev
 docs: https://pantheon.io/docs/localdev
 logo:
 
-description: "Localdev by Pantheon makes it easy to develop your sites
-locally with the Pantheon workflow."
+description: "Localdev by Pantheon makes it easy to develop your sites locally with the Pantheon workflow."
 
 requires:
   - macos
@@ -15,6 +14,7 @@ drupal_versions:
 category:
   - development
   - gui
+  - deprecated
 tags:
   - new
 similar:

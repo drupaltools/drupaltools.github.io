@@ -2,11 +2,10 @@ name: drupalQA
 year_created: 2018
 source: https://github.com/hussainweb/drupalqa
 homepage: https://github.com/hussainweb/drupalqa
-docs: 
+docs:
 logo:
 
-description: "Docker image providing static analysis tools for Drupal and PHP. 
-This is based on the comprehensive PHPQA image and adds Drupal specific sniffs and PAReview."
+description: "Docker image providing static analysis tools for Drupal and PHP. This is based on the comprehensive PHPQA image and adds Drupal specific sniffs and PAReview."
 
 recommended: false
 

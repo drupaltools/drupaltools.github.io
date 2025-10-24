@@ -2,7 +2,7 @@ name: ci-tests
 year_created: 2018
 source: https://bitbucket.org/mediacurrent/ci-tests/src/master/
 homepage: https://bitbucket.org/mediacurrent/ci-tests
-docs: 
+docs:
 logo:
 
 description: "Scripts helpful for testing a Drupal site on a Continuous-Integration server, or locally."

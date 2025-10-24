@@ -3,7 +3,7 @@ year_created: 2022
 source: https://www.drupal.org/project/dgore
 homepage: https://dgo.to
 docs: https://dgo.to
-logo: 
+logo:
 
 description: "This is a simple url shortener for drupal.org pages according to https://www.drupal.org/project/dgore."
 

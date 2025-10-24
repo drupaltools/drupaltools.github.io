@@ -5,9 +5,7 @@ homepage: https://github.com/geerlingguy/drupalci-sonar-jenkins
 docs:
 logo:
 
-description: "This Vagrant configuration (with Ansible for provisioning) will
-install Jenkins, PHP, SonarQube and Drupal CI profiles for code analysis
-(along with a bunch of other required software)."
+description: "This Vagrant configuration (with Ansible for provisioning) will install Jenkins, PHP, SonarQube and Drupal CI profiles for code analysis (along with a bunch of other required software)."
 
 requires:
   - ansible
@@ -23,6 +21,7 @@ category:
   - development
   - ci
   - testing
+  - deprecated
 tags:
   - popular
 similar:

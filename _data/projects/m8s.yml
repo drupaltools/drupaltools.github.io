@@ -5,8 +5,7 @@ homepage: https://github.com/previousnext/m8s
 docs: https://github.com/previousnext/m8s/tree/master/docs
 logo: https://raw.githubusercontent.com/previousnext/m8s/master/logo/small.png
 
-description: "M8s is a CLI and API for building temporary environments in Kubernetes
-(eg you want a real environment to run automated or manual tests that are ephemeral)."
+description: "M8s is a CLI and API for building temporary environments in Kubernetes (eg you want a real environment to run automated or manual tests that are ephemeral)."
 
 requires:
   - docker
@@ -17,5 +16,6 @@ category:
   - ci
   - debug
   - testing
+  - deprecated
 tags:
   - new

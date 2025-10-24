@@ -5,10 +5,7 @@ homepage: https://github.com/forumone/generator-web-starter
 docs: https://github.com/forumone/generator-web-starter
 logo:
 
-description: "The Web Starter Kit is a yeoman generator that allows you to
-create a Drupal, AngularJS or Wordpress project, add a Drupal theme like the
-gesso theme and add common preconfigure common utilities like grunt tasks,
-capistrano or puppet."
+description: "The Web Starter Kit is a yeoman generator that allows you to create a Drupal, AngularJS or Wordpress project, add a Drupal theme like the gesso theme and add common preconfigure common utilities like grunt tasks, capistrano or puppet."
 
 requires:
   - yeoman
@@ -19,3 +16,4 @@ category:
   - development
   - scaffolding
   - generator
+  - deprecated

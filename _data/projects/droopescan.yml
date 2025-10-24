@@ -5,8 +5,7 @@ homepage: https://github.com/droope/droopescan
 docs:
 logo:
 
-description: "A plugin-based scanner that aids security researchers in
-identifying issues with several CMSs, mainly Drupal & Silverstripe."
+description: "A plugin-based scanner that aids security researchers in identifying issues with several CMSs, mainly Drupal & Silverstripe."
 
 requires:
   - python

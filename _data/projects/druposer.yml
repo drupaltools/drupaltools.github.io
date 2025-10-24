@@ -16,6 +16,7 @@ category:
   - building
   - cli
   - scaffolding
+  - deprecated
 similar:
   - drubs
   - blt

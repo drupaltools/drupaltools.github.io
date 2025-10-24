@@ -19,6 +19,7 @@ category:
   - workflow
   - cli
   - CI
+  - deprecated
 tags:
   - test
 similar:

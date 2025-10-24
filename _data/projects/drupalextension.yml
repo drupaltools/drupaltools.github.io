@@ -5,9 +5,7 @@ homepage: https://github.com/jhedstrom/drupalextension
 docs: https://behat-drupal-extension.readthedocs.io
 logo:
 
-description: "The Drupal Extension is an integration layer between Behat, Mink
-Extension, and Drupal. It provides step definitions for common testing
-scenarios specific to Drupal sites."
+description: "The Drupal Extension is an integration layer between Behat, Mink Extension, and Drupal. It provides step definitions for common testing scenarios specific to Drupal sites."
 
 requires:
   - composer

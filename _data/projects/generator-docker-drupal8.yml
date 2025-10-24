@@ -20,6 +20,7 @@ category:
   - development
   - debug
   - generator
+  - deprecated
 similar:
   - generator-docker-drupal8
   - valkyrie

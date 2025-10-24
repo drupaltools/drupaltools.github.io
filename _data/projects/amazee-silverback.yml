@@ -2,13 +2,10 @@ name: Amazee Silverback
 year_created: 2019
 source: https://github.com/AmazeeLabs/silverback
 homepage: https://github.com/AmazeeLabs/silverback
-docs: 
+docs:
 logo:
 
-description: "A composer package adding common project dependencies,
-tooling and configuration scaffolding to Amazee Drupal projects.
-It aims to improve product quality and reduce maintenance costs by encouraging
-three simple principles: Maximize open source, Minimize requirements, Testability first."
+description: "A composer package adding common project dependencies, tooling and configuration scaffolding to Amazee Drupal projects. It aims to improve product quality and reduce maintenance costs by encouraging three simple principles: Maximize open source, Minimize requirements, Testability first."
 
 requires:
   - composer
@@ -22,6 +19,7 @@ category:
   - cli
   - development
   - scaffolding
+  - deprecated
 similar:
   - fetcher
   - aquifer

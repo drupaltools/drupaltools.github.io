@@ -3,7 +3,7 @@ year_created: 2017
 source: https://gitlab.com/florenttorregrosa-drupal/docker-drupal-project
 homepage: https://gitlab.com/florenttorregrosa-drupal/docker-drupal-project
 docs: https://gitlab.com/florenttorregrosa-drupal/docker-drupal-project
-logo: 
+logo:
 
 description: "A Drupal project template with Docker environment and Gitlab CI."
 

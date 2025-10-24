@@ -5,9 +5,7 @@ homepage: https://github.com/drupal-code-builder/drupal-code-builder
 docs:
 logo:
 
-description: "Drupal Code Builder is a system for generating scaffold code for
-Drupal modules (and other components).This is a library, and has no UI of its
-own."
+description: "Drupal Code Builder is a system for generating scaffold code for Drupal modules (and other components).This is a library, and has no UI of its own."
 
 requires:
   - php

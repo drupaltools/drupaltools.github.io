@@ -19,5 +19,6 @@ category:
   - cli
   - development
   - docker
+  - deprecated
 tags:
   - docker

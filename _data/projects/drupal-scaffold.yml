@@ -5,9 +5,7 @@ homepage: https://github.com/drupal-composer/drupal-scaffold
 docs: https://github.com/drupal-composer/drupal-scaffold
 logo:
 
-description: "Composer Plugin for updating the Drupal scaffold files when using drupal/core.
-This is a composer plugin for automatically downloading Drupal scaffold files 
-(like index.php, update.php, …) when using drupal/core via Composer."
+description: "Composer Plugin for updating the Drupal scaffold files when using drupal/core. This is a composer plugin for automatically downloading Drupal scaffold files (like index.php, update.php, …) when using drupal/core via Composer."
 
 requires:
   - composer
@@ -21,6 +19,7 @@ category:
   - cli
   - development
   - scaffolding
+  - deprecated
 similar:
   - fetcher
   - aquifer

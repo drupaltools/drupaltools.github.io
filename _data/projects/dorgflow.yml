@@ -5,11 +5,7 @@ homepage: https://github.com/joachim-n/dorgflow
 docs:
 logo:
 
-description: "Dorgflow is a set of commands that streamline your work with
-patches for issues on drupal.org. With Dorgflow, you don't need to download
-and apply patches, and creating patches and interdiffs is simplified.
-The only thing that Dorgflow doesn't handle is posting your files back to
-an issue for review."
+description: "Dorgflow is a set of commands that streamline your work with patches for issues on drupal.org. With Dorgflow, you don't need to download and apply patches, and creating patches and interdiffs is simplified. The only thing that Dorgflow doesn't handle is posting your files back to an issue for review."
 
 requires:
   - cli
@@ -25,4 +21,4 @@ category:
 tags:
   - cli
 similar:
-  - dogit 
+  - dogit

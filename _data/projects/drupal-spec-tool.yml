@@ -5,10 +5,7 @@ homepage: https://github.com/acquia/drupal-spec-tool
 docs: https://dev.acquia.com/blog/a-specification-tool-for-drupal-8-/30/05/2018/19606
 logo:
 
-description: "This project provides a tool for specifying Drupal architecture
-details and generating automated tests for them. It consists of one Google Sheet
-for capturing specification and generating tests from it and the Behat contexts
-that automate the generated tests."
+description: "This project provides a tool for specifying Drupal architecture details and generating automated tests for them. It consists of one Google Sheet for capturing specification and generating tests from it and the Behat contexts that automate the generated tests."
 
 requires:
   - cli

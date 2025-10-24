@@ -5,10 +5,7 @@ homepage: https://github.com/beetboxvm/beetbox
 docs: http://beetbox.readthedocs.io
 logo:
 
-description: "A VM for local L*MP development, built with Packer, Vagrant + Ansible.
-Beetbox is essentially a pre-provisioned version of Drupal VM mainly
-to speed up initial build time, but also to reduce the size of each VM by
-leveraging linked clones."
+description: "A VM for local L*MP development, built with Packer, Vagrant + Ansible. Beetbox is essentially a pre-provisioned version of Drupal VM mainly to speed up initial build time, but also to reduce the size of each VM by leveraging linked clones."
 
 requires:
   - vagrant
@@ -22,6 +19,7 @@ category:
   - vm
   - development
   - debug
+  - deprecated
 tags:
   - popular
 similar:

@@ -5,11 +5,7 @@ homepage: http://devilbox.org
 docs: https://devilbox.readthedocs.io/en/latest
 logo: https://devilbox.readthedocs.io/en/latest/_images/banner.png
 
-description: "The Devilbox is a modern and highly customisable dockerized PHP
-stack supporting full LAMP and MEAN and running on all major platforms.
-The main goal is to easily switch and combine any version required for local development."
-
-recommended: true
+description: "The Devilbox is a modern and highly customisable dockerized PHP stack supporting full LAMP and MEAN and running on all major platforms. The main goal is to easily switch and combine any version required for local development."
 
 requires:
   - docker
@@ -24,6 +20,7 @@ category:
   - docker
   - testing
   - gui
+  - deprecated
 tags:
   - popular
 similar:

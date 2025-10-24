@@ -2,8 +2,8 @@ name: Drupal Dockerizer
 year_created: 2021
 source: https://github.com/jet-dev-team/drupal-dockerizer
 homepage: https://github.com/jet-dev-team/drupal-dockerizer
-docs: 
-logo: 
+docs:
+logo:
 
 description: "A set of Ansible playbooks for spinning up Drupal projects with Docker Compose."
 
@@ -20,3 +20,4 @@ category:
   - testing
   - docker
   - development
+  - deprecated

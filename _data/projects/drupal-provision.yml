@@ -5,11 +5,7 @@ homepage: https://github.com/willjackson/drupal-provision
 docs:
 logo:
 
-description: "Drupal Provision is a command line tool was created to expedite
-the process of provisioning a new production environment for a Drupal
-based website. It can be used to install all the required Linux packages,
-create an optional development environment, secure all non-production
-VirtualHosts with basic authentication, and create all needed databases."
+description: "Drupal Provision is a command line tool was created to expedite the process of provisioning a new production environment for a Drupal based website. It can be used to install all the required Linux packages, create an optional development environment, secure all non-production VirtualHosts with basic authentication, and create all needed databases."
 
 requires:
   - linux
@@ -21,6 +17,7 @@ category:
   - deployment
   - testing
   - cli
+  - deprecated
 tags:
   - drush
 similar:

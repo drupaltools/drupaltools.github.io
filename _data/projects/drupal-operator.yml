@@ -2,8 +2,8 @@ name: Drupal Operator for Kubernetes
 year_created: 2019
 source: https://github.com/geerlingguy/drupal-operator
 homepage: https://github.com/geerlingguy/drupal-operator
-docs: 
-logo: 
+docs:
+logo:
 
 description: "This is a Drupal Operator, which makes management of Drupal instances running inside Kuberenetes clusters easy. It was built with the Operator SDK using Ansible Operator."
 
@@ -19,3 +19,4 @@ category:
   - provision
   - kubernetes
   - docker
+  - deprecated

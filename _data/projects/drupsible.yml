@@ -5,10 +5,7 @@ homepage: https://github.com/mbarcia/drupsible-project
 docs: https://github.com/mbarcia/drupsible-project/blob/master/README.md
 logo:
 
-description: "Drupsible is a DevOps tool for Drupal continuous delivery,
-based on Ansible. By using Drupsible, your team will be able to provision,
-import, integrate, deploy and maintain Drupal websites across complex
-infrastructures using a simple set of YAML configuration files."
+description: "Drupsible is a DevOps tool for Drupal continuous delivery, based on Ansible. By using Drupsible, your team will be able to provision, import, integrate, deploy and maintain Drupal websites across complex infrastructures using a simple set of YAML configuration files."
 
 requires:
   - vagrant

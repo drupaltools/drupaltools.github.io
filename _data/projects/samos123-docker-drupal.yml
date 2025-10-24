@@ -5,11 +5,7 @@ homepage: https://github.com/samos123/docker-drupal
 docs:
 logo:
 
-description: "This image contains the latest stable Drupal 7-release.
-It will automatically setup the database and install a default site.
-The image doesn't contain a database so you have to create a seperate database
-container (which is no effort if you use the provided configuration for docker-compose)
-and link this container or pass the database information of a MySQL- or Postgres-host."
+description: "This image contains the latest stable Drupal 7-release. It will automatically setup the database and install a default site. The image doesn't contain a database so you have to create a seperate database container (which is no effort if you use the provided configuration for docker-compose) and link this container or pass the database information of a MySQL- or Postgres-host."
 
 requires:
   - docker
@@ -19,6 +15,7 @@ category:
   - development
   - docker
   - debug
+  - deprecated
 similar:
   - drupal8-sprint-box
   - 4alldigital-dockerdrupal

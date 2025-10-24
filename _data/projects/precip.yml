@@ -5,10 +5,7 @@ homepage: https://github.com/clwdev/precip
 docs:
 logo: https://raw.githubusercontent.com/clwdev/precip/master/precip-logo-thin.png
 
-description: "Precip is a Vagrant-based all-inclusive local development environment
-for building Drupal Sites you'll eventually be pushing up to one of several
-wonderful Drupal Cloud Hosting Services. It's initially being built
-against Acquia Cloud, but may eventually support other similar services."
+description: "Precip is a Vagrant-based all-inclusive local development environment for building Drupal Sites you'll eventually be pushing up to one of several wonderful Drupal Cloud Hosting Services. It's initially being built against Acquia Cloud, but may eventually support other similar services."
 
 requires:
   - vagrant
@@ -21,6 +18,7 @@ category:
   - vm
   - development
   - debug
+  - deprecated
 similar:
   - drupal-vm
   - vlad

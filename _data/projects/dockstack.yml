@@ -5,9 +5,7 @@ homepage: https://github.com/ten7/dockstack
 docs:
 logo:
 
-description: "TEN7's dockstack is a library of containers for local Drupal
-development. Instead of a single 'stack to rule them all', dockstack provides
-a mix-and-match approach to suit your development needs."
+description: "TEN7's dockstack is a library of containers for local Drupal development. Instead of a single 'stack to rule them all', dockstack provides a mix-and-match approach to suit your development needs."
 
 requires:
   - docker
@@ -19,6 +17,7 @@ category:
   - development
   - cli
   - docker
+  - deprecated
 similar:
   - terra
   - docksal

@@ -5,11 +5,7 @@ homepage: https://github.com/omega8cc/boa
 docs: https://github.com/omega8cc/boa/tree/master/docs
 logo: https://raw.githubusercontent.com/omega8cc/boa/master/docs/assets/logo/logo-black.svg
 
-description: "BOA is an acronym of high performance Barracuda, Octopus and Aegir LEMP stack.
-Includes all-in-one bash scripts to install and upgrade high performance Aegir Hosting Systems
-for Drupal, with Nginx, PHP-FPM, Zend OPcache, MariaDB and Redis."
-
-recommended: true
+description: "BOA is an acronym of high performance Barracuda, Octopus and Aegir LEMP stack. Includes all-in-one bash scripts to install and upgrade high performance Aegir Hosting Systems for Drupal, with Nginx, PHP-FPM, Zend OPcache, MariaDB and Redis."
 
 requires:
   - linux

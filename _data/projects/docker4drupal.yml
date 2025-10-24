@@ -5,11 +5,7 @@ homepage: https://github.com/wodby/docker4drupal
 docs: https://docker4drupal.readthedocs.io
 logo: https://wodby.com/sites/all/themes/wodby/images/logo.png
 
-description: "Docker4Drupal is a set of docker containers optimized for Drupal.
-Use docker-compose.yml file from docker4drupal repository to spin up local
-environment on Linux, Mac OS X and Windows."
-
-recommended: true
+description: "Docker4Drupal is a set of docker containers optimized for Drupal. Use docker-compose.yml file from docker4drupal repository to spin up local environment on Linux, Mac OS X and Windows."
 
 requires:
   - docker

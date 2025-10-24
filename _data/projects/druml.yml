@@ -5,9 +5,7 @@ homepage: http://www.usedruml.com
 docs: https://github.com/georgetown-university/druml
 logo:
 
-description: "Druml is a Drupal multisite tool that helps to maintain multiple
-Drupal sites. It has been developed in Georgetown University, which maintains
-over 250 Drupal websites. Druml can run commands on different servers in parallel."
+description: "Druml is a Drupal multisite tool that helps to maintain multiple Drupal sites. It has been developed in Georgetown University, which maintains over 250 Drupal websites. Druml can run commands on different servers in parallel."
 
 requires:
   - cli
@@ -19,6 +17,7 @@ category:
   - building
   - deployment
   - cli
+  - deprecated
 tags:
   - popular
 similar:

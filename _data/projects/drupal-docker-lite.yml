@@ -5,9 +5,7 @@ homepage: https://github.com/mortenson/drupal-docker-lite
 docs:
 logo:
 
-description: "This project exists because local development in Drupal 8 is
-just too darn complicated. I wanted a tool that had minimal dependencies and
-a single command that set up everything for me, so I wrote one!"
+description: "This project exists because local development in Drupal 8 is just too darn complicated. I wanted a tool that had minimal dependencies and a single command that set up everything for me, so I wrote one!"
 
 requires:
   - docker
@@ -17,6 +15,7 @@ category:
   - development
   - cli
   - docker
+  - deprecated
 similar:
   - terra
   - docksal

@@ -17,6 +17,7 @@ category:
   - generator
   - npm
   - scaffolding
+  - deprecated
 similar:
   - valkyrie
   - fetcher
