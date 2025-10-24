@@ -21,6 +21,25 @@ other on Drupal.org, other on Gitlab etc.
 
 Feel free to use this website and **add a missing tool at the `_data/projects` folder**.
 
+```yaml
+name: My Tool
+year_created: 2024
+source: https://github.com/example/my-tool
+homepage: https://example.com
+description: |
+  Short, human readable copy that appears on the listings page.
+requires:
+  - php
+drupal_versions:
+  - 10
+category:
+  - devops
+recommended: true
+```
+
+Copy the structure above, update the values, and submit a pull request with the new file. Include optional fields like `docs`,
+`logo`, or `similar` when those links are available.
+
 ## Issues
 
 Add an issue at [github.com/theodorosploumis/drupaltools/issues](https://github.com/theodorosploumis/drupaltools/issues)
