@@ -10,7 +10,7 @@ description: "Yeoman generator for Drupal Themes - lets you quickly set up a Dru
 requires:
   - yeoman
 drupal_versions:
-  - 8
+  - 9
 category:
   - development
   - debug

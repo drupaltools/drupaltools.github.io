@@ -12,7 +12,6 @@ requires:
   - drupal
   - npm
 drupal_versions:
-  - 8
   - 9
 category:
   - cms

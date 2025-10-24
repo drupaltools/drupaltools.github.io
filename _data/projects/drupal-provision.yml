@@ -11,7 +11,7 @@ requires:
   - linux
 drupal_versions:
   - 7
-  - 8
+  - 9
 category:
   - provisioning
   - deployment

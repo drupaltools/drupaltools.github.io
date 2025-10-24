@@ -12,7 +12,6 @@ recommended: false
 requires:
   - kubernetes
 drupal_versions:
-  - 8
   - 9
 category:
   - deployment

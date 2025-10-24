@@ -12,7 +12,7 @@ requires:
   - docker-compose
   - ahoy
 drupal_versions:
-  - 8
+  - 9
 category:
   - docker
   - development

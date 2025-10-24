@@ -10,7 +10,7 @@ description: "A composer package adding common project dependencies, tooling and
 requires:
   - composer
 drupal_versions:
-  - 8
+  - 9
 category:
   - provisioning
   - building

@@ -10,7 +10,7 @@ description: "A collection of basic bash scripts that work together to accomplis
 requires:
   - cli
 drupal_versions:
-  - 8
+  - 9
 category:
   - cli
   - development

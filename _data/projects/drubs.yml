@@ -11,7 +11,7 @@ requires:
   - git
   - drush
 drupal_versions:
-  - 8
+  - 9
 operation_system:
   - linux
 category:

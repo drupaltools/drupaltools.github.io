@@ -10,7 +10,7 @@ description: "Phabalicious is the successor of the python tool fabalicious, a de
 requires:
   - php
 drupal_versions:
-  - 8
+  - 9
 category:
   - deployment
   - ci

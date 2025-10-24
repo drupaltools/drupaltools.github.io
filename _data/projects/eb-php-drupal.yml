@@ -10,7 +10,7 @@ description: "Configuration files and instructions for installing Drupal securel
 requires:
   - cli
 drupal_versions:
-  - 8
+  - 9
 category:
   - database
   - aws

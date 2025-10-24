@@ -10,7 +10,6 @@ description: "An Ansible role for deploying Drupal sites with repeatable tasks a
 requires:
   - ansible
 drupal_versions:
-  - 8
   - 9
   - 10
 category:

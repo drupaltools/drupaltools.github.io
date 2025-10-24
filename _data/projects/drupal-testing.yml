@@ -10,7 +10,6 @@ description: "Use this package to simplify your drupal project testing. This wil
 requires:
   - composer
 drupal_versions:
-  - 8
   - 9
 category:
   - development

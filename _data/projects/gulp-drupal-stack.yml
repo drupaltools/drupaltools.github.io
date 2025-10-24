@@ -10,7 +10,6 @@ description: "This stack core is to be included in your main project and sets up
 requires:
   - npm
 drupal_versions:
-  - 8
   - 9
 category:
   - development

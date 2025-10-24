@@ -12,7 +12,6 @@ requires:
   - php
   - phpcs
 drupal_versions:
-  - 8
   - 9
   - 10
 category:

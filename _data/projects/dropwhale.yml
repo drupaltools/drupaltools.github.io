@@ -10,7 +10,7 @@ description: "Dropwhale is a drop-in Docker environment aimed at Drupal module d
 requires:
   - docker
 drupal_versions:
-  - 8
+  - 9
 category:
   - development
   - docker

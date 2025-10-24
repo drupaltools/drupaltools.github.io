@@ -10,7 +10,7 @@ description: "End-to-end (CI + CD) dockerized Drupal 8 starting point."
 requires:
   - docker
 drupal_versions:
-  - 8
+  - 9
 operation_system:
   - all
 category:

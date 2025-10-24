@@ -10,7 +10,6 @@ description: "This project allows you to work on Drupal core contributions with 
 requires:
   - gitpod
 drupal_versions:
-  - 8
   - 9
 category:
   - drupal-core

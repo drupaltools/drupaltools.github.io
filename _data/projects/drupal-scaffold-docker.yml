@@ -11,7 +11,7 @@ requires:
   - docker
   - composer
 drupal_versions:
-  - 8
+  - 9
 category:
   - scaffolding
   - development

@@ -12,7 +12,7 @@ requires:
   - behat
   - composer
 drupal_versions:
-  - 8
+  - 9
 category:
   - testing
   - ci

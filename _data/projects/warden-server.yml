@@ -12,7 +12,7 @@ requires:
   - mongodb
   - own-server
 drupal_versions:
-  - 8
+  - 9
   - 7
   - 6
 operation_system:

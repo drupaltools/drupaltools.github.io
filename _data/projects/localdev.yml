@@ -10,7 +10,7 @@ description: "Localdev by Pantheon makes it easy to develop your sites locally w
 requires:
   - macos
 drupal_versions:
-  - 8
+  - 9
 category:
   - development
   - gui
