@@ -23,9 +23,7 @@ GEM
     mathn (0.1.0)
     posix-spawn (0.3.15)
     rake (13.0.6)
-    rexml (3.3.6)
-      strscan
-    strscan (3.1.0)
+    rexml (3.3.9)
     webrick (1.7.0)
 
 PLATFORMS
