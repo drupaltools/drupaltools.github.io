@@ -1,0 +1,20 @@
+name: Drupal.org API Client (PHP)
+year_created: 2016
+source: https://github.com/hussainweb/drupal-api-client
+homepage: https://github.com/hussainweb/drupal-api-client
+docs: https://github.com/hussainweb/drupal-api-client#readme
+logo:
+
+description: "A PHP wrapper built on Guzzle for interacting with the Drupal.org API in custom tools and integrations."
+
+requires:
+  - composer
+  - php
+drupal_versions:
+  - 7
+  - 8
+  - 9
+  - 10
+category:
+  - drupalorg
+  - sdk

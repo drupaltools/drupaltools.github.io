@@ -1,0 +1,21 @@
+name: BackUpScale Drupal Kubernetes Module
+year_created: 2025
+source: https://gitlab.com/backupscale/drubernetes
+homepage: https://registry.terraform.io/modules/BackUpScale/drupal/kubernetes/latest
+docs: https://gitlab.com/backupscale/drubernetes/-/tree/main?ref_type=heads
+logo:
+
+description: "A Terraform module that provisions production-ready Drupal workloads on Kubernetes with AWS integrations."
+
+requires:
+  - aws
+  - kubernetes
+  - terraform
+drupal_versions:
+  - 9
+  - 10
+category:
+  - aws
+  - infrastructure
+  - kubernetes
+  - provisioning

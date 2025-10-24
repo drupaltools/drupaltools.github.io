@@ -1,0 +1,20 @@
+name: Contrib Kanban
+year_created: 2015
+source: https://github.com/mglaman/contribkanban.com
+homepage: https://contribkanban.com
+docs: https://github.com/mglaman/contribkanban.com#readme
+logo:
+
+description: "Turns Drupal.org issue queues into kanban boards to help maintainers visualize work in progress."
+
+requires:
+  - http
+drupal_versions:
+  - 7
+  - 8
+  - 9
+  - 10
+category:
+  - drupalorg
+  - maintainers
+  - workflow

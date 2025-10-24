@@ -1,0 +1,21 @@
+name: Drupal Tooler
+year_created: 2025
+source: https://github.com/baikho/drupal-tooler
+homepage: https://chromewebstore.google.com/detail/drupal-tooler/lmkfjgfjbplgkgkgfmkiepadaajpenkn
+docs: https://github.com/baikho/drupal-tooler#readme
+logo:
+
+description: "A browser extension that adds quick navigation, search, and helper shortcuts for working across the Drupal.org ecosystem."
+
+requires:
+  - http
+  - javascript
+drupal_versions:
+  - 7
+  - 8
+  - 9
+  - 10
+category:
+  - development
+  - drupalorg
+  - workflow

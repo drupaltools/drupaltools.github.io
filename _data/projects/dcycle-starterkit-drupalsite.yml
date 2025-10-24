@@ -1,0 +1,21 @@
+name: Dcycle Drupal Starterkit
+year_created: 2018
+source: https://github.com/dcycle/starterkit-drupalsite
+homepage: https://github.com/dcycle/starterkit-drupalsite
+docs: https://github.com/dcycle/starterkit-drupalsite#readme
+logo:
+
+description: "A Drupal starter kit with Docker-based local environments, deployment scripts, and best-practice documentation."
+
+requires:
+  - composer
+  - docker
+  - docker-compose
+drupal_versions:
+  - 9
+  - 10
+category:
+  - development
+  - devops
+  - docker
+  - scaffolding
