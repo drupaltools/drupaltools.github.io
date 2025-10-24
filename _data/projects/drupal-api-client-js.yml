@@ -1,0 +1,21 @@
+name: Drupal API Client (JS)
+year_created: 2022
+source: https://github.com/DavideBruner/drupal-api-client
+homepage: https://github.com/DavideBruner/drupal-api-client
+docs: https://github.com/DavideBruner/drupal-api-client#readme
+logo:
+
+description: "A lightweight TypeScript client that provides an object-oriented wrapper around the Drupal.org REST API."
+
+requires:
+  - nodejs
+  - npm
+drupal_versions:
+  - 7
+  - 8
+  - 9
+  - 10
+category:
+  - drupalorg
+  - js
+  - sdk

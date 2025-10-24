@@ -1,0 +1,20 @@
+name: Drupal Updater
+year_created: 2023
+source: https://github.com/Metadrop/drupal-updater
+homepage: https://github.com/Metadrop/drupal-updater
+docs: https://github.com/Metadrop/drupal-updater#readme
+logo:
+
+description: "Helper scripts for updating a Drupal project's Composer dependencies with support for security-only workflows."
+
+requires:
+  - cli
+  - composer
+  - php
+drupal_versions:
+  - 9
+  - 10
+category:
+  - ci
+  - cli
+  - devops

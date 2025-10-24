@@ -1,0 +1,20 @@
+name: Mediacurrent Theme Generator
+year_created: 2023
+source: https://github.com/mediacurrent/theme_generator_10
+homepage: https://github.com/mediacurrent/theme_generator_10
+docs: https://github.com/mediacurrent/theme_generator_10#readme
+logo:
+
+description: "A Yeoman generator from Mediacurrent that scaffolds Drupal themes with modern tooling and best practices."
+
+requires:
+  - nodejs
+  - npm
+drupal_versions:
+  - 8
+  - 9
+  - 10
+category:
+  - cli
+  - generator
+  - theming

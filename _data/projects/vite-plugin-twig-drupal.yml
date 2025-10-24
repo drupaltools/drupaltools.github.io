@@ -1,0 +1,21 @@
+name: Vite Plugin Twig Drupal
+year_created: 2023
+source: https://github.com/larowlan/vite-plugin-twig-drupal
+homepage: https://github.com/larowlan/vite-plugin-twig-drupal
+docs: https://github.com/larowlan/vite-plugin-twig-drupal#readme
+logo:
+
+description: "A Vite plugin that renders Drupal-flavoured Twig templates so Storybook and modern front-end tooling work with Drupal themes."
+
+requires:
+  - nodejs
+  - npm
+drupal_versions:
+  - 9
+  - 10
+category:
+  - frontend
+  - js
+  - theming
+tags:
+  - js
