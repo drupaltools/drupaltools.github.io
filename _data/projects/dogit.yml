@@ -4,11 +4,7 @@ source: https://github.com/dpi/dogit
 homepage: https://github.com/dpi/dogit
 docs:
 logo:
-
 description: "Drupal.org + Git CLI application. doGit assists in making the transition to merge requests, and general Git operations, easier for Drupal developers."
-
-recommended: false
-
 requires:
   - git
   - composer

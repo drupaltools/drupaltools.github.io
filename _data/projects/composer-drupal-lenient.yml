@@ -4,9 +4,8 @@ source: https://github.com/mglaman/composer-drupal-lenient
 homepage: https://github.com/mglaman/composer-drupal-lenient
 docs: https://github.com/mglaman/composer-drupal-lenient
 logo:
-
 description: "The Drupal community introduced a lenient Composer facade that modified the drupal/core constraint for packages. This was done to remove a barrier with getting extensions installed via Composer to work on making modules Drupal 9+ ready."
-
+recommended: true
 requires:
   - cli
   - composer

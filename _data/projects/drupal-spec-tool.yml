@@ -13,8 +13,8 @@ requires:
   - composer
 drupal_versions:
   - 9
+  - 10
 category:
   - testing
   - ci
-tags:
-  - new
+  - specifications

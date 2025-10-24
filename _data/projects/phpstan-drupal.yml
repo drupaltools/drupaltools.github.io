@@ -4,9 +4,8 @@ source: https://github.com/mglaman/phpstan-drupal
 homepage: https://github.com/mglaman/phpstan-drupal
 docs:
 logo:
-
 description: "Extension for PHPStan to allow analysis of Drupal code."
-
+recommended: true
 requires:
   - phpstan
 drupal_versions:

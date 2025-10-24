@@ -4,19 +4,19 @@ source: https://github.com/theodorosploumis/drupal-docker-distros
 homepage: https://www.distros.bid
 docs: https://github.com/theodorosploumis/drupal-docker-distros
 logo: https://www.distros.bid/logo.png
-
 description: "An online saas to run try - within seconds - several popular Drupal 8.x and 7.x distributions within LAMP stack using Docker."
-
 requires:
   - docker
 drupal_versions:
   - 7
   - 9
+  - 10
 category:
   - docker
   - testing
   - debug
   - development
+  - deprecated
 tags:
   - docker
 similar:
