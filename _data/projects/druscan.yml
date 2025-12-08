@@ -1,0 +1,27 @@
+name: DRUSCAN
+year_created: 2025
+source: https://github.com/droptica/druscan
+homepage: https://github.com/droptica/druscan
+docs:
+logo:
+
+description: "Automated technical audit for Drupal sites by Droptica that collects structured data about modules, security, performance, and configuration."
+
+requires:
+  - ddev
+  - jq
+  - lighthouse
+  - pa11y
+  - nodejs
+drupal_versions:
+  - 8
+  - 9
+  - 10
+  - 11
+category:
+  - auditing
+  - security
+  - cli
+  - testing
+similar:
+  - drutiny
