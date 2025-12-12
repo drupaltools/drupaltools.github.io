@@ -1,0 +1,15 @@
+name: Shrubs
+year_created: 2023
+source: https://github.com/kanopi/shrubs
+homepage: https://github.com/kanopi/shrubs
+description: "Common support commands for Cypress when interacting with Drupal."
+requires:
+  - javascript
+  - nodejs
+  - composer
+drupal_versions:
+  - 10
+category:
+  - testing
+  - javascript
+  - cypress
