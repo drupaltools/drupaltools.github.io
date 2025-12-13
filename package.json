@@ -1,0 +1,26 @@
+{
+  "name": "drupaltools.github.io",
+  "version": "1.0.0",
+  "description": "<img src=\"img/logo.png\" align=\"left\" alt=\"Drupaltools logo\">",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mcp": "node mcp-server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drupaltools/drupaltools.github.io.git"
+  },
+  "keywords": ["mcp", "drupal", "tools"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drupaltools/drupaltools.github.io/issues"
+  },
+  "homepage": "https://github.com/drupaltools/drupaltools.github.io#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.3",
+    "js-yaml": "^4.1.1"
+  }
+}
