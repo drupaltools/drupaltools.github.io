@@ -1,0 +1,29 @@
+{
+  "name": "Stonehenge",
+  "year_created": 2019,
+  "source": "https://github.com/druidfi/stonehenge",
+  "homepage": "https://github.com/druidfi/stonehenge",
+  "docs": "https://github.com/druidfi/stonehenge",
+  "logo": "https://raw.githubusercontent.com/druidfi/stonehenge/master/logos/stonehenge_logo_wide.svg?sanitize=true",
+  "description": "Local development environment toolset on Docker supporting multiple projects (Drupal, Wordpress, Laravel, Ghost, Hugo and more).",
+  "requires": [
+    "docker",
+    "make"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "debug",
+    "development",
+    "testing",
+    "cli",
+    "docker"
+  ],
+  "similar": [
+    "terra"
+  ],
+  "id": "stonehenge",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/stonehenge.yml"
+}

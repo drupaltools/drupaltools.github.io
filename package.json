@@ -6,7 +6,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mcp": "node mcp-server/index.js"
+    "mcp": "node mcp-server/index.js",
+    "build-api": "node _scripts/build-api-data.js",
+    "watch-api": "node _scripts/watch-api.js",
+    "precommit": "npm run build-api && git add api/data/"
   },
   "repository": {
     "type": "git",

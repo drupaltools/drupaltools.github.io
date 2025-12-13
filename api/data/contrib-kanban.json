@@ -1,0 +1,24 @@
+{
+  "name": "Contrib Kanban",
+  "year_created": 2015,
+  "source": "https://github.com/mglaman/contribkanban.com",
+  "homepage": "https://contribkanban.com",
+  "docs": "https://github.com/mglaman/contribkanban.com#readme",
+  "logo": null,
+  "description": "Turns Drupal.org issue queues into kanban boards to help maintainers visualize work in progress.",
+  "requires": [
+    "http"
+  ],
+  "drupal_versions": [
+    7,
+    9,
+    10
+  ],
+  "category": [
+    "drupalorg",
+    "maintainers",
+    "workflow"
+  ],
+  "id": "contrib-kanban",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/contrib-kanban.yml"
+}

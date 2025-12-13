@@ -1,0 +1,27 @@
+{
+  "name": "Acquia Dev Desktop",
+  "year_created": 2015,
+  "source": "https://dev.acquia.com/downloads",
+  "homepage": "https://www.acquia.com/drupal/acquia-dev-desktop",
+  "docs": "https://docs.acquia.com/dev-desktop",
+  "logo": "/img/acquia_dev_desktop.png",
+  "description": "Acquia Dev Desktop is a free app that allows you to run and develop Drupal sites locally on your computer and optionally host them using Acquia Cloud. Use Acquia Dev Desktop to evaluate Drupal, add and test other Drupal modules, and develop sites while on a plane or away from an internet connection.",
+  "requires": [
+    "windows",
+    "macOS"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "deployment",
+    "development",
+    "testing"
+  ],
+  "tags": [
+    "acquia"
+  ],
+  "id": "acquia-desktop",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/acquia-desktop.yml"
+}

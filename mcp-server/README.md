@@ -85,6 +85,30 @@ Get detailed information about a specific tool by ID or name.
 **Parameters:**
 - `tool_id` (required): The tool ID (filename without .yml) or tool name
 
+**Returns:**
+All data from the YAML file plus:
+- `id`: Tool identifier
+- `path`: File path to the YAML
+
+**Response Structure:**
+```json
+{
+  "name": "Tool Name",
+  "year_created": 2020,
+  "source": "https://github.com/example/tool",
+  "homepage": "https://github.com/example/tool",
+  "docs": "https://docs.example.com",
+  "description": "Tool description",
+  "requires": ["git", "composer"],
+  "drupal_versions": [9, 10],
+  "category": ["testing", "cli"],
+  "tags": ["popular"],
+  "similar": ["other-tool"],
+  "id": "tool-id",
+  "path": "/path/to/_data/projects/tool-id.yml"
+}
+```
+
 **Example:**
 ```javascript
 {
@@ -133,13 +157,105 @@ Or test individual functionality:
 node mcp-server/test-get-tool.js
 ```
 
+## Testing
+
+### Using MCP Inspector (Recommended)
+
+The MCP SDK includes an inspector tool for interactive testing:
+
+```bash
+npx @modelcontextprotocol/inspector node mcp-server/index.js
+```
+
+This opens a web UI where you can:
+- See all available tools and their schemas
+- Test each tool with custom parameters
+- View real-time responses
+- Debug issues
+
+### Quick Command-Line Test
+
+Create a simple test to verify functionality:
+
+```javascript
+// test-mcp.js
+import { spawn } from 'child_process';
+
+const server = spawn('node', ['mcp-server/index.js'], {
+  stdio: ['pipe', 'pipe', 'inherit']
+});
+
+// Send initialization
+server.stdin.write(JSON.stringify({
+  jsonrpc: '2.0',
+  id: 1,
+  method: 'initialize',
+  params: {
+    protocolVersion: '2024-11-05',
+    capabilities: {},
+    clientInfo: { name: 'test', version: '1.0.0' }
+  }
+}) + '\n');
+
+// Test search for "testing" tools
+server.stdin.write(JSON.stringify({
+  jsonrpc: '2.0',
+  id: 2,
+  method: 'tools/call',
+  params: {
+    name: 'search_tools',
+    arguments: { query: 'testing', limit: 5 }
+  }
+}) + '\n');
+```
+
 ## Development
 
-The server is built using the [Model Context Protocol SDK](https://modelcontextprotocol.io/docs/sdk).
+The server is built using the **JavaScript/TypeScript MCP SDK** (`@modelcontextprotocol/sdk` v1.24.3) with ES modules.
+
+### Key Architecture Decisions:
+- **Language**: Pure JavaScript with ES modules (no TypeScript compilation)
+- **Transport**: Stdio for easy integration with Claude Desktop
+- **Data Loading**: Asynchronous loading with lazy initialization
+- **Scoring**: Deterministic scoring algorithm for search relevance
+- **Error Handling**: Graceful fallbacks (ID lookup → name lookup)
+
+### Architecture:
+```
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   YAML Files    │────▶│   Load Project   │────▶│   Indexed Data  │
+│ (_data/projects)│     │      Data        │     │     (Map)       │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+                                                         │
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   MCP Client    │────▶│   Tool Handlers  │────▶│   Search/Filter │
+│ (Claude Desktop)│     │ (list/search/get)│     │    Logic        │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+```
 
 Key features:
 - Static content only - no external APIs
 - Read-only operations
 - Minimal latency and cost
-- Automatic indexing on startup
+- Automatic indexing on startup (186+ tools)
 - Deterministic tool suggestions
+- Smart semantic search with field-weighted scoring
+
+## MCP vs Web API
+
+This MCP server provides stdin/stdout communication for AI assistants. For web-based access, see the [REST API](../api/) which provides similar functionality over HTTP.
+
+### Key Differences:
+
+| Aspect | MCP Server | Web API |
+|--------|-------------|----------|
+| **Protocol** | stdin/stdout (JSON-RPC) | HTTP/REST |
+| **Use Case** | AI assistant integration | Web applications |
+| **Deployment** | Local only | GitHub Pages compatible |
+| **Authentication** | Not needed | Not needed |
+| **Data Access** | Real-time from YAML files | Pre-built JSON data |
+
+Both APIs provide the same core functionality:
+- `list_tools` → GET /tools
+- `search_tools` → GET /search
+- `get_tool` → GET /tool/{id}

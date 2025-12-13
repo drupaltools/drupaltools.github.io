@@ -1,0 +1,23 @@
+{
+  "name": "Drupal Critical",
+  "year_created": 2017,
+  "source": "https://github.com/stefspakman/drupal-critical",
+  "homepage": "https://github.com/stefspakman/drupal-critical",
+  "docs": null,
+  "logo": null,
+  "description": "Automated generation of Critical CSS for Drupal sites.",
+  "requires": [
+    "npm"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "css",
+    "seo",
+    "deprecated"
+  ],
+  "id": "drupal-critical",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-critical.yml"
+}

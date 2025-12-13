@@ -1,0 +1,23 @@
+{
+  "name": "Drupal Check",
+  "year_created": 2019,
+  "source": "https://github.com/mglaman/drupal-check",
+  "homepage": "https://github.com/mglaman/drupal-check",
+  "docs": null,
+  "logo": null,
+  "description": "Built on PHPStan, this static analysis tool will check for correctness (e.g. using a class that doesn't exist), deprecation errors, and more.",
+  "requires": [
+    "phpstan"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "debug",
+    "testing",
+    "cli"
+  ],
+  "similar": null,
+  "id": "drupal-check",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-check.yml"
+}

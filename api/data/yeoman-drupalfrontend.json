@@ -1,0 +1,27 @@
+{
+  "name": "Yeoman drupal frontend",
+  "year_created": 2017,
+  "source": "https://github.com/stefspakman/yeoman-drupalfrontend",
+  "homepage": "https://github.com/stefspakman/yeoman-drupalfrontend",
+  "docs": null,
+  "logo": null,
+  "description": "A Yeoman generator to scaffold a Drupal theme and https://github.com/SyneticNL/Gulp-for-Drupal.",
+  "requires": [
+    "npm"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "theming",
+    "gulp",
+    "deprecated"
+  ],
+  "similar": [
+    "gulp-drupal"
+  ],
+  "id": "yeoman-drupalfrontend",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/yeoman-drupalfrontend.yml"
+}

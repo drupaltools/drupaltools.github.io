@@ -1,0 +1,23 @@
+{
+  "name": "Webhaven",
+  "year_created": 2025,
+  "source": "https://webhaven.io",
+  "homepage": "https://webhaven.io",
+  "docs": "https://webhaven.io/blog",
+  "logo": null,
+  "description": "A hosted Drupal project foundation that bundles best-practice configuration, automation, and documentation so teams can launch quickly.",
+  "requires": [
+    "http"
+  ],
+  "drupal_versions": [
+    9,
+    10
+  ],
+  "category": [
+    "development",
+    "provisioning",
+    "scaffolding"
+  ],
+  "id": "webhaven",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/webhaven.yml"
+}

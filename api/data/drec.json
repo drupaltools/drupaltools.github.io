@@ -1,0 +1,24 @@
+{
+  "name": "Drec - Drupal 8 Commands",
+  "year_created": 2016,
+  "source": "https://github.com/theodorosploumis/drec",
+  "homepage": "https://github.com/theodorosploumis/drec",
+  "docs": null,
+  "logo": "https://raw.githubusercontent.com/theodorosploumis/drec/master/drec-logo.png",
+  "description": "A collection of basic bash scripts that work together to accomplish common development tasks for Drupal 8.x projects. You could probably use drec locally or on a development environment and not on a production server.",
+  "requires": [
+    "cli"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "cli",
+    "development",
+    "debug",
+    "deprecated"
+  ],
+  "similar": null,
+  "id": "drec",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drec.yml"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Drupal install CLI",
+  "year_created": 2018,
+  "source": "https://github.com/awd-studio/drupal-install-cli",
+  "homepage": "https://github.com/awd-studio/drupal-install-cli",
+  "docs": null,
+  "logo": null,
+  "description": "Provide a command for installing drupal with drush from the command line.",
+  "requires": [
+    "composer",
+    "drush",
+    "cli"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "cli"
+  ],
+  "similar": null,
+  "id": "drupal-install-cli",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-install-cli.yml"
+}

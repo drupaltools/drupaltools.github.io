@@ -1,0 +1,25 @@
+{
+  "name": "CMSeeK",
+  "year_created": 2017,
+  "source": "https://github.com/Tuhinshubhra/CMSeeK",
+  "homepage": "https://github.com/Tuhinshubhra/CMSeeK",
+  "docs": null,
+  "logo": null,
+  "description": "CMS Detection and Exploitation suite - Scan WordPress, Joomla, Drupal and over 180 other CMSs",
+  "requires": [
+    "python"
+  ],
+  "drupal_versions": [
+    6,
+    7,
+    9
+  ],
+  "category": [
+    "testing",
+    "security",
+    "bruteforce",
+    "deprecated"
+  ],
+  "id": "cmseek",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/cmseek.yml"
+}

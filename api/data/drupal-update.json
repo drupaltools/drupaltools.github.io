@@ -1,0 +1,25 @@
+{
+  "name": "Drupal Update Script",
+  "year_created": 2023,
+  "source": "https://github.com/valicm/drupal-update",
+  "homepage": "https://github.com/valicm/drupal-update",
+  "docs": "https://github.com/valicm/drupal-update#readme",
+  "logo": null,
+  "description": "A Bash utility and GitHub Action for updating Drupal core and contributed modules with Composer, including security-only runs.",
+  "requires": [
+    "cli",
+    "composer",
+    "php"
+  ],
+  "drupal_versions": [
+    9,
+    10
+  ],
+  "category": [
+    "ci",
+    "cli",
+    "devops"
+  ],
+  "id": "drupal-update",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-update.yml"
+}

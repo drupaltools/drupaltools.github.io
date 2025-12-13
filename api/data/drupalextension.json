@@ -1,0 +1,26 @@
+{
+  "name": "Drupal Extension to Behat and Mink",
+  "year_created": 2014,
+  "source": "https://github.com/jhedstrom/drupalextension",
+  "homepage": "https://github.com/jhedstrom/drupalextension",
+  "docs": "https://behat-drupal-extension.readthedocs.io",
+  "logo": null,
+  "description": "The Drupal Extension is an integration layer between Behat, Mink Extension, and Drupal. It provides step definitions for common testing scenarios specific to Drupal sites.",
+  "requires": [
+    "composer",
+    "behat",
+    "mink"
+  ],
+  "drupal_versions": [
+    6,
+    7,
+    9
+  ],
+  "category": [
+    "testing",
+    "ci",
+    "debug"
+  ],
+  "id": "drupalextension",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupalextension.yml"
+}

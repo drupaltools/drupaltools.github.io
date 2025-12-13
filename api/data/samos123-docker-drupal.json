@@ -1,0 +1,27 @@
+{
+  "name": "Samos123 Docker image",
+  "year_created": 2014,
+  "source": "https://github.com/samos123/docker-drupal",
+  "homepage": "https://github.com/samos123/docker-drupal",
+  "docs": null,
+  "logo": null,
+  "description": "This image contains the latest stable Drupal 7-release. It will automatically setup the database and install a default site. The image doesn't contain a database so you have to create a seperate database container (which is no effort if you use the provided configuration for docker-compose) and link this container or pass the database information of a MySQL- or Postgres-host.",
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    7
+  ],
+  "category": [
+    "development",
+    "docker",
+    "debug",
+    "deprecated"
+  ],
+  "similar": [
+    "drupal8-sprint-box",
+    "4alldigital-dockerdrupal"
+  ],
+  "id": "samos123-docker-drupal",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/samos123-docker-drupal.yml"
+}

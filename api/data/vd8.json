@@ -1,0 +1,30 @@
+{
+  "name": "Vagrant Drupal 8",
+  "year_created": 2014,
+  "source": "https://github.com/nickschuch/vd8",
+  "homepage": "https://github.com/nickschuch/vd8",
+  "docs": "https://github.com/nickschuch/vd8",
+  "logo": null,
+  "description": "The VD8 project has been created to make sure developers have an easy method for boostrapping a local Drupal 8 development environment.",
+  "requires": [
+    "vagrant",
+    "virtualbox",
+    "composer"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "vagrant",
+    "vm",
+    "development",
+    "debug",
+    "deprecated"
+  ],
+  "similar": [
+    "vdd",
+    "drupal-vm"
+  ],
+  "id": "vd8",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/vd8.yml"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Expresso PHP",
+  "year_created": 2016,
+  "source": "https://github.com/expresso-php/expresso-php",
+  "homepage": "https://github.com/expresso-php/expresso-php",
+  "docs": null,
+  "logo": null,
+  "description": "This is a fast and simple Docker setup for all your PHP development. Quick but not dirty.",
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "development",
+    "docker",
+    "deprecated"
+  ],
+  "id": "expresso-php",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/expresso-php.yml"
+}

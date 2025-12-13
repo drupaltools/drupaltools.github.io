@@ -1,0 +1,30 @@
+{
+  "name": "dockstack",
+  "year_created": 2016,
+  "source": "https://github.com/ten7/dockstack",
+  "homepage": "https://github.com/ten7/dockstack",
+  "docs": null,
+  "logo": null,
+  "description": "TEN7's dockstack is a library of containers for local Drupal development. Instead of a single 'stack to rule them all', dockstack provides a mix-and-match approach to suit your development needs.",
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    6,
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "cli",
+    "docker",
+    "deprecated"
+  ],
+  "similar": [
+    "terra",
+    "docksal",
+    "drudock"
+  ],
+  "id": "dockstack",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/dockstack.yml"
+}

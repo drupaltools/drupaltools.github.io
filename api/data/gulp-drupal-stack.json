@@ -1,0 +1,22 @@
+{
+  "name": "Gulp Drupal Stack",
+  "year_created": 2017,
+  "source": "https://github.com/ovh/gulp-drupal-stack",
+  "homepage": "https://github.com/ovh/gulp-drupal-stack",
+  "docs": "https://gulp-drupal-stack.readthedocs.io",
+  "logo": "https://raw.githubusercontent.com/ovh/gulp-drupal-stack/master/banner.png",
+  "description": "This stack core is to be included in your main project and sets up many Gulp tasks that can work in many flexible ways by passing in different config objects, which can be based off of gulpfile.default.yml (and is merged with).",
+  "requires": [
+    "npm"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "development",
+    "theming",
+    "gulp"
+  ],
+  "id": "gulp-drupal-stack",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/gulp-drupal-stack.yml"
+}

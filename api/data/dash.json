@@ -1,0 +1,29 @@
+{
+  "name": "Dash",
+  "year_created": 2020,
+  "source": "https://github.com/kod-camp/dash",
+  "homepage": "https://github.com/kod-camp/dash",
+  "docs": "https://github.com/kod-camp/dash",
+  "logo": null,
+  "description": "An opinionated project template to spin up Drupal projects in a dash.",
+  "requires": [
+    "composer"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "development",
+    "scaffolding",
+    "deprecated"
+  ],
+  "tags": [
+    "scaffolding"
+  ],
+  "similar": [
+    "ddd",
+    "drupalal"
+  ],
+  "id": "dash",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/dash.yml"
+}

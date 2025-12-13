@@ -1,0 +1,25 @@
+{
+  "name": "Acquia Drupal Spec Tool",
+  "year_created": 2018,
+  "source": "https://github.com/acquia/drupal-spec-tool",
+  "homepage": "https://github.com/acquia/drupal-spec-tool",
+  "docs": "https://dev.acquia.com/blog/a-specification-tool-for-drupal-8-/30/05/2018/19606",
+  "logo": null,
+  "description": "This project provides a tool for specifying Drupal architecture details and generating automated tests for them. It consists of one Google Sheet for capturing specification and generating tests from it and the Behat contexts that automate the generated tests.",
+  "requires": [
+    "cli",
+    "behat",
+    "composer"
+  ],
+  "drupal_versions": [
+    9,
+    10
+  ],
+  "category": [
+    "testing",
+    "ci",
+    "specifications"
+  ],
+  "id": "drupal-spec-tool",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-spec-tool.yml"
+}

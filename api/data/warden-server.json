@@ -1,0 +1,36 @@
+{
+  "name": "Warden server",
+  "year_created": 2014,
+  "source": "https://github.com/teamdeeson/warden",
+  "homepage": "https://github.com/teamdeeson/warden",
+  "docs": null,
+  "logo": null,
+  "description": "Warden is for busy people managing multiple websites. It provides a central dashboard for reviewing the status of every website, highlighting those with immediate issues which need resolving. On the roadmap is a pluggable system allowing Warden to be used flexibly for any website which has a supporting connector module.",
+  "requires": [
+    "composer",
+    "mongodb",
+    "own-server"
+  ],
+  "drupal_versions": [
+    9,
+    7,
+    6
+  ],
+  "operation_system": [
+    "linux"
+  ],
+  "category": [
+    "server",
+    "paas",
+    "monitoring",
+    "security",
+    "deprecated"
+  ],
+  "similar": [
+    "boa",
+    "aegir",
+    "opendevshop"
+  ],
+  "id": "warden-server",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/warden-server.yml"
+}

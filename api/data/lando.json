@@ -1,0 +1,35 @@
+{
+  "name": "Lando",
+  "year_created": 2017,
+  "source": "https://github.com/lando/lando",
+  "homepage": "https://lando.dev",
+  "docs": "https://docs.lando.dev",
+  "logo": "https://docs.lando.dev/images/logo.png",
+  "description": "Lando is a free, open source and cross-platform local development environment and DevOps tool built on Docker container technology and developed by Tandem. It is designed to work with most major languages, frameworks and services and to provide an easy way for users to specify simple or complex development requirements for their projects.",
+  "recommended": true,
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    6,
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "testing",
+    "debug",
+    "cli",
+    "docker"
+  ],
+  "tags": [
+    "new"
+  ],
+  "similar": [
+    "opendevshop",
+    "terra",
+    "dockerdrupal"
+  ],
+  "id": "lando",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/lando.yml"
+}

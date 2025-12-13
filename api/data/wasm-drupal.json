@@ -1,0 +1,25 @@
+{
+  "name": "WASM Drupal",
+  "year_created": 2023,
+  "source": "https://github.com/mglaman/wasm-drupal",
+  "homepage": "https://wasm-drupal.mglaman.dev/",
+  "docs": "https://github.com/mglaman/wasm-drupal#readme",
+  "logo": null,
+  "description": "Runs Drupal inside WebAssembly for browser-based demos, experiments, and education.",
+  "requires": [
+    "http"
+  ],
+  "drupal_versions": [
+    10
+  ],
+  "category": [
+    "development",
+    "drupal-core",
+    "testing"
+  ],
+  "tags": [
+    "new"
+  ],
+  "id": "wasm-drupal",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/wasm-drupal.yml"
+}

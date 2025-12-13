@@ -1,0 +1,32 @@
+{
+  "name": "Task Runner",
+  "year_created": 2017,
+  "source": "https://github.com/openeuropa/task-runner",
+  "homepage": "https://github.com/openeuropa/task-runner",
+  "docs": null,
+  "logo": null,
+  "description": "PHP task runner based on Robo, focused on extensibility.",
+  "requires": [
+    "composer",
+    "docker",
+    "docker-compose"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "robo",
+    "ci",
+    "cd",
+    "deployment",
+    "devops",
+    "provisioning"
+  ],
+  "tags": [
+    "devops",
+    "robo"
+  ],
+  "id": "task-runner",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/task-runner.yml"
+}

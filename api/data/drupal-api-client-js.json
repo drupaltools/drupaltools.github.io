@@ -1,0 +1,26 @@
+{
+  "name": "Drupal API Client (JS)",
+  "year_created": 2022,
+  "source": "https://github.com/DavideBruner/drupal-api-client",
+  "homepage": "https://github.com/DavideBruner/drupal-api-client",
+  "docs": "https://github.com/DavideBruner/drupal-api-client#readme",
+  "logo": null,
+  "description": "A lightweight TypeScript client that provides an object-oriented wrapper around the Drupal.org REST API.",
+  "requires": [
+    "nodejs",
+    "npm"
+  ],
+  "drupal_versions": [
+    7,
+    9,
+    10
+  ],
+  "category": [
+    "drupalorg",
+    "js",
+    "sdk",
+    "deprecated"
+  ],
+  "id": "drupal-api-client-js",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-api-client-js.yml"
+}

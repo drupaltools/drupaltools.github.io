@@ -1,0 +1,29 @@
+{
+  "name": "Drupal Console",
+  "year_created": 2013,
+  "source": "https://github.com/hechoendrupal/drupal-console",
+  "homepage": "https://drupalconsole.com",
+  "docs": "https://drupalconsole.com/docs/en/",
+  "logo": "https://drupalconsole.com/images/drupal-console-logo.png",
+  "description": "The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.",
+  "requires": [
+    "cli"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "cli",
+    "symfony",
+    "development",
+    "debug",
+    "scaffolding",
+    "phar",
+    "deprecated"
+  ],
+  "tags": [
+    "popular"
+  ],
+  "id": "drupalconsole",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupalconsole.yml"
+}

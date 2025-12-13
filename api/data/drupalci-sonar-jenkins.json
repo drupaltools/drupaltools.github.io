@@ -1,0 +1,34 @@
+{
+  "name": "Jenkins & SonarQube Drupal CI & Static Code Analysis",
+  "year_created": 2014,
+  "source": "https://github.com/geerlingguy/drupalci-sonar-jenkins",
+  "homepage": "https://github.com/geerlingguy/drupalci-sonar-jenkins",
+  "docs": null,
+  "logo": null,
+  "description": "This Vagrant configuration (with Ansible for provisioning) will install Jenkins, PHP, SonarQube and Drupal CI profiles for code analysis (along with a bunch of other required software).",
+  "requires": [
+    "ansible",
+    "vagrant",
+    "virtualbox"
+  ],
+  "drupal_versions": [
+    6,
+    7,
+    9
+  ],
+  "operation_system": [
+    "all"
+  ],
+  "category": [
+    "development",
+    "ci",
+    "testing",
+    "deprecated"
+  ],
+  "tags": [
+    "popular"
+  ],
+  "similar": null,
+  "id": "drupalci-sonar-jenkins",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupalci-sonar-jenkins.yml"
+}

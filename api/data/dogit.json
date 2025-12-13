@@ -1,0 +1,26 @@
+{
+  "name": "doGit",
+  "year_created": 2021,
+  "source": "https://github.com/dpi/dogit",
+  "homepage": "https://github.com/dpi/dogit",
+  "docs": null,
+  "logo": null,
+  "description": "Drupal.org + Git CLI application. doGit assists in making the transition to merge requests, and general Git operations, easier for Drupal developers.",
+  "requires": [
+    "git",
+    "composer"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "building",
+    "testing",
+    "maintainers"
+  ],
+  "similar": [
+    "dorgflow"
+  ],
+  "id": "dogit",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/dogit.yml"
+}

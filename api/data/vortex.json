@@ -1,0 +1,32 @@
+{
+  "name": "Vortex",
+  "year_created": 2017,
+  "source": "https://github.com/drevops/vortex",
+  "homepage": "https://www.vortextemplate.com/",
+  "docs": "https://github.com/drevops/vortex#readme",
+  "logo": "https://www.vortextemplate.com/img/logo-vortex-dark.svg",
+  "description": "A Drupal project template that ships containerized local environments, automated testing, and CI/CD scaffolding so teams can start fast.",
+  "recommended": true,
+  "requires": [
+    "cli",
+    "composer",
+    "docker",
+    "docker-compose"
+  ],
+  "drupal_versions": [
+    9,
+    10
+  ],
+  "category": [
+    "cd",
+    "ci",
+    "devops",
+    "deployment",
+    "scaffolding"
+  ],
+  "tags": [
+    "devops"
+  ],
+  "id": "vortex",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/vortex.yml"
+}

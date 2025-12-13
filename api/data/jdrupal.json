@@ -1,0 +1,22 @@
+{
+  "name": "jDrupal",
+  "year_created": 2014,
+  "source": "https://github.com/signalpoint/jDrupal",
+  "homepage": "http://jdrupal.tylerfrankenstein.com",
+  "docs": "https://github.com/signalpoint/jDrupal/tree/8.x-1.x/docs",
+  "logo": null,
+  "description": "A JavaScript Library and API for Drupal Applications.",
+  "requires": [
+    "javascript"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "deprecated"
+  ],
+  "id": "jdrupal",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/jdrupal.yml"
+}

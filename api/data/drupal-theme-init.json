@@ -1,0 +1,24 @@
+{
+  "name": "Drupal Theme Init",
+  "year_created": 2021,
+  "source": "https://github.com/SpecbeeLabs/drupal-theme-init",
+  "homepage": "https://github.com/SpecbeeLabs/drupal-theme-init",
+  "docs": "https://github.com/SpecbeeLabs/drupal-theme-init#readme",
+  "logo": null,
+  "description": "A Yeoman generator that scaffolds modern Drupal themes with sensible defaults and tooling.",
+  "requires": [
+    "nodejs",
+    "npm"
+  ],
+  "drupal_versions": [
+    9,
+    10
+  ],
+  "category": [
+    "cli",
+    "generator",
+    "theming"
+  ],
+  "id": "drupal-theme-init",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-theme-init.yml"
+}

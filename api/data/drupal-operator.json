@@ -1,0 +1,25 @@
+{
+  "name": "Drupal Operator for Kubernetes",
+  "year_created": 2019,
+  "source": "https://github.com/geerlingguy/drupal-operator",
+  "homepage": "https://github.com/geerlingguy/drupal-operator",
+  "docs": null,
+  "logo": null,
+  "description": "This is a Drupal Operator, which makes management of Drupal instances running inside Kuberenetes clusters easy. It was built with the Operator SDK using Ansible Operator.",
+  "recommended": false,
+  "requires": [
+    "kubernetes"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "deployment",
+    "provision",
+    "kubernetes",
+    "docker",
+    "deprecated"
+  ],
+  "id": "drupal-operator",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-operator.yml"
+}

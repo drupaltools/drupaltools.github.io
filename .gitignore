@@ -2,3 +2,13 @@ _site/
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Generated files (these are built, not edited)
+# Note: api/data/ is committed as it's needed for GitHub Pages
+drupaltools.log
+*.log
+.DS_Store

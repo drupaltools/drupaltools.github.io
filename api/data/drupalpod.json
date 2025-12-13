@@ -1,0 +1,29 @@
+{
+  "name": "DrupalPod",
+  "year_created": 2021,
+  "source": "https://github.com/shaal/DrupalPod",
+  "homepage": "https://github.com/shaal/DrupalPod",
+  "docs": "https://github.com/shaal/DrupalPod",
+  "logo": "https://user-images.githubusercontent.com/22901/122864786-40253c00-d2f3-11eb-959b-61fb6871e3f4.png",
+  "description": "This project allows you to work on Drupal core contributions with a familiar setup of a 'normal' Drupal website using the online IDE Gitpod.io and DDEV. No computer is needed because it is all running in the cloud.",
+  "requires": [
+    "gitpod"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "drupal-core",
+    "development",
+    "gui",
+    "ide",
+    "gitpod"
+  ],
+  "tags": [
+    "ddev",
+    "ide",
+    "gitpod"
+  ],
+  "id": "drupalpod",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupalpod.yml"
+}

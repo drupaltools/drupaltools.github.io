@@ -1,0 +1,36 @@
+{
+  "name": "Deployotron",
+  "year_created": 2013,
+  "source": "https://github.com/reload/deployotron",
+  "homepage": "http://reload.github.io/deployotron",
+  "docs": "https://github.com/reload/deployotron",
+  "logo": "https://reload.github.io/deployotron/images/deployotron.png",
+  "description": "Deployotron is a Drush command to simplify deploying new code to a Drupal site. There's already a lot of ways to deploy ones Drupal site, from FTPing up the files to having Capistrano deploy the site when the build passes in Jenkins. Deployotron aims to be simple to use, but also usable as a part of a bigger setup.",
+  "requires": [
+    "drush",
+    "git"
+  ],
+  "drupal_versions": [
+    6,
+    7,
+    9
+  ],
+  "category": [
+    "provisioning",
+    "building",
+    "deployment",
+    "testing",
+    "cli",
+    "deprecated"
+  ],
+  "tags": [
+    "drush"
+  ],
+  "similar": [
+    "fetcher",
+    "drubs",
+    "blt"
+  ],
+  "id": "deployotron",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/deployotron.yml"
+}
