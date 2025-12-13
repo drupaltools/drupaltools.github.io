@@ -71,12 +71,17 @@ if (existsSync(readmeSrc)) {
 const testContent = `#!/usr/bin/env node
 
 import { spawn } from 'child_process';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 console.log('Testing @drupaltools/mcp server...');
 
-const server = spawn('node', ['${serverDest}'], {
+const server = spawn('node', [join(__dirname, 'index.js')], {
   stdio: ['pipe', 'pipe', 'inherit'],
-  cwd: '${distDir}'
+  cwd: __dirname
 });
 
 let responseCount = 0;
@@ -143,6 +148,14 @@ console.log('✓ Created test.js');
 // Create package.json for distribution
 const packageSrc = join(__dirname, 'package.json');
 const packageContent = JSON.parse(readFileSync(packageSrc, 'utf8'));
+
+// Update paths for distribution
+// When published from dist/, these files become the package root
+packageContent.main = 'index.js';
+packageContent.bin = {
+  'drupaltools-mcp': 'index.js'
+};
+
 // Update files list to include only what's in dist
 packageContent.files = ['*.js', '*.json', '*.md'];
 writeFileSync(join(distDir, 'package.json'), JSON.stringify(packageContent, null, 2));

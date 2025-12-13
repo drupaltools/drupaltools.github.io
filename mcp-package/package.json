@@ -8,13 +8,12 @@
     "drupaltools-mcp": "dist/index.js"
   },
   "files": [
-    "dist/",
-    "README.md"
+    "dist/"
   ],
   "scripts": {
     "build": "node build.js",
     "prepublishOnly": "npm run build",
-    "test": "node dist/test.js",
+    "test": "node test.js",
     "publish:npm": "cd dist && npm publish",
     "publish": "./publish.sh"
   },

@@ -11,6 +11,23 @@ copyright: '<a href="https://www.drupal.org">Drupal</a> is a <a href="http://dru
 # Build settings
 markdown: kramdown
 
+# GitHub Pages compatible settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+  - mcp-package
+  - api
+
 # yml_files = Dir.glob("_data/projects/*.yml")
 # puts "page_gen:"
 # yml_files.each do |file|

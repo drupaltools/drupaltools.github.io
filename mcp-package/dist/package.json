@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Model Context Protocol (MCP) server for discovering Drupal development tools, utilities, and plugins",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "index.js",
   "bin": {
-    "drupaltools-mcp": "dist/index.js"
+    "drupaltools-mcp": "index.js"
   },
   "files": [
     "*.js",
@@ -13,11 +13,7 @@
     "*.md"
   ],
   "scripts": {
-    "build": "node build.js",
-    "prepublishOnly": "npm run build",
-    "test": "node dist/test.js",
-    "publish:npm": "cd dist && npm publish",
-    "publish": "./publish.sh"
+    "test": "node test.js"
   },
   "keywords": [
     "mcp",

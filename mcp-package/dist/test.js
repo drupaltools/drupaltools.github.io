@@ -1,12 +1,17 @@
 #!/usr/bin/env node
 
 import { spawn } from 'child_process';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 console.log('Testing @drupaltools/mcp server...');
 
-const server = spawn('node', ['/var/www/html/NON-DRUPAL/drupaltools.github.io/mcp-package/dist/index.js'], {
+const server = spawn('node', [join(__dirname, 'index.js')], {
   stdio: ['pipe', 'pipe', 'inherit'],
-  cwd: '/var/www/html/NON-DRUPAL/drupaltools.github.io/mcp-package/dist'
+  cwd: __dirname
 });
 
 let responseCount = 0;
