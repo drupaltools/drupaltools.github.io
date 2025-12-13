@@ -1,15 +1,12 @@
 {
   "name": "drupaltools.github.io",
   "version": "1.0.0",
-  "description": "<img src=\"img/logo.png\" align=\"left\" alt=\"Drupaltools logo\">",
+  "description": "Drupal Tools awesome list",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mcp": "node mcp-server/index.js",
-    "build-api": "node _scripts/build-api-data.js",
-    "watch-api": "node _scripts/watch-api.js",
-    "precommit": "npm run build-api && git add api/data/"
+    "mcp": "node mcp-server/index.js"
   },
   "repository": {
     "type": "git",
