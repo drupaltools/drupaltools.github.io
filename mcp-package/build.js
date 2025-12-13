@@ -149,7 +149,8 @@ console.log('✓ Created test.js');
 const packageSrc = join(__dirname, 'package.json');
 const packageContent = JSON.parse(readFileSync(packageSrc, 'utf8'));
 
-// Update paths for distribution (remove dist/ prefix since files are at root)
+// Update paths for distribution
+// When published from dist/, these files become the package root
 packageContent.main = 'index.js';
 packageContent.bin = {
   'drupaltools-mcp': 'index.js'

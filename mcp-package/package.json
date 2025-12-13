@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "Model Context Protocol (MCP) server for discovering Drupal development tools, utilities, and plugins",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
   "bin": {
-    "drupaltools-mcp": "index.js"
+    "drupaltools-mcp": "dist/index.js"
   },
   "files": [
-    "dist/",
-    "README.md"
+    "dist/"
   ],
   "scripts": {
     "build": "node build.js",
