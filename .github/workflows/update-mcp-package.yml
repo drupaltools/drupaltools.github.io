@@ -1,0 +1,85 @@
+name: Update MCP Package
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '_data/projects/*.yml'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - '_data/projects/*.yml'
+  workflow_dispatch:
+
+jobs:
+  update-package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          cd mcp-package
+          npm install
+
+      - name: Build the MCP package with latest data
+        run: |
+          cd mcp-package
+          npm run build
+
+      - name: Run tests
+        run: |
+          cd mcp-package
+          npm test
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if [[ -n $(git status --porcelain mcp-package/) ]]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ MCP package data updated"
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No changes to MCP package"
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add mcp-package/
+          git commit -m "chore: Update MCP package with latest Drupal tools data
+
+          - Rebuilt projects.json with $(cd mcp-package && node -e "console.log(Object.keys(JSON.parse(require('fs').readFileSync('dist/projects.json', 'utf8'))).length)" tools
+          - Updated package when _data/projects changed
+
+          🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+          Co-Authored-By: Claude <noreply@anthropic.com>"
+          git push
+
+      - name: Create summary
+        run: |
+          echo "## MCP Package Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [[ "${{ steps.changes.outputs.has_changes }}" == "true" ]]; then
+            echo "✅ MCP package has been updated with the latest tools data" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "The package will include:" >> $GITHUB_STEP_SUMMARY
+            echo "- Updated projects.json" >> $GITHUB_STEP_SUMMARY
+            echo "- All 186+ Drupal tools data" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ No changes needed - MCP package is already up to date" >> $GITHUB_STEP_SUMMARY
+          fi
