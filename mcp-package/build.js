@@ -158,6 +158,11 @@ packageContent.bin = {
 
 // Update files list to include only what's in dist
 packageContent.files = ['*.js', '*.json', '*.md'];
+
+// Remove scripts that don't apply to the distributed package
+delete packageContent.scripts.publish;
+delete packageContent.scripts['publish:npm'];
+
 writeFileSync(join(distDir, 'package.json'), JSON.stringify(packageContent, null, 2));
 console.log('✓ Created package.json in dist/');
 
