@@ -195,14 +195,14 @@
   display: inline-block;
   text-decoration: none;
   padding: 4px 8px;
-  background: $site-blue;
+  background: #ff7a00;
   color: #fff !important;
   border-radius: 3px;
 
   &:hover,
   &:focus {
-    background: #fff;
-    color: $site-blue !important;
+    background: #cc6200;
+    color: #fff !important;
     text-decoration: none;
   }
 }
