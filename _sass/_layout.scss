@@ -193,9 +193,13 @@
 
 .button {
   display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
   text-decoration: none;
-  padding: 4px 8px;
+  padding: 6px 10px;
+  background: $site-blue;
   border-radius: 3px;
+  color: #fff;
 
   &:hover,
   &:focus {
