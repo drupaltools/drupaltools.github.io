@@ -45,7 +45,7 @@ gem install jekyll bundler
 git clone https://github.com/theodorosploumis/drupaltools.git
 cd drupaltools
 bundle install
-bundle exec jekyll serve --port 8080
+bundle exec jekyll serve
 ```
 
 ## MCP Server
