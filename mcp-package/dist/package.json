@@ -13,7 +13,11 @@
     "*.md"
   ],
   "scripts": {
-    "test": "node test.js"
+    "build": "node build.js",
+    "prepublishOnly": "npm run build",
+    "test": "node dist/test.js",
+    "publish:npm": "cd dist && npm publish",
+    "publish": "./publish.sh"
   },
   "keywords": [
     "mcp",
