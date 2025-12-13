@@ -13,7 +13,7 @@
   "scripts": {
     "build": "node build.js",
     "prepublishOnly": "npm run build",
-    "test": "node test.js",
+    "test": "node dist/test.js",
     "publish:npm": "cd dist && npm publish",
     "publish": "./publish.sh"
   },
