@@ -132,6 +132,31 @@ This MCP server contains data for 186+ Drupal tools sourced from the Drupal Tool
 
 ## Publishing
 
+### Required GitHub Repository Secrets
+
+To enable automated publishing, you need to set up the following secrets in your GitHub repository:
+
+1. **NPM_TOKEN** (Required for npm publishing)
+   - Go to: https://www.npmjs.com
+   - Create an account or log in
+   - Generate an access token: Account Settings → Access Tokens → Generate New Token
+   - Set the token with automation permissions
+   - Add to GitHub: Repository Settings → Secrets and variables → Actions → New repository secret
+   - Name: `NPM_TOKEN`
+   - Value: Your npm access token
+
+2. **GITHUB_TOKEN** (Already provided by GitHub Actions)
+   - This is automatically available in workflows with `permissions: contents: write`
+
+### Package Name
+
+**Package Name:** `@drupaltools/mcp`
+
+This is the name you'll use to install the package:
+```bash
+npx @drupaltools/mcp
+```
+
 ### Manual Publishing
 
 From the project root:
@@ -152,19 +177,66 @@ npm run publish:npm
 
 ### Automated Publishing via GitHub Actions
 
+#### Option 1: Tag-based Publishing (Recommended)
 1. Create and push a version tag:
    ```bash
    git tag v1.0.0
    git push origin v1.0.0
    ```
+   This will automatically trigger the publish workflow
 
-2. Or manually trigger the workflow in GitHub Actions with a version number
+#### Option 2: Manual Trigger
+1. Go to: Repository → Actions → "Publish to npm"
+2. Click "Run workflow"
+3. Enter the version number (e.g., "1.0.0")
+4. Click "Run workflow"
 
-3. The workflow will:
-   - Build the package
-   - Run tests
-   - Publish to npm
-   - Create a GitHub release
+#### What the workflow does:
+- ✅ Builds the MCP package with latest data
+- ✅ Runs tests to ensure everything works
+- ✅ Publishes to npm registry
+- ✅ Creates a GitHub release
+- ✅ Updates version numbers in package.json files
+
+### Publishing for the First Time
+
+1. **Set up npm account** (if you don't have one):
+   - Visit https://www.npmjs.com
+   - Click "Sign up"
+   - Verify your email address
+
+2. **Generate npm token**:
+   - Log in to npm
+   - Go to Account Settings → Access Tokens
+   - Click "Generate New Token"
+   - Name: `drupaltools-mcp` (or any descriptive name)
+   - Select permissions: "Automation"
+   - Click "Generate Token"
+   - **Important**: Copy the token immediately (you won't see it again)
+
+3. **Add token to GitHub**:
+   - Go to your GitHub repository
+   - Settings → Secrets and variables → Actions
+   - Click "New repository secret"
+   - Name: `NPM_TOKEN`
+   - Value: Paste your npm token
+   - Click "Add secret"
+
+4. **Publish the package**:
+   ```bash
+   cd mcp-package
+   npm publish
+   ```
+
+### Post-Publishing Verification
+
+After publishing, verify the package:
+1. Visit https://www.npmjs.com/package/@drupaltools/mcp
+2. Test installation:
+   ```bash
+   npx @drupaltools/mcp@latest --version
+   ```
+3. The package should be publicly available for anyone to use
 
 ## Contributing
 
