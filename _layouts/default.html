@@ -27,7 +27,9 @@
 
     <div class="page-content">
       <div class="project-wrapper">
-        {% include filters.html %}
+        {% unless page.url contains '/mcp-server' %}
+          {% include filters.html %}
+        {% endunless %}
         {{ content }}
       </div>
     </div>
