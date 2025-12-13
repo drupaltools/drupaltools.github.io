@@ -143,6 +143,13 @@ console.log('✓ Created test.js');
 // Create package.json for distribution
 const packageSrc = join(__dirname, 'package.json');
 const packageContent = JSON.parse(readFileSync(packageSrc, 'utf8'));
+
+// Update paths for distribution (remove dist/ prefix since files are at root)
+packageContent.main = 'index.js';
+packageContent.bin = {
+  'drupaltools-mcp': 'index.js'
+};
+
 // Update files list to include only what's in dist
 packageContent.files = ['*.js', '*.json', '*.md'];
 writeFileSync(join(distDir, 'package.json'), JSON.stringify(packageContent, null, 2));
