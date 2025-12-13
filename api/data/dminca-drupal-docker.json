@@ -1,0 +1,29 @@
+{
+  "name": "dminca drupal-docker",
+  "year_created": 2015,
+  "source": "https://github.com/dminca/drupal-docker",
+  "homepage": "https://dminca.github.io",
+  "docs": null,
+  "logo": null,
+  "description": "Drupal 8.x on Alpine Linux Docker with Nginx, PHP7 and PostgreSQL.",
+  "requires": [
+    "docker",
+    "make"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "debug",
+    "development",
+    "cli",
+    "docker",
+    "deprecated"
+  ],
+  "similar": [
+    "terra",
+    "docker4drupal"
+  ],
+  "id": "dminca-drupal-docker",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/dminca-drupal-docker.yml"
+}

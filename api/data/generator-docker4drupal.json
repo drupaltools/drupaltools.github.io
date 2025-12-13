@@ -1,0 +1,31 @@
+{
+  "name": "Docker4Drupal Generator",
+  "year_created": 2017,
+  "source": "https://github.com/pauloamgomes/generator-docker4drupal",
+  "homepage": "https://www.npmjs.com/package/generator-docker4drupal",
+  "docs": null,
+  "logo": null,
+  "description": "Yeoman generator for docker4drupal stack",
+  "requires": [
+    "yeoman",
+    "docker"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "vm",
+    "development",
+    "debug",
+    "generator",
+    "deprecated"
+  ],
+  "similar": [
+    "generator-docker-drupal8",
+    "drupal-scaffold-docker",
+    "docker4drupal"
+  ],
+  "id": "generator-docker4drupal",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/generator-docker4drupal.yml"
+}

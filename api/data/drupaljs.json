@@ -1,0 +1,22 @@
+{
+  "name": "Drupal JS API Docs",
+  "year_created": 2023,
+  "source": "https://drupaljs.net",
+  "homepage": "https://drupaljs.net",
+  "docs": "https://drupaljs.net",
+  "logo": null,
+  "description": "Automatically generated JavaScript API documentation for Drupal 8, 9, and 10 using JSDoc.",
+  "requires": [
+    "http"
+  ],
+  "drupal_versions": [
+    9,
+    10
+  ],
+  "category": [
+    "drupal-core",
+    "js"
+  ],
+  "id": "drupaljs",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupaljs.yml"
+}

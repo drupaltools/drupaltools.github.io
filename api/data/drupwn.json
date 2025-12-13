@@ -1,0 +1,26 @@
+{
+  "name": "drupwn",
+  "year_created": 2018,
+  "source": "https://github.com/immunIT/drupwn",
+  "homepage": "https://github.com/immunIT/drupwn",
+  "docs": "https://github.com/immunIT/drupwn/blob/master/README.md",
+  "logo": null,
+  "description": "Drupwn claims to provide an efficient way to gather drupal 7.x and 8.x information.",
+  "requires": [
+    "python"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "security",
+    "deprecated"
+  ],
+  "similar": [
+    "droopescan"
+  ],
+  "id": "drupwn",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupwn.yml"
+}

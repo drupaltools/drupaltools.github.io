@@ -1,0 +1,25 @@
+{
+  "name": "Tome",
+  "year_created": 2018,
+  "source": "https://github.com/drupal-tome",
+  "homepage": "https://tome.fyi",
+  "docs": "https://tome.fyi/docs",
+  "logo": "https://www.drupal.org/files/styles/grid-3-2x/public/project-images/tome_logo_3.png",
+  "description": "A static site generator lovingly crafted with Drupal 8.",
+  "requires": [
+    "composer",
+    "drush"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "generator",
+    "development",
+    "deployment",
+    "static-sites"
+  ],
+  "similar": null,
+  "id": "tome",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/tome.yml"
+}

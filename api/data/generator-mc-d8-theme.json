@@ -1,0 +1,27 @@
+{
+  "name": "mc-d8-theme",
+  "year_created": 2016,
+  "source": "https://github.com/mediacurrent/theme_generator_8",
+  "homepage": "https://github.com/mediacurrent/theme_generator_8",
+  "docs": "https://github.com/mediacurrent/theme_generator_8/blob/master/README.md",
+  "logo": null,
+  "description": "Yeoman generator for Drupal Themes - lets you quickly set up a Drupal 8 theme with sensible defaults and best practices.",
+  "requires": [
+    "yeoman"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "development",
+    "debug",
+    "generator",
+    "deprecated"
+  ],
+  "similar": [
+    "generator-docker-drupal8",
+    "drupalal"
+  ],
+  "id": "generator-mc-d8-theme",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/generator-mc-d8-theme.yml"
+}

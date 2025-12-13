@@ -1,0 +1,26 @@
+{
+  "name": "PHP conventions",
+  "year_created": 2019,
+  "source": "https://github.com/drupol/php-conventions",
+  "homepage": "https://github.com/drupol/php-conventions",
+  "docs": null,
+  "logo": null,
+  "description": "A developer tool which provides a pre-defined GrumPHP configuration tailored specifically for PHP development.",
+  "requires": [
+    "grumphp",
+    "composer"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "testing",
+    "linting",
+    "devops"
+  ],
+  "similar": [
+    "drupal-check"
+  ],
+  "id": "php-conventions",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/php-conventions.yml"
+}

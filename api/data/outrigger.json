@@ -1,0 +1,26 @@
+{
+  "name": "Outrigger",
+  "year_created": 2017,
+  "source": "https://github.com/phase2?utf8=%E2%9C%93&q=outrigger-",
+  "homepage": "http://outrigger.sh",
+  "docs": "http://docs.outrigger.sh",
+  "logo": "https://raw.githubusercontent.com/phase2/outrigger.sh/master/img/logo.png",
+  "description": "Outrigger is a set of developer tools that makes development, integration, staging and production environments simple, portable and, most importantly, CONSISTENT across team members and environments.",
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "operation_system": [
+    "all"
+  ],
+  "category": [
+    "development",
+    "docker",
+    "testing"
+  ],
+  "id": "outrigger",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/outrigger.yml"
+}

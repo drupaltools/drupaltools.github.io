@@ -1,0 +1,34 @@
+{
+  "name": "Druml",
+  "year_created": 2014,
+  "source": "https://github.com/georgetown-university/druml",
+  "homepage": "http://www.usedruml.com",
+  "docs": "https://github.com/georgetown-university/druml",
+  "logo": null,
+  "description": "Druml is a Drupal multisite tool that helps to maintain multiple Drupal sites. It has been developed in Georgetown University, which maintains over 250 Drupal websites. Druml can run commands on different servers in parallel.",
+  "requires": [
+    "cli"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "drush",
+    "building",
+    "deployment",
+    "cli",
+    "deprecated"
+  ],
+  "tags": [
+    "popular"
+  ],
+  "similar": [
+    "fetcher",
+    "aquifer",
+    "drubs",
+    "blt"
+  ],
+  "id": "druml",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/druml.yml"
+}

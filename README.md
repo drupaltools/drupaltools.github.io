@@ -48,6 +48,22 @@ bundle install
 bundle exec jekyll serve --server 8080
 ```
 
+## MCP Server
+
+This repository includes an MCP (Model Context Protocol) server that provides programmatic access to the Drupal tools database. See [mcp-server/README.md](./mcp-server/README.md) for details.
+
+### Quick Start
+
+```bash
+npm install
+npm run mcp
+```
+
+The MCP server provides three tools:
+- `list_tools`: List all tools with optional category filtering
+- `search_tools`: Semantic search for tools
+- `get_tool`: Get detailed information about a specific tool
+
 Or just open in Gitpod!
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/drupaltools/drupaltools.github.io)

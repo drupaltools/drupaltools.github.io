@@ -1,0 +1,31 @@
+{
+  "name": "Capistrano Drupal Deploy",
+  "year_created": 2015,
+  "source": "https://github.com/capistrano/drupal-deploy",
+  "homepage": "https://github.com/capistrano/drupal-deploy",
+  "docs": null,
+  "logo": null,
+  "description": "This gem provides a number of tasks which are useful for deploying Drupal 7 projects with Capistrano 3 and the help of drush. This is a short doc to help you deploy a drupal projet. To know more about capistrano read their documentation on Capistrano 3.",
+  "requires": [
+    "ruby"
+  ],
+  "drupal_versions": [
+    7
+  ],
+  "operation_system": [
+    "all"
+  ],
+  "category": [
+    "deployment",
+    "development",
+    "cli",
+    "deprecated"
+  ],
+  "similar": [
+    "deployotron",
+    "deployer",
+    "drubs"
+  ],
+  "id": "capistrano-drupal-deploy",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/capistrano-drupal-deploy.yml"
+}

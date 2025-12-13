@@ -1,0 +1,29 @@
+{
+  "name": "Drupal Docker Environment",
+  "year_created": 2016,
+  "source": "https://github.com/activelamp/generator-drupalal",
+  "homepage": "https://github.com/activelamp/generator-drupalal",
+  "docs": null,
+  "logo": null,
+  "description": "Yeoman generator for building Drupal sites.",
+  "requires": [
+    "yeoman"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "generator",
+    "npm",
+    "scaffolding",
+    "deprecated"
+  ],
+  "similar": [
+    "valkyrie",
+    "fetcher"
+  ],
+  "id": "ddd",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/ddd.yml"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Drupal.org API Component",
+  "year_created": 2015,
+  "source": "https://github.com/EclipseGc/drupal-org-api",
+  "homepage": "https://github.com/EclipseGc/drupal-org-api",
+  "docs": "https://github.com/EclipseGc/drupal-org-api#readme",
+  "logo": null,
+  "description": "A PHP component that wraps the Drupal.org REST API for accessing project, user, and issue data.",
+  "requires": [
+    "composer",
+    "php"
+  ],
+  "drupal_versions": [
+    7,
+    9,
+    10
+  ],
+  "category": [
+    "drupalorg",
+    "sdk",
+    "deprecated"
+  ],
+  "id": "drupal-org-api",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-org-api.yml"
+}

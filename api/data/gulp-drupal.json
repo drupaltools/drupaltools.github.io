@@ -1,0 +1,25 @@
+{
+  "name": "Gulp for Drupal",
+  "year_created": 2017,
+  "source": "https://github.com/SyneticNL/Gulp-for-Drupal",
+  "homepage": "https://github.com/SyneticNL/Gulp-for-Drupal",
+  "docs": "https://github.com/SyneticNL/Gulp-for-Drupal",
+  "logo": "https://raw.githubusercontent.com/electric-eloquence/fepper-npm/master/excludes/fepper-branding.png",
+  "description": "This gulp setup features a full Drupal Gulp workflow for proccesing your SCSS files, running browsersync, linting SCSS and JavaScript and several other tasks. This Gulp setup is made to work with Drupal (tested with Drupal 7 & 8) but can also be configured to work with any other project. The setup is extremely customisable by editing the gulpconfig.json.",
+  "requires": [
+    "npm"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "theming",
+    "gulp",
+    "deprecated"
+  ],
+  "similar": null,
+  "id": "gulp-drupal",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/gulp-drupal.yml"
+}

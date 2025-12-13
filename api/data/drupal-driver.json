@@ -1,0 +1,25 @@
+{
+  "name": "DrupalDriver",
+  "year_created": 2017,
+  "source": "https://github.com/jhedstrom/DrupalDriver",
+  "homepage": "https://github.com/jhedstrom/DrupalDriver",
+  "docs": null,
+  "logo": null,
+  "description": "Provides a collection of light-weight drivers (eg Blackbox, Direct Drupal API bootstrap, Drush) with a common interface for interacting with Drupal.These are generally intended for testing, and are not meant to be API-complete. ",
+  "requires": [
+    "drupal",
+    "composer"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "drivers",
+    "ci",
+    "testing"
+  ],
+  "similar": null,
+  "id": "drupal-driver",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-driver.yml"
+}

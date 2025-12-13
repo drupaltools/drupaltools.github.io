@@ -1,0 +1,22 @@
+{
+  "name": "Test Drupal Projects",
+  "year_created": 2019,
+  "source": "https://github.com/thunder/drupal-testing",
+  "homepage": "https://github.com/thunder/drupal-testing",
+  "docs": null,
+  "logo": null,
+  "description": "Use this package to simplify your drupal project testing. This will run all your standard drupal test and additionally check your source code for drupal coding style guidelines. It can be used to locally run those tests, or on CI platforms like travis or in github actions.",
+  "requires": [
+    "composer"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "development",
+    "ci",
+    "testing"
+  ],
+  "id": "drupal-testing",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-testing.yml"
+}

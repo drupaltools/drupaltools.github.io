@@ -1,0 +1,25 @@
+{
+  "name": "Drupal Nginx recipe",
+  "year_created": 2010,
+  "source": "https://github.com/perusio/drupal-with-nginx",
+  "homepage": "https://github.com/perusio/drupal-with-nginx",
+  "docs": null,
+  "logo": null,
+  "description": "Nginx configuration for running Drupal",
+  "requires": [
+    "nginx",
+    "php-fpm"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "provisioning",
+    "server",
+    "seo",
+    "deprecated"
+  ],
+  "id": "drupal-nginx-recipe",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-nginx-recipe.yml"
+}

@@ -1,0 +1,110 @@
+---
+layout: default
+title: Drupal Tools API
+permalink: /api/
+---
+
+# Drupal Tools REST API
+
+This API provides programmatic access to the Drupal tools database. It's designed to work similarly to the MCP server but over HTTP.
+
+## Base URL
+```
+https://drupaltools.github.io/api
+```
+
+## Endpoints
+
+### 1. List Tools
+```
+GET /tools?category={category}&limit={limit}
+```
+
+Parameters:
+- `category` (optional): Filter by category
+- `limit` (optional, default: 50): Maximum results
+
+Example:
+```javascript
+fetch('/api/tools?category=testing&limit=5')
+  .then(r => r.json())
+  .then(data => console.log(data));
+```
+
+### 2. Search Tools
+```
+GET /search?q={query}&limit={limit}
+```
+
+Parameters:
+- `q` (required): Search query
+- `limit` (optional, default: 10): Maximum results
+
+Example:
+```javascript
+fetch('/api/search?q=docker&limit=5')
+  .then(r => r.json())
+  .then(data => console.log(data));
+```
+
+### 3. Get Tool
+```
+GET /tool/{id}
+```
+
+Parameters:
+- `id`: Tool ID or name
+
+Example:
+```javascript
+fetch('/api/tool/blt')
+  .then(r => r.json())
+  .then(data => console.log(data));
+```
+
+### 4. Categories
+```
+GET /categories
+```
+
+Example:
+```javascript
+fetch('/api/categories')
+  .then(r => r.json())
+  .then(data => console.log(data));
+```
+
+## JavaScript Client
+
+Include the client library:
+```html
+<script src="/api/drupal-tools.js"></script>
+```
+
+Use the API:
+```javascript
+// List testing tools
+const tools = await DrupalToolsAPI.listTools('testing', 10);
+
+// Search for Docker tools
+const results = await DrupalToolsAPI.searchTools('docker', 5);
+
+// Get BLT details
+const blt = await DrupalToolsAPI.getTool('blt');
+```
+
+## CORS Note
+
+Due to browser security policies, this API works best when accessed from the same domain (drupaltools.github.io). For cross-domain access, consider using a CORS proxy.
+
+## MCP vs REST API
+
+| Feature | MCP Server | REST API |
+|---------|-------------|-----------|
+| Protocol | stdin/stdout | HTTP |
+| Integration | Claude Desktop | Any HTTP client |
+| Real-time | Yes | Yes |
+| Authentication | Not needed | Not needed |
+| Deployment | Local | GitHub Pages |
+
+The MCP server is recommended for integration with AI assistants, while the REST API is suitable for web applications and other HTTP clients.

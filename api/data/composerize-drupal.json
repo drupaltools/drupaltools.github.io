@@ -1,0 +1,23 @@
+{
+  "name": "Composerize Drupal",
+  "year_created": 2018,
+  "source": "https://github.com/grasmash/composerize-drupal",
+  "homepage": "https://github.com/grasmash/composerize-drupal",
+  "docs": null,
+  "logo": null,
+  "description": "Convert a non-Composer-managed Drupal application (e.g., one created via tarball) to a Composer-managed Drupal application.",
+  "requires": [
+    "composer"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "cli",
+    "development",
+    "deprecated"
+  ],
+  "similar": null,
+  "id": "composerize-drupal",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/composerize-drupal.yml"
+}

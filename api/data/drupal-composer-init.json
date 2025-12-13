@@ -1,0 +1,32 @@
+{
+  "name": "Drupal composer init",
+  "year_created": 2017,
+  "source": "https://github.com/hussainweb/drupal-composer-init",
+  "homepage": "https://github.com/hussainweb/drupal-composer-init",
+  "docs": "https://github.com/hussainweb/drupal-composer-init",
+  "logo": null,
+  "description": "This plugin provides a new composer command (drupal-init) which helps in creating new Drupal installations based on composer. Most of the options are very similar to the default composer init command. There are additional options to specify a Drupal core or distro to use and the docroot.",
+  "requires": [
+    "composer"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "building",
+    "cli",
+    "scaffolding"
+  ],
+  "tags": [
+    "popular"
+  ],
+  "similar": [
+    "fetcher",
+    "aquifer",
+    "drubs",
+    "blt"
+  ],
+  "id": "drupal-composer-init",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-composer-init.yml"
+}

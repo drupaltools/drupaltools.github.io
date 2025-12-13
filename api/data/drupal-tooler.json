@@ -1,0 +1,26 @@
+{
+  "name": "Drupal Tooler",
+  "year_created": 2025,
+  "source": "https://github.com/baikho/drupal-tooler",
+  "homepage": "https://chromewebstore.google.com/detail/drupal-tooler/lmkfjgfjbplgkgkgfmkiepadaajpenkn",
+  "docs": "https://github.com/baikho/drupal-tooler#readme",
+  "logo": null,
+  "description": "A browser extension that adds quick navigation, search, and helper shortcuts for working across the Drupal.org ecosystem.",
+  "requires": [
+    "http",
+    "javascript"
+  ],
+  "drupal_versions": [
+    7,
+    9,
+    10
+  ],
+  "category": [
+    "development",
+    "drupalorg",
+    "workflow",
+    "browser"
+  ],
+  "id": "drupal-tooler",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupal-tooler.yml"
+}

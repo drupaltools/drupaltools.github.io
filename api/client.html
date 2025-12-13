@@ -1,0 +1,299 @@
+---
+layout: default
+title: Drupal Tools API Client
+permalink: /api/client/
+---
+
+<div id="app" class="container">
+  <h1>Drupal Tools API Client</h1>
+
+  <div class="search-section">
+    <input type="text" id="searchInput" placeholder="Search for tools..." class="search-input">
+    <button onclick="performSearch()" class="btn btn-primary">Search</button>
+  </div>
+
+  <div class="filters-section">
+    <label>Category:</label>
+    <select id="categorySelect" onchange="filterByCategory()" class="form-control">
+      <option value="">All Categories</option>
+    </select>
+    <label>Limit:</label>
+    <input type="number" id="limitInput" value="20" min="1" max="100" class="form-control" style="width: 80px;">
+  </div>
+
+  <div id="results" class="results-section"></div>
+</div>
+
+<script src="/api/data/drupal-tools-data.js"></script>
+<script>
+// Client-side Drupal Tools API - works on GitHub Pages
+class DrupalToolsClient {
+  constructor(data) {
+    this.projects = data.projects;
+    this.categories = data.categories;
+    this.setupUI();
+  }
+
+  setupUI() {
+    // Populate categories
+    const categorySelect = document.getElementById('categorySelect');
+    this.categories.forEach(cat => {
+      const option = document.createElement('option');
+      option.value = cat;
+      option.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+      categorySelect.appendChild(option);
+    });
+  }
+
+  listTools(category = null, limit = 20) {
+    let tools = this.projects;
+
+    if (category) {
+      tools = tools.filter(tool =>
+        tool.category && tool.category.includes(category.toLowerCase())
+      );
+    }
+
+    return tools.slice(0, limit);
+  }
+
+  searchTools(query, limit = 20) {
+    const queryLower = query.toLowerCase();
+
+    const scored = this.projects.map(tool => {
+      let score = 0;
+
+      // Title matches
+      if (tool.name.toLowerCase().includes(queryLower)) score += 100;
+
+      // Category matches
+      if (tool.category) {
+        tool.category.forEach(cat => {
+          if (cat.toLowerCase().includes(queryLower)) score += 50;
+        });
+      }
+
+      // Tag matches
+      if (tool.tags) {
+        tool.tags.forEach(tag => {
+          if (tag.toLowerCase().includes(queryLower)) score += 30;
+        });
+      }
+
+      // Description matches
+      if (tool.description.toLowerCase().includes(queryLower)) score += 20;
+
+      return { tool, score };
+    })
+    .filter(item => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(item => item.tool);
+
+    return scored;
+  }
+
+  getTool(toolId) {
+    return this.projects.find(p => p.id === toolId) ||
+           this.projects.find(p => p.name.toLowerCase() === toolId.toLowerCase());
+  }
+
+  renderTool(tool) {
+    const card = document.createElement('div');
+    card.className = 'tool-card';
+
+    const categories = tool.category ? tool.category.map(c =>
+      `<span class="category">${c}</span>`
+    ).join('') : '';
+
+    const tags = tool.tags ? tool.tags.map(t =>
+      `<span class="tag">${t}</span>`
+    ).join('') : '';
+
+    card.innerHTML = `
+      <h3>${tool.name}</h3>
+      <p class="description">${tool.description}</p>
+      <div class="meta">
+        ${categories}
+        ${tags}
+      </div>
+      <div class="links">
+        ${tool.homepage ? `<a href="${tool.homepage}" target="_blank">GitHub</a>` : ''}
+        ${tool.docs ? `<a href="${tool.docs}" target="_blank">Docs</a>` : ''}
+      </div>
+    `;
+
+    card.onclick = () => showToolDetails(tool);
+    return card;
+  }
+}
+
+// Initialize
+let client;
+let currentResults = [];
+
+function initializeClient() {
+  client = new DrupalToolsClient(window.DrupalToolsData);
+
+  // Show initial tools
+  const limit = parseInt(document.getElementById('limitInput').value);
+  currentResults = client.listTools(null, limit);
+  renderResults(currentResults);
+}
+
+function renderResults(tools) {
+  const resultsDiv = document.getElementById('results');
+  resultsDiv.innerHTML = '';
+
+  if (tools.length === 0) {
+    resultsDiv.innerHTML = '<p>No tools found.</p>';
+    return;
+  }
+
+  const toolsGrid = document.createElement('div');
+  toolsGrid.className = 'tools-grid';
+  tools.forEach(tool => {
+    toolsGrid.appendChild(client.renderTool(tool));
+  });
+
+  resultsDiv.appendChild(toolsGrid);
+}
+
+function performSearch() {
+  const query = document.getElementById('searchInput').value;
+  const limit = parseInt(document.getElementById('limitInput').value);
+
+  if (query) {
+    currentResults = client.searchTools(query, limit);
+  } else {
+    const category = document.getElementById('categorySelect').value;
+    currentResults = client.listTools(category, limit);
+  }
+
+  renderResults(currentResults);
+}
+
+function filterByCategory() {
+  performSearch();
+}
+
+function showToolDetails(tool) {
+  alert(`Tool: ${tool.name}\n\n${tool.description}\n\nRequirements: ${tool.requires ? tool.requires.join(', ') : 'None'}\nDrupal Versions: ${tool.drupal_versions ? tool.drupal_versions.join(', ') : 'Not specified'}`);
+}
+
+// Initialize when page loads
+if (window.DrupalToolsData) {
+  initializeClient();
+} else {
+  document.getElementById('results').innerHTML = '<p>Loading data...</p>';
+  window.addEventListener('load', initializeClient);
+}
+
+// Add some basic styles
+const style = document.createElement('style');
+style.textContent = `
+  .search-section {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .filters-section {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+  }
+
+  .tool-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+  }
+
+  .tool-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .tool-card h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .description {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .category, .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 2px;
+    border-radius: 12px;
+    font-size: 12px;
+    background: #e3f2fd;
+    color: #1976d2;
+  }
+
+  .tag {
+    background: #fff3e0;
+    color: #f57c00;
+  }
+
+  .links {
+    margin-top: 10px;
+  }
+
+  .links a {
+    margin-right: 15px;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    background: #007bff;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: #0056b3;
+  }
+
+  .form-control {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+`;
+document.head.appendChild(style);
+</script>

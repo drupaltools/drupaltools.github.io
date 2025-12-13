@@ -1,0 +1,27 @@
+{
+  "name": "Phing Drupal Tests",
+  "year_created": 2019,
+  "source": "https://github.com/DoghouseMedia/phing-drupal-tests",
+  "homepage": "https://github.com/DoghouseMedia/phing-drupal-tests",
+  "docs": null,
+  "logo": null,
+  "description": "A collection of automated Drupal testing targets for Phing.",
+  "requires": [
+    "composer",
+    "phing"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "testing",
+    "CI",
+    "phing",
+    "deprecated"
+  ],
+  "similar": [
+    "phingdrushtask"
+  ],
+  "id": "phing-drupal-tests",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/phing-drupal-tests.yml"
+}

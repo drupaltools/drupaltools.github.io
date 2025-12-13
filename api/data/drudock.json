@@ -1,0 +1,28 @@
+{
+  "name": "DruDock",
+  "year_created": 2016,
+  "source": "https://github.com/4AllDigital/DruDockCli",
+  "homepage": "https://github.com/4AllDigital/DruDockCli",
+  "docs": null,
+  "logo": "https://s3.eu-west-2.amazonaws.com/drudock/DruDockLogo.jpg",
+  "description": "DruDock is Docker based development, staging and production environment for Drupal websites or PHP apps.",
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "cli",
+    "docker",
+    "debug"
+  ],
+  "similar": [
+    "terra",
+    "docksal"
+  ],
+  "id": "drudock",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drudock.yml"
+}

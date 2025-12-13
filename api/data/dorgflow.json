@@ -1,0 +1,31 @@
+{
+  "name": "dorgflow",
+  "year_created": 2016,
+  "source": "https://github.com/joachim-n/dorgflow",
+  "homepage": "https://github.com/joachim-n/dorgflow",
+  "docs": null,
+  "logo": null,
+  "description": "Dorgflow is a set of commands that streamline your work with patches for issues on drupal.org. With Dorgflow, you don't need to download and apply patches, and creating patches and interdiffs is simplified. The only thing that Dorgflow doesn't handle is posting your files back to an issue for review.",
+  "requires": [
+    "cli",
+    "composer",
+    "git"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "cli",
+    "development",
+    "drupalorg"
+  ],
+  "tags": [
+    "cli"
+  ],
+  "similar": [
+    "dogit"
+  ],
+  "id": "dorgflow",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/dorgflow.yml"
+}

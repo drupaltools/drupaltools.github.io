@@ -1,0 +1,30 @@
+{
+  "name": "Simple Drupal Docker Toolset",
+  "year_created": 2015,
+  "source": "https://github.com/reinier-vegter/Simple-Drupal-Docker-Toolset",
+  "homepage": "https://github.com/reinier-vegter/Simple-Drupal-Docker-Toolset",
+  "docs": null,
+  "logo": null,
+  "description": "With this toolset, you can install docker and easily fire up any existing Drupal (or php) webroot in 2 seconds.",
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    6,
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "cli",
+    "docker",
+    "debug"
+  ],
+  "similar": [
+    "terra",
+    "docksal",
+    "drudock"
+  ],
+  "id": "simple-drupal-docker-toolset",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/simple-drupal-docker-toolset.yml"
+}

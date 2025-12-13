@@ -1,0 +1,29 @@
+{
+  "name": "Bitnami Docker for Drupal",
+  "year_created": 2015,
+  "source": "https://github.com/bitnami/bitnami-docker-drupal",
+  "homepage": "https://github.com/bitnami/bitnami-docker-drupal",
+  "docs": "https://github.com/bitnami/bitnami-docker-drupal",
+  "logo": null,
+  "description": "Bitnami Docker Images for Drupal.",
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "debug",
+    "development",
+    "testing",
+    "cli",
+    "docker",
+    "deprecated"
+  ],
+  "similar": [
+    "terra"
+  ],
+  "id": "bitnami-docker",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/bitnami-docker.yml"
+}

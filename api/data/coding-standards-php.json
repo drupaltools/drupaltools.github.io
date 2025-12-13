@@ -1,0 +1,24 @@
+{
+  "name": "Coding standards php",
+  "year_created": 2018,
+  "source": "https://github.com/acquia/coding-standards-php",
+  "homepage": "https://github.com/acquia/coding-standards-php",
+  "docs": null,
+  "logo": null,
+  "description": "Acquia Coding Standards for PHP is a collection of PHP_CodeSniffer rules (sniffs) for Acquia coding standards for PHP projects, including Drupal extensions.",
+  "requires": [
+    "composer",
+    "phpcs"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "guality-check",
+    "coding-standards",
+    "testing",
+    "phpcs"
+  ],
+  "id": "coding-standards-php",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/coding-standards-php.yml"
+}

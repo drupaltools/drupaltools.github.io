@@ -1,0 +1,29 @@
+{
+  "name": "Drainpipe",
+  "year_created": 2021,
+  "source": "https://github.com/Lullabot/drainpipe",
+  "homepage": "https://github.com/Lullabot/drainpipe",
+  "docs": "https://github.com/Lullabot/drainpipe",
+  "logo": null,
+  "description": "Drainpipe is a composer package which provides a number of build tool helpers for a Drupal site, including: 1) Site and database updates, 2) Artifact packaging for deployment to a hosting provider, 3) Automated testing setup with support for PHPUnit and Nightwatch tests",
+  "requires": [
+    "composer",
+    "npm"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "development",
+    "testing",
+    "deployment",
+    "devops",
+    "ci",
+    "cd"
+  ],
+  "similar": [
+    "blt"
+  ],
+  "id": "drainpipe",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drainpipe.yml"
+}

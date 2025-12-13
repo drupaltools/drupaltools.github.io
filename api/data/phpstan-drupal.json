@@ -1,0 +1,26 @@
+{
+  "name": "PHPStan Drupal",
+  "year_created": 2018,
+  "source": "https://github.com/mglaman/phpstan-drupal",
+  "homepage": "https://github.com/mglaman/phpstan-drupal",
+  "docs": null,
+  "logo": null,
+  "description": "Extension for PHPStan to allow analysis of Drupal code.",
+  "recommended": true,
+  "requires": [
+    "phpstan"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "category": [
+    "debug",
+    "testing",
+    "cli"
+  ],
+  "similar": [
+    "drupal-check"
+  ],
+  "id": "phpstan-drupal",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/phpstan-drupal.yml"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Wadmiraal Docker Drupal",
+  "year_created": 2015,
+  "source": "https://github.com/wadmiraal/docker-drupal",
+  "homepage": "https://github.com/wadmiraal/docker-drupal",
+  "docs": "https://github.com/wadmiraal/docker-drupal",
+  "logo": null,
+  "description": "Quick and easy to use Docker container for your local Drupal development. It contains a LAMP stack and an SSH server, along with an up to date version of Drush. It is based on Debian Jessie.",
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "development",
+    "debug",
+    "docker",
+    "deprecated"
+  ],
+  "tags": [
+    "popular"
+  ],
+  "similar": [
+    "drupal8-sprint-box",
+    "dockerdrupal"
+  ],
+  "id": "wadmiraal-docker-drupal",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/wadmiraal-docker-drupal.yml"
+}

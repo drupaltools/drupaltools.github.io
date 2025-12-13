@@ -1,0 +1,25 @@
+{
+  "name": "drupalQA",
+  "year_created": 2018,
+  "source": "https://github.com/hussainweb/drupalqa",
+  "homepage": "https://github.com/hussainweb/drupalqa",
+  "docs": null,
+  "logo": null,
+  "description": "Docker image providing static analysis tools for Drupal and PHP. This is based on the comprehensive PHPQA image and adds Drupal specific sniffs and PAReview.",
+  "recommended": false,
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    7,
+    9
+  ],
+  "category": [
+    "code-quality",
+    "docker",
+    "testing",
+    "qa"
+  ],
+  "id": "drupalqa",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drupalqa.yml"
+}

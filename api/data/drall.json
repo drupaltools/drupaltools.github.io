@@ -1,0 +1,26 @@
+{
+  "name": "Drall",
+  "year_created": 2022,
+  "source": "https://github.com/jigarius/drall",
+  "homepage": "https://github.com/jigarius/drall",
+  "docs": "https://github.com/jigarius/drall#readme",
+  "logo": null,
+  "description": "Runs Drush commands across multi-site Drupal installations from a single CLI wrapper.",
+  "requires": [
+    "cli",
+    "drush",
+    "php"
+  ],
+  "drupal_versions": [
+    7,
+    9,
+    10
+  ],
+  "category": [
+    "cli",
+    "drush",
+    "multisite"
+  ],
+  "id": "drall",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/drall.yml"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Dockerized drupal starter",
+  "year_created": 2017,
+  "source": "https://github.com/LevInteractive/dockerized-drupal-starter",
+  "homepage": "https://github.com/LevInteractive/dockerized-drupal-starter",
+  "docs": null,
+  "logo": null,
+  "description": "End-to-end (CI + CD) dockerized Drupal 8 starting point.",
+  "requires": [
+    "docker"
+  ],
+  "drupal_versions": [
+    9
+  ],
+  "operation_system": [
+    "all"
+  ],
+  "category": [
+    "development",
+    "docker",
+    "testing",
+    "ci",
+    "cd",
+    "deprecated"
+  ],
+  "tags": [
+    "new"
+  ],
+  "similar": [
+    "drupal-8-sprint-box",
+    "docker4drupal"
+  ],
+  "id": "dockerized-drupal-starter",
+  "path": "/var/www/html/NON-DRUPAL/drupaltools.github.io/_data/projects/dockerized-drupal-starter.yml"
+}
