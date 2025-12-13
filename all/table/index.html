@@ -17,6 +17,7 @@ hero_title: All Drupal tools
       <th class="sort-filter"><span>Created</span></th>
       <th class="sort-filter"><span>Requires</span></th>
       <th class="sort-filter"><span>Category</span></th>
+      <th>Edit</th>
     </tr>
     {% assign project_hashes = site.data.projects | sort %}
     {% for project_hash in project_hashes %}
@@ -26,7 +27,7 @@ hero_title: All Drupal tools
       {% assign category =  project.category | sort | join: ', ' | downcase %}
       {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
 
-      <tr class="result-row" data-created="{{ project.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
+      <tr class="result-row" data-name="{{ project.name }}" data-created="{{ project.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
         <td>{{ forloop.index }}</td>
         <td>
           <h4 class="project-title"><a href="{{ project.homepage }}">{{ project.name }}</a></h4>
@@ -44,6 +45,7 @@ hero_title: All Drupal tools
         <td class="filter-created">{{ project.year_created }}</td>
         <td class="filter-requires">{{ requires }}</td>
         <td class="filter-category">{{ category }}</td>
+        <td><a class="project-edit-table" title="Edit on GitHub" href="https://github.com/drupaltools/drupaltools.github.io/edit/master/_data/projects/{{ project_hash[0] }}.yml" target="_blank">✎</a></td>
       </tr>
     {% endfor %}
 

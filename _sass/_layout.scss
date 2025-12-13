@@ -323,6 +323,12 @@
 }
 
 th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+
   select {
     display: block;
     width: 100%;
@@ -356,6 +362,41 @@ th {
 
 .project-docs {
   background: url(../img/book.png) no-repeat;
+}
+
+.project-edit {
+  display: block;
+  background-color: #f0f0f0;
+  color: #666;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-top: 5px;
+
+  &:visited {
+    text-decoration: none;
+    color: #666;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #333;
+    background-color: #e0e0e0;
+  }
+}
+
+.project-edit-table {
+  font-size: 18px;
+  text-decoration: none;
+  color: #666;
+
+  &:hover,
+  &:focus {
+    color: $site-blue;
+  }
 }
 
 // Tile - flexbox
@@ -425,6 +466,24 @@ th {
 
 .filters {
   margin: 0 14px 20px 2px;
+
+  .search-input {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 200px;
+    margin-right: 10px;
+
+    &:focus {
+      outline: none;
+      border-color: $site-blue;
+    }
+  }
+
+  select {
+    margin-right: 10px;
+  }
 }
 
 .results {
@@ -435,7 +494,8 @@ th {
 .js-hidden-created,
 .js-hidden-category,
 .js-hidden-requires,
-.js-hidden-drupal {
+.js-hidden-drupal,
+.js-hidden-search {
   display: none;
 }
 
@@ -501,7 +561,8 @@ th {
 .project-wrapper-tile {
   .filter-requires,
   .filter-category,
-  .description {
+  .description,
+  .project-edit {
     display: none;
   }
 }
@@ -518,7 +579,8 @@ th {
 
   .filter-requires,
   .filter-category,
-  .description {
+  .description,
+  .project-edit {
     display: block;
     overflow: hidden;
     white-space: normal;

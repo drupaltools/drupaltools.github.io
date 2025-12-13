@@ -22,6 +22,7 @@ layout: default
         <div class="description">{{ page.description }}</div>
         <div class="filter-requires"><label>Requires: </label>{{ page.requires | sort | join: ', ' | downcase }}</div>
         <div class="filter-category"><label>Category: </label>{{ page.category | sort | join: ', ' | downcase }}</div>
+        <a class="project-edit" title="Edit on GitHub" href="https://github.com/drupaltools/drupaltools.github.io/edit/master/_data/projects/{{ page.name | slugify }}.yml" target="_blank">✎ Edit on GitHub</a>
       </article>
     </div>
 

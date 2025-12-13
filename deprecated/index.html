@@ -1,6 +1,7 @@
 ---
 layout: default
-title: All Drupal tools
+title: Deprecated Drupal tools
+hero_title: Deprecated Drupal tools
 ---
 <div class="project-tiles row">
   {% assign project_hashes = site.data.projects | sort %}
@@ -11,6 +12,7 @@ title: All Drupal tools
     {% assign category =  project.category | sort | join: ', ' | downcase %}
     {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
 
+    {% if category contains 'deprecated' %}
     <div class="column result-row" data-name="{{ project.name }}" data-created="{{ project.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
       <div class="js-close"> </div>
       <article class="project-wrapper-tile">
@@ -36,5 +38,6 @@ title: All Drupal tools
         <a class="project-edit" title="Edit on GitHub" href="https://github.com/drupaltools/drupaltools.github.io/edit/master/_data/projects/{{ project_hash[0] }}.yml" target="_blank">✎ Edit</a>
       </article>
     </div>
+    {% endif %}
   {% endfor %}
 </div>

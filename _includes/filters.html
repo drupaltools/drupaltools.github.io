@@ -1,4 +1,14 @@
 <div class="filters">
+  <input type="text" class="search-input" placeholder="🔍 Search tools..." />
+
+  <select class="sort-by">
+    <option value="none" class="default">- Sort By -</option>
+    <option value="name-asc">Name (A-Z)</option>
+    <option value="name-desc">Name (Z-A)</option>
+    <option value="created-asc">Created (Oldest)</option>
+    <option value="created-desc">Created (Newest)</option>
+  </select>
+
   <select class="filter-created">
     <option value="none" class="default">- Created -</option>
     {% capture list_created %}
