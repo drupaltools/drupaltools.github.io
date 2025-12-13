@@ -60,8 +60,8 @@ jobs:
         run: |
           cd mcp-package
           npm version ${{ steps.version.outputs.version }} --no-git-tag-version
-          cd dist
-          npm version ${{ steps.version.outputs.version }} --no-git-tag-version
+          # Update version in dist/package.json
+          node -e "const fs=require('fs');const p=require('./dist/package.json');p.version='${{ steps.version.outputs.version }}';fs.writeFileSync('./dist/package.json',JSON.stringify(p,null,2));"
 
       - name: Publish to npm
         run: |
