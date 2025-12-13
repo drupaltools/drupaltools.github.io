@@ -1,11 +1,72 @@
 jQuery(function($) {
 
   const rows = $(".result-row"),
-        body = $("body");
+        body = $("body"),
+        rowsContainer = rows.parent();
 
   $(".results-text").text(rows.length);
 
-  $("select").change(function() {
+  // Search functionality
+  $(".search-input").on("keyup", function() {
+    const searchTerm = $(this).val().toLowerCase();
+    
+    rows.each(function() {
+      const el = $(this),
+            name = el.attr("data-name") ? el.attr("data-name").toLowerCase() : "",
+            category = el.attr("data-category") ? el.attr("data-category").toLowerCase() : "",
+            requires = el.attr("data-requires") ? el.attr("data-requires").toLowerCase() : "",
+            description = el.find(".description").text().toLowerCase();
+      
+      if (name.indexOf(searchTerm) >= 0 || 
+          category.indexOf(searchTerm) >= 0 || 
+          requires.indexOf(searchTerm) >= 0 ||
+          description.indexOf(searchTerm) >= 0) {
+        el.removeClass("js-hidden-search");
+      } else {
+        el.addClass("js-hidden-search");
+      }
+    });
+    
+    updateResultsCount();
+  });
+
+  // Sort functionality
+  $(".sort-by").change(function() {
+    const sortValue = $(this).val();
+    
+    if (sortValue === "none") {
+      return;
+    }
+    
+    const sortedRows = rows.sort(function(a, b) {
+      const aEl = $(a),
+            bEl = $(b);
+      
+      if (sortValue === "name-asc") {
+        const aName = aEl.attr("data-name") || "",
+              bName = bEl.attr("data-name") || "";
+        return aName.localeCompare(bName);
+      } else if (sortValue === "name-desc") {
+        const aName = aEl.attr("data-name") || "",
+              bName = bEl.attr("data-name") || "";
+        return bName.localeCompare(aName);
+      } else if (sortValue === "created-asc") {
+        const aYear = parseInt(aEl.attr("data-created")) || 0,
+              bYear = parseInt(bEl.attr("data-created")) || 0;
+        return aYear - bYear;
+      } else if (sortValue === "created-desc") {
+        const aYear = parseInt(aEl.attr("data-created")) || 0,
+              bYear = parseInt(bEl.attr("data-created")) || 0;
+        return bYear - aYear;
+      }
+      return 0;
+    });
+    
+    rowsContainer.append(sortedRows);
+  });
+
+  // Filter functionality
+  $("select:not(.sort-by)").change(function() {
     const el = $(this),
           attr = el.attr("class").replace("filter-",""),
           selected = el.val();
@@ -28,8 +89,14 @@ jQuery(function($) {
         $(this).removeClass("js-hidden-"+attr);
       });
     }
-
+    
+    updateResultsCount();
   });
+
+  function updateResultsCount() {
+    const visibleRows = rows.filter(":visible").length;
+    $(".results-text").text(visibleRows);
+  }
 
   // Click to open a project
   $(".js-more").click(function(e){

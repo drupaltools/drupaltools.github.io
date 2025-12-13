@@ -14,7 +14,7 @@ title: Most popular Drupal tools
       {% assign category =  project.category | sort | join: ', ' | downcase %}
       {% assign drupal =  project.drupal_versions | sort | join: ', ' %}
 
-      <div class="column result-row" data-created="{{ project.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
+      <div class="column result-row" data-name="{{ project.name }}" data-created="{{ project.year_created }}" data-requires="{{ requires }}" data-category="{{ category }}" data-drupal="{{ drupal }}">
         <div class="js-close"> </div>
         <article class="project-wrapper-tile">
           <div class="name"><a href="{{ project.homepage }}">{{ project.name }}</a> (<span class="td-filter" data-class="td-created">{{ project.year_created }}</span>)</div>
@@ -36,6 +36,7 @@ title: Most popular Drupal tools
           <div class="filter-category"><label>Category: </label>{{ project.category | sort | join: ', ' | downcase }}</div>
 
           <a class="js-more" href="{{ project.name }}">more details</a>
+          <a class="project-edit" title="Edit on GitHub" href="https://github.com/drupaltools/drupaltools.github.io/edit/master/_data/projects/{{ project_hash[0] }}.yml" target="_blank">✎ Edit</a>
         </article>
       </div>
     {% endif %}
