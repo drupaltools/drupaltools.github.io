@@ -6,6 +6,17 @@ jQuery(function($) {
 
   $(".results-text").text(rows.length);
 
+  // Style deprecated items
+  $(".filter-category").each(function() {
+    const $this = $(this);
+    const text = $this.text();
+    if (text.toLowerCase().includes("deprecated")) {
+      // Find and wrap the "deprecated" text
+      const deprecatedText = $this.text().replace(/deprecated/gi, '<span class="deprecated">deprecated</span>');
+      $this.html(deprecatedText);
+    }
+  });
+
   // Search functionality
   $(".search-input").on("keyup", function() {
     const searchTerm = $(this).val().toLowerCase();

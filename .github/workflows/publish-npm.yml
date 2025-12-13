@@ -1,0 +1,104 @@
+name: Publish to npm
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish (e.g., 1.0.0)'
+        required: true
+        default: '1.0.0'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@drupaltools'
+
+      - name: Install dependencies
+        run: |
+          cd mcp-package
+          npm install
+
+      - name: Build the package
+        run: |
+          cd mcp-package
+          npm run build
+
+      - name: Run tests
+        run: |
+          cd mcp-package
+          npm test
+
+      - name: Determine version
+        id: version
+        run: |
+          if [[ "${{ github.ref_type }}" == "tag" ]]; then
+            VERSION=${{ github.ref_name }}
+            VERSION=${VERSION#v}  # Remove 'v' prefix if present
+          else
+            VERSION=${{ github.event.inputs.version }}
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Publishing version: $VERSION"
+
+      - name: Update package version
+        run: |
+          cd mcp-package
+          npm version ${{ steps.version.outputs.version }} --no-git-tag-version
+          cd dist
+          npm version ${{ steps.version.outputs.version }} --no-git-tag-version
+
+      - name: Publish to npm
+        run: |
+          cd mcp-package/dist
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create GitHub Release
+        if: github.ref_type == 'tag'
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          body: |
+            ## Changes in ${{ github.ref_name }}
+
+            This release updates the @drupaltools/mcp npm package with the latest Drupal tools data.
+
+            ### Installation
+            ```bash
+            npx @drupaltools/mcp@${{ steps.version.outputs.version }}
+            ```
+
+            ### Claude Desktop Configuration
+            ```json
+            {
+              "mcpServers": {
+                "drupaltools": {
+                  "type": "stdio",
+                  "command": "npx",
+                  "args": ["@drupaltools/mcp@${{ steps.version.outputs.version }}"]
+                }
+              }
+            }
+            ```

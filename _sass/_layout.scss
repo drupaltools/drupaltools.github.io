@@ -499,6 +499,36 @@ th {
   display: none;
 }
 
+// Style for deprecated items
+.deprecated {
+  background-color: #ffebee !important;
+  color: #c62828 !important;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.deprecated-link {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: #ffcdd2 !important;
+    color: #b71c1c !important;
+    text-decoration: none;
+  }
+}
+
 .js-more {
   display: block;
   background-color: #ddd;
