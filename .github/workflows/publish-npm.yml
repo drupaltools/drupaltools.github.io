@@ -59,9 +59,18 @@ jobs:
       - name: Update package version
         run: |
           cd mcp-package
-          npm version ${{ steps.version.outputs.version }} --no-git-tag-version
-          # Update version in dist/package.json
-          node -e "const fs=require('fs');const p=require('./dist/package.json');p.version='${{ steps.version.outputs.version }}';fs.writeFileSync('./dist/package.json',JSON.stringify(p,null,2));"
+          # Manually update version to avoid triggering prepublishOnly
+          node -e "
+            const fs = require('fs');
+            // Update root package.json
+            const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+            pkg.version = '${{ steps.version.outputs.version }}';
+            fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
+            // Update dist/package.json
+            const distPkg = JSON.parse(fs.readFileSync('dist/package.json', 'utf8'));
+            distPkg.version = '${{ steps.version.outputs.version }}';
+            fs.writeFileSync('dist/package.json', JSON.stringify(distPkg, null, 2) + '\n');
+          "
 
       - name: Publish to npm
         run: |
