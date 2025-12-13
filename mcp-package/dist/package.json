@@ -1,6 +1,6 @@
 {
   "name": "@drupaltools/mcp",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Model Context Protocol (MCP) server for discovering Drupal development tools, utilities, and plugins",
   "type": "module",
   "main": "index.js",
