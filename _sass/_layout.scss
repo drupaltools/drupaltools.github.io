@@ -193,18 +193,22 @@
 
 .button {
   display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
   text-decoration: none;
-  padding: 4px 8px;
-  background: #ff7a00;
-  color: #fff !important;
+  padding: 6px 10px;
+  background: $site-blue;
   border-radius: 3px;
+  color: #fff;
 
   &:hover,
   &:focus {
-    background: #cc6200;
-    color: #fff !important;
     text-decoration: none;
   }
+}
+
+.orange {
+  background: #ff7a00;
 }
 
 .red {
