@@ -34,16 +34,6 @@ jobs:
           cd mcp-package
           npm install
 
-      - name: Build the package
-        run: |
-          cd mcp-package
-          npm run build
-
-      - name: Run tests
-        run: |
-          cd mcp-package
-          npm test
-
       - name: Determine version
         id: version
         run: |
@@ -66,9 +56,28 @@ jobs:
             const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
             pkg.version = '${{ steps.version.outputs.version }}';
             fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
-            // Update dist/package.json
+          "
+
+      - name: Build the package
+        run: |
+          cd mcp-package
+          npm run build
+
+      - name: Run tests
+        run: |
+          cd mcp-package
+          npm test
+
+      - name: Update dist package version
+        run: |
+          cd mcp-package
+          # Update dist/package.json without triggering prepublishOnly
+          node -e "
+            const fs = require('fs');
             const distPkg = JSON.parse(fs.readFileSync('dist/package.json', 'utf8'));
             distPkg.version = '${{ steps.version.outputs.version }}';
+            // Remove prepublishOnly to prevent build loop
+            delete distPkg.scripts.prepublishOnly;
             fs.writeFileSync('dist/package.json', JSON.stringify(distPkg, null, 2) + '\n');
           "
 
