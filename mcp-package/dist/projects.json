@@ -927,7 +927,7 @@
     "docs": "https://deployer.org/docs",
     "logo": "https://deployer.org/img/logo-48px.svg",
     "description": "Deployment tool for PHP.",
-    "recommended": true,
+    "recommended": false,
     "requires": [
       "php"
     ],
