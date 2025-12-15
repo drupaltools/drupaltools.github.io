@@ -16,7 +16,7 @@ title: Drupal Tools MCP Server
         <li><strong>get_tool</strong>: Get detailed information about a specific tool</li>
       </ul>
 
-      <h2>Installation with npm</h2>
+      <h2>Using npx</h2>
 
       <p>The easiest way to use the MCP server is with npm:</p>
 
@@ -29,13 +29,33 @@ title: Drupal Tools MCP Server
       <p>Add the following to your Claude Desktop configuration file:</p>
 
       <div class="highlight">
-        <pre>{
-  "mcpServers": {
-    "drupal-tools": {
-      "command": "drupaltools-mcp"
-    }
-  }
-}</pre>
+        <pre>
+          {
+            "mcpServers": {
+              "drupaltools": {
+                "type": "stdio",
+                "command": "npx",
+                "args": ["@drupaltools/mcp@latest"]
+              }
+            }
+          }
+        </pre>
+      </div>
+
+      <h2>Local install with npm</h2>
+
+      <div class="highlight">
+        <pre>npm install -g @drupaltools/mcp</pre>
+        <pre>
+          {
+            "mcpServers": {
+              "drupaltools": {
+                "type": "stdio",
+                "command": "drupaltools-mcp"
+              }
+            }
+          }
+        </pre>
       </div>
 
       <h2>Available Tools</h2>
@@ -73,6 +93,14 @@ title: Drupal Tools MCP Server
         <li><code>tool_id</code> (required): The tool ID (filename without .yml) or tool name</li>
       </ul>
 
+      <h2>Example Usage and prompts</h2>
+      <code>
+        Show me 5 Drupal tools for testing Drupal sites
+        Search for Docker-based Drupal development tools
+        Tell me about ddev tool
+        List all CLI tools for Drupal that are deprecated
+      </code>
+
       <h2>Development</h2>
 
       <p>The server is built using the JavaScript/TypeScript MCP SDK (<code>@modelcontextprotocol/sdk</code> v1.24.3) with ES modules.</p>
@@ -80,7 +108,7 @@ title: Drupal Tools MCP Server
       <h2>Testing</h2>
 
       <div class="highlight">
-        <pre>npx @modelcontextprotocol/inspector node mcp-server/index.js</pre>
+        <pre>npx @modelcontextprotocol/inspector drupaltools-mcp</pre>
       </div>
 
       <p>This opens a web UI where you can:</p>

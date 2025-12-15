@@ -248,10 +248,6 @@ To add or update tools:
 
 The MCP package will be automatically updated when changes are merged (if the workflow is triggered).
 
-## License
-
-MIT
-
 ## Support
 
 - Issues: https://github.com/drupaltools/drupaltools.github.io/issues
