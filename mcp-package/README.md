@@ -128,7 +128,48 @@ Once configured, you can ask Claude to:
 
 ## Data Source
 
-This MCP server contains data for 186+ Drupal tools sourced from the Drupal Tools community project (https://drupaltools.github.io). The data is embedded in the package, so it works offline and doesn't require external API calls.
+This MCP server contains data for 160+ Drupal tools sourced from the Drupal Tools community project (https://drupaltools.github.io). 
+The data is embedded in the package, so it works offline and doesn't require external API calls.
+
+## Development
+
+```bash
+git clone https://github.com/drupaltools/drupaltools.github.io
+cd drupaltools.github.io/mcp-package
+npm install
+npm run mcp
+```
+
+The server is built using the **JavaScript/TypeScript MCP SDK** (`@modelcontextprotocol/sdk` v1.24.3) with ES modules.
+
+### Key Architecture Decisions:
+- **Language**: Pure JavaScript with ES modules (no TypeScript compilation)
+- **Transport**: Stdio for easy integration with Claude Desktop
+- **Data Loading**: Asynchronous loading with lazy initialization
+- **Scoring**: Deterministic scoring algorithm for search relevance
+- **Error Handling**: Graceful fallbacks (ID lookup → name lookup)
+
+### Architecture:
+```
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   YAML Files    │────▶│   Load Project   │────▶│   Indexed Data  │
+│ (_data/projects)│     │      Data        │     │     (Map)       │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+                                                         │
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   MCP Client    │────▶│   Tool Handlers  │────▶│   Search/Filter │
+│  (any AI tool)  │     │ (list/search/get)│     │    Logic        │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+```
+
+Key features:
+
+- Static content only - no external APIs
+- Read-only operations
+- Minimal latency and cost
+- Automatic indexing on startup (186+ tools)
+- Deterministic tool suggestions
+- Smart semantic search with field-weighted scoring
 
 ## Publishing
 
