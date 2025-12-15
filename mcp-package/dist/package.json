@@ -1,6 +1,6 @@
 {
   "name": "@drupaltools/mcp",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Model Context Protocol (MCP) server for discovering Drupal development tools, utilities, and plugins",
   "type": "module",
   "main": "index.js",
@@ -14,7 +14,27 @@
   ],
   "scripts": {
     "build": "node build.js",
-    "test": "node dist/test.js"
+    "test": "node dist/test.js",
+    "prepublishOnly": "npm run build && npm test",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
+    "release:patch": "standard-version --release-as patch",
+    "release:auto": "./release.sh",
+    "release:auto:minor": "./release.sh minor",
+    "release:auto:major": "./release.sh major"
+  },
+  "standard-version": {
+    "changelogFiles": [
+      {
+        "filename": "RELEASES.md",
+        "type": "markdown"
+      }
+    ],
+    "skip": {
+      "tag": true,
+      "commit": true
+    }
   },
   "keywords": [
     "mcp",
@@ -34,7 +54,7 @@
   "bugs": {
     "url": "https://github.com/drupaltools/drupaltools.github.io/issues"
   },
-  "homepage": "https://github.com/drupaltools/drupaltools.github.io#readme",
+  "homepage": "https://github.com/drupaltools/drupaltools.github.io/blob/master/mcp-package/README.md",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.24.3",
     "js-yaml": "^4.1.1"
@@ -44,5 +64,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
   }
 }
