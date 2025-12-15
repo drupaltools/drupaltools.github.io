@@ -59,7 +59,7 @@ writeFileSync(serverDest, serverContent);
 console.log('✓ Copied server to dist/');
 
 // Copy README
-const readmeSrc = join(rootDir, 'README.md');
+const readmeSrc = join(__dirname, 'README.md');
 const readmeDest = join(distDir, 'README.md');
 if (existsSync(readmeSrc)) {
   const readmeContent = readFileSync(readmeSrc, 'utf8');

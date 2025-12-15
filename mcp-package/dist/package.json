@@ -1,6 +1,6 @@
 {
   "name": "@drupaltools/mcp",
-  "version": "1.1.0",
+  "version": "1.0.7",
   "description": "Model Context Protocol (MCP) server for discovering Drupal development tools, utilities, and plugins",
   "type": "module",
   "main": "index.js",
@@ -17,12 +17,21 @@
     "test": "node dist/test.js",
     "prepublishOnly": "npm run build && npm test",
     "release": "standard-version",
+    "release:patch": "standard-version --release-as patch",
     "release:minor": "standard-version --release-as minor",
     "release:major": "standard-version --release-as major",
-    "release:patch": "standard-version --release-as patch",
-    "release:auto": "./release.sh",
-    "release:auto:minor": "./release.sh minor",
-    "release:auto:major": "./release.sh major"
+    "release:auto": "./scripts/release.sh",
+    "release:auto:patch": "./scripts/release-patch.sh",
+    "release:auto:minor": "./scripts/release-minor.sh",
+    "release:auto:major": "./scripts/release-major.sh",
+    "release:git": "./scripts/release-git.sh",
+    "release:git:patch": "./scripts/release-patch.sh",
+    "release:git:minor": "./scripts/release-minor.sh",
+    "release:git:major": "./scripts/release-major.sh",
+    "release:full": "./scripts/release-full.sh",
+    "release:full:patch": "./scripts/release-patch.sh publish",
+    "release:full:minor": "./scripts/release-minor.sh publish",
+    "release:full:major": "./scripts/release-major.sh publish"
   },
   "standard-version": {
     "changelogFiles": [
@@ -49,7 +58,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/drupaltools/drupaltools.github.io.git"
+    "url": "git+https://github.com/drupaltools/drupaltools.github.io.git"
   },
   "bugs": {
     "url": "https://github.com/drupaltools/drupaltools.github.io/issues"
