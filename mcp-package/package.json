@@ -48,7 +48,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/drupaltools/drupaltools.github.io.git"
+    "url": "git+https://github.com/drupaltools/drupaltools.github.io.git"
   },
   "bugs": {
     "url": "https://github.com/drupaltools/drupaltools.github.io/issues"
