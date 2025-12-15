@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/drupaltools/drupaltools.github.io/issues"
   },
-  "homepage": "https://github.com/drupaltools/drupaltools.github.io#readme",
+  "homepage": "https://github.com/drupaltools/drupaltools.github.io/blob/master/mcp-package/README.md",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.24.3",
     "js-yaml": "^4.1.1"
