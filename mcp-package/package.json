@@ -14,7 +14,26 @@
     "build": "node build.js",
     "test": "node dist/test.js",
     "publish:npm": "cd dist && npm publish",
-    "publish": "./publish.sh"
+    "publish": "./publish.sh",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
+    "release:patch": "standard-version --release-as patch",
+    "release:auto": "./release.sh",
+    "release:auto:minor": "./release.sh minor",
+    "release:auto:major": "./release.sh major"
+  },
+  "standard-version": {
+    "changelogFiles": [
+      {
+        "filename": "RELEASES.md",
+        "type": "markdown"
+      }
+    ],
+    "skip": {
+      "tag": true,
+      "commit": true
+    }
   },
   "keywords": [
     "mcp",
@@ -44,5 +63,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
   }
 }
