@@ -50,62 +50,8 @@ bundle exec jekyll serve
 
 ## MCP Server
 
-This repository includes an MCP (Model Context Protocol) server that provides programmatic access to the Drupal tools database. The MCP server enables AI assistants like Claude Desktop to intelligently discover and recommend Drupal development tools through natural language queries.
-
-### Two Ways to Use
-
-#### Option 1: NPM Package (Recommended for End Users)
-
-Install the published NPM package for immediate use with Claude Desktop:
-
-```bash
-# Add to Claude Desktop configuration:
-# "mcpServers": {
-#   "drupaltools": {
-#     "type": "stdio",
-#     "command": "npx",
-#     "args": ["@drupaltools/mcp@latest"]
-#   }
-# }
-```
-
-Then you can ask Claude things like:
-
-- "Show me 5 tools for testing Drupal sites"
-- "Search for Docker-based Drupal development tools"
-- "Tell me about BLT (Acquia Lightning) tool"
-
-**Package name:** `@drupaltools/mcp`
-**Repository:** [mcp-package/](./mcp-package/)
-**Documentation:** [mcp-package/README.md](./mcp-package/README.md)
-
-#### Option 2: Development Server (For Contributors)
-
-Run locally from source for testing and development:
-
-```bash
-npm install
-npm run mcp
-```
-
-**Repository:** [mcp-server/](./mcp-server/)
-**Documentation:** [mcp-server/README.md](./mcp-server/README.md)
-
-### Demo & Testing
-
-Visit the demo page: [/mcp-server/](./mcp-server/index.html)
-
-Or test with MCP Inspector:
-```bash
-npx @modelcontextprotocol/inspector node mcp-server/index.js
-```
-
-### Available Tools
-
-The MCP server provides three tools:
-- **`list_tools`**: List all tools with optional category filtering
-- **`search_tools`**: Semantic search for tools using intelligent scoring
-- **`get_tool`**: Get detailed information about a specific tool
+- [mcp-package/README.md](./mcp-package/README.md)
+- [mcp-server/README.md](./mcp-server/README.md)
 
 ## Similar tools
 
