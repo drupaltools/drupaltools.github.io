@@ -3,10 +3,13 @@
 # Major release - convenience script for major releases
 # Usage: ./release-major.sh [publish]
 
+# Get the directory where this script is located
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 echo "📦 Major release..."
 
 if [ "$1" = "publish" ]; then
-    ./release-full.sh major
+    "$SCRIPT_DIR/release-full.sh" major
 else
-    ./release-git.sh major
+    "$SCRIPT_DIR/release-git.sh" major
 fi

@@ -5,6 +5,10 @@
 
 set -e
 
+# Get the directory where this script is located
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+cd "$SCRIPT_DIR/.."
+
 # Get release type from argument (default: auto)
 RELEASE_TYPE=${1:-"auto"}
 
@@ -12,7 +16,7 @@ echo "🚀 Starting full release process..."
 
 # Run git release first
 echo "📦 Running git release..."
-./release-git.sh $RELEASE_TYPE
+./scripts/release-git.sh $RELEASE_TYPE
 
 # Get the version
 VERSION=$(node -p "require('./package.json').version")
