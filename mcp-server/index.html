@@ -18,44 +18,36 @@ title: Drupal Tools MCP Server
 
       <h2>Using npx</h2>
 
-      <p>The easiest way to use the MCP server is with npm:</p>
-
-      <div class="highlight">
-        <pre>npm install -g @drupaltools/mcp</pre>
-      </div>
-
-      <h2>Usage with Claude Desktop</h2>
-
-      <p>Add the following to your Claude Desktop configuration file:</p>
+      <p>Add the following to your <strong>mcpServers</strong> json key:</p>
 
       <div class="highlight">
         <pre>
-          {
-            "mcpServers": {
-              "drupaltools": {
-                "type": "stdio",
-                "command": "npx",
-                "args": ["@drupaltools/mcp@latest"]
-              }
-            }
-          }
+{
+  "mcpServers": {
+    "drupaltools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@drupaltools/mcp@latest"]
+    }
+  }
+}
         </pre>
       </div>
 
       <h2>Local install with npm</h2>
 
       <div class="highlight">
-        <pre>npm install -g @drupaltools/mcp</pre>
-        <pre>
-          {
-            "mcpServers": {
-              "drupaltools": {
-                "type": "stdio",
-                "command": "drupaltools-mcp"
-              }
-            }
-          }
-        </pre>
+<pre>npm install -g @drupaltools/mcp</pre>
+<pre>
+  {
+    "mcpServers": {
+      "drupaltools": {
+        "type": "stdio",
+        "command": "drupaltools-mcp"
+      }
+    }
+  }
+</pre>
       </div>
 
       <h2>Available Tools</h2>
