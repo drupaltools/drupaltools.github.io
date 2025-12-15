@@ -13,8 +13,8 @@
   "scripts": {
     "build": "node build.js",
     "test": "node dist/test.js",
-    "publish:npm": "cd dist && npm publish",
-    "publish": "./publish.sh",
+    "prepublishOnly": "npm run build && npm test",
+    "publish": "npm run build && npm test && cd dist && npm publish",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:major": "standard-version --release-as major",

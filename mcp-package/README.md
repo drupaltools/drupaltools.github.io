@@ -204,10 +204,10 @@ From the project root:
 
 ```bash
 cd mcp-package
-./publish.sh  # Or: ./publish.sh 1.2.3
+npm run publish
 ```
 
-Or using npm script:
+Or run the steps individually:
 
 ```bash
 cd mcp-package
