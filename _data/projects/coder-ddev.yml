@@ -1,0 +1,22 @@
+name: coder-ddev
+year_created: 2026
+source: https://github.com/ddev/coder-ddev
+homepage: https://github.com/ddev/coder-ddev
+docs: https://github.com/ddev/coder-ddev#readme
+logo:
+description: "Coder workspace templates for DDEV-based development with Docker-in-Docker support, including a Drupal core development template and a general-purpose template."
+recommended: true
+requires:
+  - docker
+  - ddev
+drupal_versions:
+  - 11
+operation_system:
+  - linux
+category:
+  - cloud
+  - development
+  - docker
+  - workflow
+similar:
+  - ddev
