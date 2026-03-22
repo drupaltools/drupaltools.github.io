@@ -61,13 +61,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add mcp-package/
           git commit -m "chore: Update MCP package with latest Drupal tools data
-
-          - Rebuilt projects.json with $(cd mcp-package && node -e "console.log(Object.keys(JSON.parse(require('fs').readFileSync('dist/projects.json', 'utf8'))).length)" tools
-          - Updated package when _data/projects changed
-
-          🤖 Generated with [Claude Code](https://claude.com/claude-code)
-
-          Co-Authored-By: Claude <noreply@anthropic.com>"
+          - Rebuilt projects.json with $(cd mcp-package && node -e "console.log(Object.keys(JSON.parse(require('fs').readFileSync('dist/projects.json', 'utf8'))).length)" tools"
           git push
 
       - name: Create summary
