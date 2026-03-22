@@ -5,7 +5,6 @@ homepage: https://www.vortextemplate.com/
 docs: https://github.com/drevops/vortex#readme
 logo: https://www.vortextemplate.com/img/logo-vortex-dark.svg
 description: "A Drupal project template that ships containerized local environments, automated testing, and CI/CD scaffolding so teams can start fast."
-recommended: true
 requires:
   - cli
   - composer
